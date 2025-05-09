@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "QqW/dV8GIhEJ5CKQeAfUazsCe43CQKGRvd9gUlghGt4=",
+  "Source": "EmployeeProfile.API",
+  "BasePath": "_content/EmployeeProfile.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
