@@ -68,12 +68,6 @@ namespace EmployeeProfile.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("DepartmentId");
-
-                    b.HasIndex("GradeId");
-
-                    b.HasIndex("OccupationId");
-
                     b.ToTable("Employees");
                 });
 
@@ -117,33 +111,6 @@ namespace EmployeeProfile.Infrastructure.Migrations
                     b.HasIndex("DepartmentId");
 
                     b.ToTable("Occupations");
-                });
-
-            modelBuilder.Entity("EmployeeProfile.Domain.Aggregates.EmployeeAggregate.Employee", b =>
-                {
-                    b.HasOne("EmployeeProfile.Domain.Aggregates.DepartmentAggregate.Department", "Department")
-                        .WithMany()
-                        .HasForeignKey("DepartmentId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("EmployeeProfile.Domain.Aggregates.OccupationAggregate.Grade", "Grade")
-                        .WithMany()
-                        .HasForeignKey("GradeId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("EmployeeProfile.Domain.Aggregates.OccupationAggregate.Occupation", "Occupation")
-                        .WithMany()
-                        .HasForeignKey("OccupationId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Department");
-
-                    b.Navigation("Grade");
-
-                    b.Navigation("Occupation");
                 });
 
             modelBuilder.Entity("EmployeeProfile.Domain.Aggregates.OccupationAggregate.Grade", b =>

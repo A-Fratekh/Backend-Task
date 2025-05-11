@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿
 using EmployeeProfile.Domain.Repositories;
 using EmployeeProfile.Infrastructure.Data;
 
@@ -28,24 +23,22 @@ namespace EmployeeProfile.Infrastructure.Repositories
 
         }
 
-        public Task UpdateAsync(T entity)
+        public async Task UpdateAsync(T entity)
         {
             if (entity == null)
                 throw new ArgumentNullException(nameof(entity));
 
-            _context.Set<T>().Update(entity);
-             _context.SaveChangesAsync();
-            return Task.CompletedTask;
+             _context.Set<T>().Update(entity);
+            await _context.SaveChangesAsync();
         }
 
-        public Task DeleteAsync(T entity)
+        public async Task DeleteAsync(T entity)
         {
             if (entity == null)
                 throw new ArgumentNullException(nameof(entity));
 
             _context.Set<T>().Remove(entity);
-             _context.SaveChangesAsync();
-            return Task.CompletedTask;
+            await _context.SaveChangesAsync();
         }
 
         public async Task SaveChangesAsync()

@@ -991,22 +991,13 @@
             "type": "string",
             "format": "uuid"
           },
-          "department": {
-            "$ref": "#/components/schemas/Department"
-          },
           "occupationId": {
             "type": "string",
             "format": "uuid"
           },
-          "occupation": {
-            "$ref": "#/components/schemas/Occupation"
-          },
           "gradeId": {
             "type": "string",
             "format": "uuid"
-          },
-          "grade": {
-            "$ref": "#/components/schemas/Grade"
           }
         },
         "additionalProperties": false

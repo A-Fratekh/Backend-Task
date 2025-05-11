@@ -1,4 +1,5 @@
-﻿using EmployeeProfile.Domain.Aggregates.DepartmentAggregate;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using EmployeeProfile.Domain.Aggregates.DepartmentAggregate;
 using EmployeeProfile.Domain.Aggregates.OccupationAggregate;
 
 namespace EmployeeProfile.Domain.Aggregates.EmployeeAggregate;
@@ -8,12 +9,12 @@ public class Employee : Entity, IAggregateRoot
     public string EmployeeNo { get; private set; }
     public string Name { get; private set; }
     public DateTime HireDate { get; private set; }
+    [ForeignKey(nameof(Department))]
     public Guid DepartmentId { get; private set; }
-    public Department Department { get; private set; }
+    [ForeignKey(nameof(Occupation))]
     public Guid OccupationId { get; private set; }
-    public Occupation Occupation { get; private set; }
+    [ForeignKey(nameof(Grade))]
     public Guid GradeId { get; private set; }
-    public Grade Grade { get; private set; }
 
     private Employee() { }
 

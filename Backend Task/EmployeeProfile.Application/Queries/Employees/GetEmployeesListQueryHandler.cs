@@ -11,12 +11,12 @@ public class GetEmployeesListQueryHandler : IRequestHandler<GetEmployeesListQuer
 {
 
     private readonly IQueryRepository<Employee> _employeeRepository;
-    private readonly IQueryRepository<Domain.Aggregates.DepartmentAggregate.Department> _departmentRepository;
+    private readonly IQueryRepository<Department> _departmentRepository;
     private readonly IQueryRepository<Occupation> _occupationRepository;
     private readonly IQueryRepository<Grade> _gradeRepository;
 
     public GetEmployeesListQueryHandler(IQueryRepository<Employee> employeeRepository,
-        IQueryRepository<Domain.Aggregates.DepartmentAggregate.Department> departmentRepository,
+        IQueryRepository<Department> departmentRepository,
         IQueryRepository<Occupation> occupationRepository,
         IQueryRepository<Grade> gradeRepository)
     {
@@ -41,9 +41,12 @@ public class GetEmployeesListQueryHandler : IRequestHandler<GetEmployeesListQuer
             {
                 EmployeeNo = employee.EmployeeNo,
                 Name = employee.Name,
+                DepartmentId = employee.DepartmentId,
                 DepartmentName = department?.Name,
-                OccupationName = occupation?.Name,
-                GradeName = grade?.Name,
+                OccupationId = employee.OccupationId,
+                Occupation = occupation?.Name,
+                GradeId = employee.GradeId,
+                Grade = grade?.Name,
                 HireDate = employee.HireDate
             });
         }

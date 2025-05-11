@@ -7,7 +7,7 @@ using MediatR;
 
 namespace EmployeeProfile.Application.Queries.Employees;
 
-public class GetEmployeeProfileHandler : IRequestHandler<GetEmployeeProfileQuery, Employee>
+public class GetEmployeeProfileHandler : IRequestHandler<GetEmployeeProfileQuery, EmployeeProfileDTO>
 {
     private readonly IQueryRepository<Employee> _employeeRepository;
     private readonly IQueryRepository<Department> _departmentRepository;
@@ -25,7 +25,7 @@ public class GetEmployeeProfileHandler : IRequestHandler<GetEmployeeProfileQuery
         _gradeRepository = gradeRepository;
     }
 
-    public async Task<Employee> Handle(GetEmployeeProfileQuery request, CancellationToken cancellationToken)
+    public async Task<EmployeeProfileDTO> Handle(GetEmployeeProfileQuery request, CancellationToken cancellationToken)
     {
         var employee = await _employeeRepository.GetByIdAsync(request.EmployeeId);
         if (employee == null)
@@ -35,14 +35,16 @@ public class GetEmployeeProfileHandler : IRequestHandler<GetEmployeeProfileQuery
         var occupation = await _occupationRepository.GetByIdAsync(employee.OccupationId);
         var grade = await _gradeRepository.GetByIdAsync(employee.GradeId);
 
-        return new Employee
-        (
-            employee.EmployeeNo,
-            employee.Name,
-            employee.HireDate,
-            department.Id,
-            occupation.Id,
-            grade.Id
-        );
+        return new EmployeeProfileDTO
+        {
+            EmployeeNo = employee.EmployeeNo,
+            Name = employee.Name,
+            DepartmentId = employee.DepartmentId,
+            DepartmentName = department.Name,
+            OccupationId = employee.OccupationId,
+            Occupation = occupation.Name,
+            GradeId = employee.GradeId,
+            Grade = grade.Name
+        };
     }
 }

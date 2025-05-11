@@ -1,254 +1,254 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\",
+  "WorkspaceRootPath": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\queries\\occupations\\getalloccupationshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\occupations\\getalloccupationshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\dtos\\departmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\dtos\\departmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\queries\\occupations\\getoccupationquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\occupations\\getoccupationquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\queries\\departments\\getalldepartmentshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\departments\\getalldepartmentshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\queries\\departments\\getdepartmentbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\departments\\getdepartmentbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\queries\\departments\\getdepartmentbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\departments\\getdepartmentbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\queries\\occupations\\getalloccupationsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\occupations\\getalloccupationsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\queries\\occupations\\getoccupationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\occupations\\getoccupationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\queries\\grades\\getgradehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\grades\\getgradehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E4F2C6D-3AD7-42CB-92DF-16C23D0BEC4C}|EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.domain\\repositories\\iqueryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E4F2C6D-3AD7-42CB-92DF-16C23D0BEC4C}|EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj|solutionrelative:employeeprofile.domain\\repositories\\iqueryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|solutionrelative:employeeprofile.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\queries\\departments\\getalldepartmentsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\departments\\getalldepartmentsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E4F2C6D-3AD7-42CB-92DF-16C23D0BEC4C}|EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.domain\\aggregates\\departmentaggregate\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E4F2C6D-3AD7-42CB-92DF-16C23D0BEC4C}|EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj|solutionrelative:employeeprofile.domain\\aggregates\\departmentaggregate\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\dtos\\employeeprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\dtos\\employeeprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\dtos\\gradedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\dtos\\gradedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\queries\\grades\\getgradequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\grades\\getgradequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E4F2C6D-3AD7-42CB-92DF-16C23D0BEC4C}|EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.domain\\aggregates\\occupationaggregate\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E4F2C6D-3AD7-42CB-92DF-16C23D0BEC4C}|EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj|solutionrelative:employeeprofile.domain\\aggregates\\occupationaggregate\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.api\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|solutionrelative:employeeprofile.api\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E4F2C6D-3AD7-42CB-92DF-16C23D0BEC4C}|EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.domain\\aggregates\\employeeaggregate\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E4F2C6D-3AD7-42CB-92DF-16C23D0BEC4C}|EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj|solutionrelative:employeeprofile.domain\\aggregates\\employeeaggregate\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|solutionrelative:employeeprofile.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.api\\controllers\\gradescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|solutionrelative:employeeprofile.api\\controllers\\gradescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.api\\controllers\\occupationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|solutionrelative:employeeprofile.api\\controllers\\occupationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\queries\\grades\\getallgradeshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\grades\\getallgradeshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\queries\\grades\\getallgradesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\grades\\getallgradesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\commands\\occupations\\updateoccupationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\occupations\\updateoccupationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\commands\\occupations\\deleteoccupationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\occupations\\deleteoccupationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\commands\\grades\\updategradehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\grades\\updategradehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\commands\\occupations\\updateoccupationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\occupations\\updateoccupationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\commands\\grades\\updategradecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\grades\\updategradecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\commands\\employee\\updateemployeehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\employee\\updateemployeehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\commands\\employee\\updateemployeecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\employee\\updateemployeecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\commands\\departments\\updatedepartmenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\departments\\updatedepartmenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\commands\\departments\\updatedepartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\departments\\updatedepartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\commands\\employee\\deleteemployeecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\employee\\deleteemployeecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\commands\\employee\\deleteemployeehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\employee\\deleteemployeehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\commands\\grades\\deletegradehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\grades\\deletegradehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\commands\\grades\\deletegradecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\grades\\deletegradecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\commands\\occupations\\deleteoccupationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\occupations\\deleteoccupationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\commands\\grades\\creategradehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\grades\\creategradehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\commands\\occupations\\createoccupationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\occupations\\createoccupationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\commands\\occupations\\createoccupationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\occupations\\createoccupationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\commands\\departments\\createdepartmenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\departments\\createdepartmenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\commands\\departments\\createdepartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\departments\\createdepartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\queries\\employees\\getemployeeprofilehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\employees\\getemployeeprofilehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\queries\\employees\\getemployeeprofilequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\employees\\getemployeeprofilequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\queries\\employees\\getemployeeslistqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\queries\\employees\\getemployeeslistqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\employees\\getemployeeslistqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\queries\\employees\\getemployeeslistquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\employees\\getemployeeslistquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\queries\\employees\\getemployeeprofilehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\employees\\getemployeeprofilehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\commands\\grades\\creategradecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\grades\\creategradecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\dtos\\employeeprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\dtos\\employeeprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\commands\\employee\\createemployeecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\employee\\createemployeecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\queries\\employees\\getemployeeprofilequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\employees\\getemployeeprofilequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\commands\\employee\\createemployeehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\queries\\occupations\\getoccupationquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\occupations\\getoccupationquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4F2C6D-3AD7-42CB-92DF-16C23D0BEC4C}|EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.domain\\aggregates\\employeeaggregate\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E4F2C6D-3AD7-42CB-92DF-16C23D0BEC4C}|EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj|solutionrelative:employeeprofile.domain\\aggregates\\employeeaggregate\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|solutionrelative:employeeprofile.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.infrastructure\\migrations\\20250511055837_employeeedits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|solutionrelative:employeeprofile.infrastructure\\migrations\\20250511055837_employeeedits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.api\\employeeprofile.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|solutionrelative:employeeprofile.api\\employeeprofile.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\commands\\employee\\createemployeehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\employee\\createemployeehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\commands\\employee\\createemployeecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\employee\\createemployeecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|solutionrelative:employeeprofile.api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|solutionrelative:employeeprofile.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.infrastructure\\repositories\\commandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|solutionrelative:employeeprofile.infrastructure\\repositories\\commandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E4F2C6D-3AD7-42CB-92DF-16C23D0BEC4C}|EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.domain\\repositories\\icommandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E4F2C6D-3AD7-42CB-92DF-16C23D0BEC4C}|EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj|solutionrelative:employeeprofile.domain\\repositories\\icommandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\commands\\departments\\deletedepartmenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\departments\\deletedepartmenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.application\\commands\\departments\\deletedepartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\departments\\deletedepartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.infrastructure\\migrations\\20250509154653_updatingdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|solutionrelative:employeeprofile.infrastructure\\migrations\\20250509154653_updatingdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.infrastructure\\migrations\\migrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|solutionrelative:employeeprofile.infrastructure\\migrations\\migrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E4F2C6D-3AD7-42CB-92DF-16C23D0BEC4C}|EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.domain\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4E4F2C6D-3AD7-42CB-92DF-16C23D0BEC4C}|EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.domain\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E4F2C6D-3AD7-42CB-92DF-16C23D0BEC4C}|EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj|solutionrelative:employeeprofile.domain\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4E4F2C6D-3AD7-42CB-92DF-16C23D0BEC4C}|EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.domain\\aggregates\\occupationaggregate\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E4F2C6D-3AD7-42CB-92DF-16C23D0BEC4C}|EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj|solutionrelative:employeeprofile.domain\\aggregates\\occupationaggregate\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|solutionrelative:employeeprofile.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\queries\\occupations\\getalloccupationshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\occupations\\getalloccupationshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\queries\\departments\\getalldepartmentshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\departments\\getalldepartmentshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\queries\\departments\\getdepartmentbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\departments\\getdepartmentbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\queries\\departments\\getdepartmentbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\departments\\getdepartmentbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\queries\\occupations\\getalloccupationsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\occupations\\getalloccupationsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\queries\\occupations\\getoccupationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\occupations\\getoccupationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\queries\\grades\\getgradehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\grades\\getgradehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4F2C6D-3AD7-42CB-92DF-16C23D0BEC4C}|EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.domain\\repositories\\iqueryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E4F2C6D-3AD7-42CB-92DF-16C23D0BEC4C}|EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj|solutionrelative:employeeprofile.domain\\repositories\\iqueryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\queries\\departments\\getalldepartmentsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\departments\\getalldepartmentsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4F2C6D-3AD7-42CB-92DF-16C23D0BEC4C}|EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.domain\\aggregates\\departmentaggregate\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E4F2C6D-3AD7-42CB-92DF-16C23D0BEC4C}|EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj|solutionrelative:employeeprofile.domain\\aggregates\\departmentaggregate\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\dtos\\gradedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\dtos\\gradedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\queries\\grades\\getgradequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\grades\\getgradequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.api\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|solutionrelative:employeeprofile.api\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|solutionrelative:employeeprofile.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.api\\controllers\\gradescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|solutionrelative:employeeprofile.api\\controllers\\gradescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.api\\controllers\\occupationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|solutionrelative:employeeprofile.api\\controllers\\occupationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\queries\\grades\\getallgradeshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\grades\\getallgradeshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\queries\\grades\\getallgradesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\grades\\getallgradesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\commands\\occupations\\updateoccupationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\occupations\\updateoccupationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\commands\\occupations\\deleteoccupationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\occupations\\deleteoccupationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\commands\\grades\\updategradehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\grades\\updategradehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\commands\\occupations\\updateoccupationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\occupations\\updateoccupationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\commands\\grades\\updategradecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\grades\\updategradecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\commands\\employee\\updateemployeehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\employee\\updateemployeehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\commands\\employee\\updateemployeecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\employee\\updateemployeecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\commands\\departments\\updatedepartmenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\departments\\updatedepartmenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\commands\\departments\\updatedepartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\departments\\updatedepartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\commands\\employee\\deleteemployeecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\employee\\deleteemployeecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\commands\\employee\\deleteemployeehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\employee\\deleteemployeehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\commands\\grades\\deletegradehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\grades\\deletegradehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\commands\\grades\\deletegradecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\grades\\deletegradecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\commands\\occupations\\deleteoccupationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\occupations\\deleteoccupationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\commands\\grades\\creategradehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\grades\\creategradehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\commands\\occupations\\createoccupationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\occupations\\createoccupationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\commands\\occupations\\createoccupationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\occupations\\createoccupationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\commands\\departments\\createdepartmenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\departments\\createdepartmenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\commands\\departments\\createdepartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\departments\\createdepartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\queries\\employees\\getemployeeslistquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\queries\\employees\\getemployeeslistquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\commands\\grades\\creategradecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\grades\\creategradecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.infrastructure\\repositories\\commandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|solutionrelative:employeeprofile.infrastructure\\repositories\\commandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4F2C6D-3AD7-42CB-92DF-16C23D0BEC4C}|EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.domain\\repositories\\icommandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E4F2C6D-3AD7-42CB-92DF-16C23D0BEC4C}|EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj|solutionrelative:employeeprofile.domain\\repositories\\icommandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\commands\\departments\\deletedepartmenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\departments\\deletedepartmenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.application\\commands\\departments\\deletedepartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC7210A-7E3E-4B85-BDCF-8E8EC54ECFFC}|EmployeeProfile.Application\\EmployeeProfile.Application.csproj|solutionrelative:employeeprofile.application\\commands\\departments\\deletedepartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.infrastructure\\migrations\\20250509154653_updatingdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|solutionrelative:employeeprofile.infrastructure\\migrations\\20250509154653_updatingdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.infrastructure\\migrations\\migrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|solutionrelative:employeeprofile.infrastructure\\migrations\\migrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|solutionrelative:employeeprofile.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.infrastructure\\repositories\\queryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|d:\\ahmad\\desktop\\backend task\\backend task\\employeeprofile.infrastructure\\repositories\\queryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{103CF124-3793-4228-A2B9-E59F3022E366}|EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj|solutionrelative:employeeprofile.infrastructure\\repositories\\queryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|c:\\users\\ahmad\\desktop\\github\\backend-task\\backend task\\employeeprofile.api\\employeeprofile.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{EB006DD7-B121-4E1B-8E85-EE6190053330}|EmployeeProfile.API\\EmployeeProfile.API.csproj|solutionrelative:employeeprofile.api\\employeeprofile.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -258,15 +258,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "GetEmployeeProfileQuery.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Employees\\GetEmployeeProfileQuery.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Employees\\GetEmployeeProfileQuery.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Employees\\GetEmployeeProfileQuery.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Employees\\GetEmployeeProfileQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T17:00:12.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "GetOccupationQuery.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Occupations\\GetOccupationQuery.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Occupations\\GetOccupationQuery.cs",
               "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Occupations\\GetOccupationQuery.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Occupations\\GetOccupationQuery.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Occupations\\GetOccupationQuery.cs",
               "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Occupations\\GetOccupationQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -276,218 +289,153 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DepartmentDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\DTOs\\DepartmentDTO.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\DTOs\\DepartmentDTO.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\DTOs\\DepartmentDTO.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\DTOs\\DepartmentDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAANAAAAAAAAAA==",
+              "Title": "GetEmployeeProfileHandler.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Employees\\GetEmployeeProfileHandler.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Employees\\GetEmployeeProfileHandler.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Employees\\GetEmployeeProfileHandler.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Employees\\GetEmployeeProfileHandler.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwDEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T15:51:30.598Z",
+              "WhenOpened": "2025-05-09T15:56:11.494Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GetAllOccupationsHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Occupations\\GetAllOccupationsHandler.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Occupations\\GetAllOccupationsHandler.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Occupations\\GetAllOccupationsHandler.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Occupations\\GetAllOccupationsHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T21:18:46.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GetAllOccupationsQuery.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Occupations\\GetAllOccupationsQuery.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Occupations\\GetAllOccupationsQuery.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Occupations\\GetAllOccupationsQuery.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Occupations\\GetAllOccupationsQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T21:17:38.26Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GetDepartmentByIdHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Departments\\GetDepartmentByIdHandler.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Departments\\GetDepartmentByIdHandler.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Departments\\GetDepartmentByIdHandler.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Departments\\GetDepartmentByIdHandler.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T15:51:45.555Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GetAllDepartmentsHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Departments\\GetAllDepartmentsHandler.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Departments\\GetAllDepartmentsHandler.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Departments\\GetAllDepartmentsHandler.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Departments\\GetAllDepartmentsHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T15:50:05.992Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GetDepartmentByIdQuery.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Departments\\GetDepartmentByIdQuery.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Departments\\GetDepartmentByIdQuery.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Departments\\GetDepartmentByIdQuery.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Departments\\GetDepartmentByIdQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T15:58:19.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GetOccupationHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Occupations\\GetOccupationHandler.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Occupations\\GetOccupationHandler.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Occupations\\GetOccupationHandler.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Occupations\\GetOccupationHandler.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAqwCIAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T17:31:09.002Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GetGradeHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Grades\\GetGradeHandler.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Grades\\GetGradeHandler.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Grades\\GetGradeHandler.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Grades\\GetGradeHandler.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCUAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T17:13:29.633Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IQueryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\Repositories\\IQueryRepository.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Domain\\Repositories\\IQueryRepository.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\Repositories\\IQueryRepository.cs",
-              "RelativeToolTip": "EmployeeProfile.Domain\\Repositories\\IQueryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T14:47:19.331Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "GetAllDepartmentsQuery.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Departments\\GetAllDepartmentsQuery.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Departments\\GetAllDepartmentsQuery.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Departments\\GetAllDepartmentsQuery.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Departments\\GetAllDepartmentsQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T15:51:35.57Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "EmployeeProfileDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\DTOs\\EmployeeProfileDTO.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\DTOs\\EmployeeProfileDTO.cs",
               "RelativeDocumentMoniker": "EmployeeProfile.Application\\DTOs\\EmployeeProfileDTO.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\DTOs\\EmployeeProfileDTO.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\DTOs\\EmployeeProfileDTO.cs",
               "RelativeToolTip": "EmployeeProfile.Application\\DTOs\\EmployeeProfileDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T15:58:57.185Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Department.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\Aggregates\\DepartmentAggregate\\Department.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Domain\\Aggregates\\DepartmentAggregate\\Department.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\Aggregates\\DepartmentAggregate\\Department.cs",
-              "RelativeToolTip": "EmployeeProfile.Domain\\Aggregates\\DepartmentAggregate\\Department.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "GetEmployeesListQueryHandler.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Employees\\GetEmployeesListQueryHandler.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Employees\\GetEmployeesListQueryHandler.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Employees\\GetEmployeesListQueryHandler.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Employees\\GetEmployeesListQueryHandler.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwC0AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T15:42:01.481Z",
+              "WhenOpened": "2025-05-09T15:56:45.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CreateEmployeeHandler.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Employee\\CreateEmployeeHandler.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Employee\\CreateEmployeeHandler.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Employee\\CreateEmployeeHandler.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Employee\\CreateEmployeeHandler.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T15:11:55.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Domain\\Aggregates\\EmployeeAggregate\\Employee.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Domain\\Aggregates\\EmployeeAggregate\\Employee.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Domain\\Aggregates\\EmployeeAggregate\\Employee.cs",
+              "RelativeToolTip": "EmployeeProfile.Domain\\Aggregates\\EmployeeAggregate\\Employee.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T15:42:15.864Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "CreateEmployeeCommand.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Employee\\CreateEmployeeCommand.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Employee\\CreateEmployeeCommand.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Employee\\CreateEmployeeCommand.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Employee\\CreateEmployeeCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T16:26:50.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.API\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.API\\Controllers\\EmployeesController.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.API\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "EmployeeProfile.API\\Controllers\\EmployeesController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwCUAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T15:21:33.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Infrastructure\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "EmployeeProfile.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Infrastructure\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "EmployeeProfile.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwDcAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T15:21:07.535Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "GradeDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\DTOs\\GradeDTO.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\DTOs\\GradeDTO.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\DTOs\\GradeDTO.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\DTOs\\GradeDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "20250511055837_employeeEdits.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Infrastructure\\Migrations\\20250511055837_employeeEdits.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Infrastructure\\Migrations\\20250511055837_employeeEdits.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Infrastructure\\Migrations\\20250511055837_employeeEdits.cs",
+              "RelativeToolTip": "EmployeeProfile.Infrastructure\\Migrations\\20250511055837_employeeEdits.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAYwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T21:31:29.565Z",
+              "WhenOpened": "2025-05-11T05:58:45.19Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "GetGradeQuery.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Grades\\GetGradeQuery.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Grades\\GetGradeQuery.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Grades\\GetGradeQuery.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Grades\\GetGradeQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T17:11:57.208Z",
+              "DocumentIndex": 8,
+              "Title": "EmployeeProfile.API.csproj",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.API\\EmployeeProfile.API.csproj",
+              "RelativeDocumentMoniker": "EmployeeProfile.API\\EmployeeProfile.API.csproj",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.API\\EmployeeProfile.API.csproj",
+              "RelativeToolTip": "EmployeeProfile.API\\EmployeeProfile.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-09T15:23:17.257Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "DepartmentsController.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.API\\Controllers\\DepartmentsController.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.API\\Controllers\\DepartmentsController.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.API\\Controllers\\DepartmentsController.cs",
-              "RelativeToolTip": "EmployeeProfile.API\\Controllers\\DepartmentsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "Entity.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Domain\\Entity.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Domain\\Entity.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Domain\\Entity.cs",
+              "RelativeToolTip": "EmployeeProfile.Domain\\Entity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T15:21:30.189Z",
+              "WhenOpened": "2025-05-09T15:42:10.025Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 13,
               "Title": "Grade.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\Aggregates\\OccupationAggregate\\Grade.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Domain\\Aggregates\\OccupationAggregate\\Grade.cs",
               "RelativeDocumentMoniker": "EmployeeProfile.Domain\\Aggregates\\OccupationAggregate\\Grade.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\Aggregates\\OccupationAggregate\\Grade.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Domain\\Aggregates\\OccupationAggregate\\Grade.cs",
               "RelativeToolTip": "EmployeeProfile.Domain\\Aggregates\\OccupationAggregate\\Grade.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -496,271 +444,409 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\Aggregates\\EmployeeAggregate\\Employee.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Domain\\Aggregates\\EmployeeAggregate\\Employee.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\Aggregates\\EmployeeAggregate\\Employee.cs",
-              "RelativeToolTip": "EmployeeProfile.Domain\\Aggregates\\EmployeeAggregate\\Employee.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAApwBEAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.API\\appsettings.json",
+              "RelativeDocumentMoniker": "EmployeeProfile.API\\appsettings.json",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.API\\appsettings.json",
+              "RelativeToolTip": "EmployeeProfile.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-09T15:30:14.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GetAllDepartmentsHandler.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Departments\\GetAllDepartmentsHandler.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Departments\\GetAllDepartmentsHandler.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Departments\\GetAllDepartmentsHandler.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Departments\\GetAllDepartmentsHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T15:42:15.864Z",
+              "WhenOpened": "2025-05-09T15:50:05.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GetDepartmentByIdHandler.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Departments\\GetDepartmentByIdHandler.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Departments\\GetDepartmentByIdHandler.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Departments\\GetDepartmentByIdHandler.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Departments\\GetDepartmentByIdHandler.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T15:51:45.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GetAllOccupationsHandler.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Occupations\\GetAllOccupationsHandler.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Occupations\\GetAllOccupationsHandler.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Occupations\\GetAllOccupationsHandler.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Occupations\\GetAllOccupationsHandler.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwBQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T21:18:46.778Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Infrastructure\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Infrastructure\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Infrastructure\\DependencyInjection.cs",
-              "RelativeToolTip": "EmployeeProfile.Infrastructure\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
+              "Title": "GetAllOccupationsQuery.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Occupations\\GetAllOccupationsQuery.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Occupations\\GetAllOccupationsQuery.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Occupations\\GetAllOccupationsQuery.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Occupations\\GetAllOccupationsQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T15:12:22.817Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T21:17:38.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GetDepartmentByIdQuery.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Departments\\GetDepartmentByIdQuery.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Departments\\GetDepartmentByIdQuery.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Departments\\GetDepartmentByIdQuery.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Departments\\GetDepartmentByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T15:58:19.673Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "GradesController.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.API\\Controllers\\GradesController.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.API\\Controllers\\GradesController.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.API\\Controllers\\GradesController.cs",
-              "RelativeToolTip": "EmployeeProfile.API\\Controllers\\GradesController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
+              "Title": "GetOccupationHandler.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Occupations\\GetOccupationHandler.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Occupations\\GetOccupationHandler.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Occupations\\GetOccupationHandler.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Occupations\\GetOccupationHandler.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwCIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T17:09:58.853Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T17:31:09.002Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "OccupationsController.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.API\\Controllers\\OccupationsController.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.API\\Controllers\\OccupationsController.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.API\\Controllers\\OccupationsController.cs",
-              "RelativeToolTip": "EmployeeProfile.API\\Controllers\\OccupationsController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAkwBcAAAAFAAAAAAAAAA==",
+              "Title": "GetGradeHandler.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Grades\\GetGradeHandler.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Grades\\GetGradeHandler.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Grades\\GetGradeHandler.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Grades\\GetGradeHandler.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCUAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T17:09:24.748Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "UpdateEmployeeCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Employee\\UpdateEmployeeCommand.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Employee\\UpdateEmployeeCommand.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Employee\\UpdateEmployeeCommand.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Employee\\UpdateEmployeeCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T21:05:51.219Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "GetAllGradesQuery.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Grades\\GetAllGradesQuery.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Grades\\GetAllGradesQuery.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Grades\\GetAllGradesQuery.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Grades\\GetAllGradesQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T21:12:55.008Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T17:13:29.633Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "GetAllGradesHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Grades\\GetAllGradesHandler.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Grades\\GetAllGradesHandler.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Grades\\GetAllGradesHandler.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Grades\\GetAllGradesHandler.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAfAAAAAAAAAA==",
+              "Title": "IQueryRepository.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Domain\\Repositories\\IQueryRepository.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Domain\\Repositories\\IQueryRepository.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Domain\\Repositories\\IQueryRepository.cs",
+              "RelativeToolTip": "EmployeeProfile.Domain\\Repositories\\IQueryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T21:14:00.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T14:47:19.331Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "DeleteOccupationHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Occupations\\DeleteOccupationHandler.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Occupations\\DeleteOccupationHandler.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Occupations\\DeleteOccupationHandler.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Occupations\\DeleteOccupationHandler.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAABMAAAAAAAAAA==",
+              "DocumentIndex": 23,
+              "Title": "GetAllDepartmentsQuery.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Departments\\GetAllDepartmentsQuery.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Departments\\GetAllDepartmentsQuery.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Departments\\GetAllDepartmentsQuery.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Departments\\GetAllDepartmentsQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T21:02:00.445Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "UpdateEmployeeHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Employee\\UpdateEmployeeHandler.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Employee\\UpdateEmployeeHandler.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Employee\\UpdateEmployeeHandler.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Employee\\UpdateEmployeeHandler.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAwAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T15:12:01.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "UpdateGradeHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Grades\\UpdateGradeHandler.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Grades\\UpdateGradeHandler.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Grades\\UpdateGradeHandler.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Grades\\UpdateGradeHandler.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBwAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T20:57:30.903Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "UpdateGradeCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Grades\\UpdateGradeCommand.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Grades\\UpdateGradeCommand.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Grades\\UpdateGradeCommand.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Grades\\UpdateGradeCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T20:56:59.022Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T15:51:35.57Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "UpdateOccupationHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Occupations\\UpdateOccupationHandler.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Occupations\\UpdateOccupationHandler.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Occupations\\UpdateOccupationHandler.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Occupations\\UpdateOccupationHandler.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAABUAAAAAAAAAA==",
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Domain\\Aggregates\\DepartmentAggregate\\Department.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Domain\\Aggregates\\DepartmentAggregate\\Department.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Domain\\Aggregates\\DepartmentAggregate\\Department.cs",
+              "RelativeToolTip": "EmployeeProfile.Domain\\Aggregates\\DepartmentAggregate\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T21:07:00.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T15:42:01.481Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "UpdateDepartmentHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Departments\\UpdateDepartmentHandler.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Departments\\UpdateDepartmentHandler.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Departments\\UpdateDepartmentHandler.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Departments\\UpdateDepartmentHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAABAAAAAAAAAAA==",
+              "DocumentIndex": 25,
+              "Title": "GradeDTO.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\DTOs\\GradeDTO.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\DTOs\\GradeDTO.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\DTOs\\GradeDTO.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\DTOs\\GradeDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T14:41:11.845Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T21:31:29.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GetGradeQuery.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Grades\\GetGradeQuery.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Grades\\GetGradeQuery.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Grades\\GetGradeQuery.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Grades\\GetGradeQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T17:11:57.208Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
-              "Title": "UpdateOccupationCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Occupations\\UpdateOccupationCommand.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Occupations\\UpdateOccupationCommand.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Occupations\\UpdateOccupationCommand.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Occupations\\UpdateOccupationCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
+              "Title": "DepartmentsController.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.API\\Controllers\\DepartmentsController.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.API\\Controllers\\DepartmentsController.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.API\\Controllers\\DepartmentsController.cs",
+              "RelativeToolTip": "EmployeeProfile.API\\Controllers\\DepartmentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T21:05:27.996Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T15:21:30.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "EmployeeProfile.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T15:12:22.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "GradesController.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.API\\Controllers\\GradesController.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.API\\Controllers\\GradesController.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.API\\Controllers\\GradesController.cs",
+              "RelativeToolTip": "EmployeeProfile.API\\Controllers\\GradesController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T17:09:58.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "OccupationsController.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.API\\Controllers\\OccupationsController.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.API\\Controllers\\OccupationsController.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.API\\Controllers\\OccupationsController.cs",
+              "RelativeToolTip": "EmployeeProfile.API\\Controllers\\OccupationsController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAkwBcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T17:09:24.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "UpdateEmployeeCommand.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Employee\\UpdateEmployeeCommand.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Employee\\UpdateEmployeeCommand.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Employee\\UpdateEmployeeCommand.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Employee\\UpdateEmployeeCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T21:05:51.219Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 32,
-              "Title": "UpdateDepartmentCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Departments\\UpdateDepartmentCommand.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Departments\\UpdateDepartmentCommand.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Departments\\UpdateDepartmentCommand.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Departments\\UpdateDepartmentCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Title": "GetAllGradesQuery.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Grades\\GetAllGradesQuery.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Grades\\GetAllGradesQuery.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Grades\\GetAllGradesQuery.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Grades\\GetAllGradesQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T16:20:57.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T21:12:55.008Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "DeleteEmployeeCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Employee\\DeleteEmployeeCommand.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Employee\\DeleteEmployeeCommand.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Employee\\DeleteEmployeeCommand.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Employee\\DeleteEmployeeCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 31,
+              "Title": "GetAllGradesHandler.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Grades\\GetAllGradesHandler.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Grades\\GetAllGradesHandler.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Grades\\GetAllGradesHandler.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Grades\\GetAllGradesHandler.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T20:53:16.513Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "DeleteGradeHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Grades\\DeleteGradeHandler.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Grades\\DeleteGradeHandler.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Grades\\DeleteGradeHandler.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Grades\\DeleteGradeHandler.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T20:50:14.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "DeleteOccupationcommand.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Occupations\\DeleteOccupationcommand.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Occupations\\DeleteOccupationcommand.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Occupations\\DeleteOccupationcommand.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Occupations\\DeleteOccupationcommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T21:01:30.151Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T21:14:00.038Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 34,
-              "Title": "DeleteEmployeeHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Employee\\DeleteEmployeeHandler.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Employee\\DeleteEmployeeHandler.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Employee\\DeleteEmployeeHandler.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Employee\\DeleteEmployeeHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "DeleteOccupationHandler.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Occupations\\DeleteOccupationHandler.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Occupations\\DeleteOccupationHandler.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Occupations\\DeleteOccupationHandler.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Occupations\\DeleteOccupationHandler.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T15:11:58.89Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T21:02:00.445Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "DeleteGradeCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Grades\\DeleteGradeCommand.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Grades\\DeleteGradeCommand.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Grades\\DeleteGradeCommand.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Grades\\DeleteGradeCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 38,
+              "Title": "UpdateEmployeeHandler.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Employee\\UpdateEmployeeHandler.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Employee\\UpdateEmployeeHandler.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Employee\\UpdateEmployeeHandler.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Employee\\UpdateEmployeeHandler.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAwAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T20:49:58.116Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T15:12:01.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UpdateGradeHandler.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Grades\\UpdateGradeHandler.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Grades\\UpdateGradeHandler.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Grades\\UpdateGradeHandler.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Grades\\UpdateGradeHandler.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T20:57:30.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "UpdateGradeCommand.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Grades\\UpdateGradeCommand.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Grades\\UpdateGradeCommand.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Grades\\UpdateGradeCommand.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Grades\\UpdateGradeCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T20:56:59.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "UpdateOccupationHandler.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Occupations\\UpdateOccupationHandler.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Occupations\\UpdateOccupationHandler.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Occupations\\UpdateOccupationHandler.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Occupations\\UpdateOccupationHandler.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T21:07:00.26Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 40,
+              "Title": "UpdateDepartmentHandler.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Departments\\UpdateDepartmentHandler.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Departments\\UpdateDepartmentHandler.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Departments\\UpdateDepartmentHandler.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Departments\\UpdateDepartmentHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T14:41:11.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "UpdateOccupationCommand.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Occupations\\UpdateOccupationCommand.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Occupations\\UpdateOccupationCommand.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Occupations\\UpdateOccupationCommand.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Occupations\\UpdateOccupationCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T21:05:27.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "UpdateDepartmentCommand.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Departments\\UpdateDepartmentCommand.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Departments\\UpdateDepartmentCommand.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Departments\\UpdateDepartmentCommand.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Departments\\UpdateDepartmentCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T16:20:57.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "DeleteEmployeeCommand.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Employee\\DeleteEmployeeCommand.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Employee\\DeleteEmployeeCommand.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Employee\\DeleteEmployeeCommand.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Employee\\DeleteEmployeeCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T20:53:16.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "DeleteGradeHandler.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Grades\\DeleteGradeHandler.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Grades\\DeleteGradeHandler.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Grades\\DeleteGradeHandler.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Grades\\DeleteGradeHandler.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T20:50:14.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "DeleteOccupationcommand.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Occupations\\DeleteOccupationcommand.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Occupations\\DeleteOccupationcommand.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Occupations\\DeleteOccupationcommand.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Occupations\\DeleteOccupationcommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T21:01:30.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "DeleteEmployeeHandler.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Employee\\DeleteEmployeeHandler.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Employee\\DeleteEmployeeHandler.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Employee\\DeleteEmployeeHandler.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Employee\\DeleteEmployeeHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T15:11:58.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "DeleteGradeCommand.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Grades\\DeleteGradeCommand.cs",
+              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Grades\\DeleteGradeCommand.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Grades\\DeleteGradeCommand.cs",
+              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Grades\\DeleteGradeCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T20:49:58.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
               "Title": "CreateOccupationCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Occupations\\CreateOccupationCommand.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Occupations\\CreateOccupationCommand.cs",
               "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Occupations\\CreateOccupationCommand.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Occupations\\CreateOccupationCommand.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Occupations\\CreateOccupationCommand.cs",
               "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Occupations\\CreateOccupationCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -768,11 +854,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 48,
               "Title": "CreateOccupationHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Occupations\\CreateOccupationHandler.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Occupations\\CreateOccupationHandler.cs",
               "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Occupations\\CreateOccupationHandler.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Occupations\\CreateOccupationHandler.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Occupations\\CreateOccupationHandler.cs",
               "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Occupations\\CreateOccupationHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -780,11 +866,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 51,
               "Title": "CreateDepartmentCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Departments\\CreateDepartmentCommand.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Departments\\CreateDepartmentCommand.cs",
               "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Departments\\CreateDepartmentCommand.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Departments\\CreateDepartmentCommand.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Departments\\CreateDepartmentCommand.cs",
               "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Departments\\CreateDepartmentCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -792,24 +878,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 47,
               "Title": "CreateGradeHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Grades\\CreateGradeHandler.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Grades\\CreateGradeHandler.cs",
               "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Grades\\CreateGradeHandler.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Grades\\CreateGradeHandler.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Grades\\CreateGradeHandler.cs",
               "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Grades\\CreateGradeHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T15:12:05.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T15:12:05.943Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 50,
               "Title": "CreateDepartmentHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Departments\\CreateDepartmentHandler.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Departments\\CreateDepartmentHandler.cs",
               "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Departments\\CreateDepartmentHandler.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Departments\\CreateDepartmentHandler.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Departments\\CreateDepartmentHandler.cs",
               "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Departments\\CreateDepartmentHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -817,11 +902,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 52,
               "Title": "GetEmployeesListQuery.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Employees\\GetEmployeesListQuery.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Employees\\GetEmployeesListQuery.cs",
               "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Employees\\GetEmployeesListQuery.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Employees\\GetEmployeesListQuery.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Queries\\Employees\\GetEmployeesListQuery.cs",
               "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Employees\\GetEmployeesListQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -829,47 +914,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "GetEmployeeProfileHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Employees\\GetEmployeeProfileHandler.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Employees\\GetEmployeeProfileHandler.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Employees\\GetEmployeeProfileHandler.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Employees\\GetEmployeeProfileHandler.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T15:56:11.494Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "GetEmployeeProfileQuery.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Employees\\GetEmployeeProfileQuery.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Employees\\GetEmployeeProfileQuery.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Employees\\GetEmployeeProfileQuery.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Employees\\GetEmployeeProfileQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T17:00:12.431Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "GetEmployeesListQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Employees\\GetEmployeesListQueryHandler.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Queries\\Employees\\GetEmployeesListQueryHandler.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Queries\\Employees\\GetEmployeesListQueryHandler.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Queries\\Employees\\GetEmployeesListQueryHandler.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwBIAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T15:56:45.81Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 53,
               "Title": "CreateGradeCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Grades\\CreateGradeCommand.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Grades\\CreateGradeCommand.cs",
               "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Grades\\CreateGradeCommand.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Grades\\CreateGradeCommand.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Grades\\CreateGradeCommand.cs",
               "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Grades\\CreateGradeCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -877,23 +926,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "CreateEmployeeCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Employee\\CreateEmployeeCommand.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Employee\\CreateEmployeeCommand.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Employee\\CreateEmployeeCommand.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Employee\\CreateEmployeeCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T16:26:50.652Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 54,
               "Title": "CommandRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Infrastructure\\Repositories\\CommandRepository.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Infrastructure\\Repositories\\CommandRepository.cs",
               "RelativeDocumentMoniker": "EmployeeProfile.Infrastructure\\Repositories\\CommandRepository.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Infrastructure\\Repositories\\CommandRepository.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Infrastructure\\Repositories\\CommandRepository.cs",
               "RelativeToolTip": "EmployeeProfile.Infrastructure\\Repositories\\CommandRepository.cs",
               "ViewState": "AgIAABkAAAAAAAAAAADwvy4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -901,35 +938,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "EmployeesController.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.API\\Controllers\\EmployeesController.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.API\\Controllers\\EmployeesController.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.API\\Controllers\\EmployeesController.cs",
-              "RelativeToolTip": "EmployeeProfile.API\\Controllers\\EmployeesController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAkwDgAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T15:21:33.561Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "CreateEmployeeHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Employee\\CreateEmployeeHandler.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Employee\\CreateEmployeeHandler.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Employee\\CreateEmployeeHandler.cs",
-              "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Employee\\CreateEmployeeHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T15:11:55.603Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 55,
               "Title": "ICommandRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\Repositories\\ICommandRepository.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Domain\\Repositories\\ICommandRepository.cs",
               "RelativeDocumentMoniker": "EmployeeProfile.Domain\\Repositories\\ICommandRepository.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\Repositories\\ICommandRepository.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Domain\\Repositories\\ICommandRepository.cs",
               "RelativeToolTip": "EmployeeProfile.Domain\\Repositories\\ICommandRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -937,23 +950,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.API\\appsettings.json",
-              "RelativeDocumentMoniker": "EmployeeProfile.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.API\\appsettings.json",
-              "RelativeToolTip": "EmployeeProfile.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-09T15:30:14.641Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 56,
               "Title": "DeleteDepartmentHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Departments\\DeleteDepartmentHandler.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Departments\\DeleteDepartmentHandler.cs",
               "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Departments\\DeleteDepartmentHandler.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Departments\\DeleteDepartmentHandler.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Departments\\DeleteDepartmentHandler.cs",
               "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Departments\\DeleteDepartmentHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -961,11 +962,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 57,
               "Title": "DeleteDepartmentCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Departments\\DeleteDepartmentCommand.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Departments\\DeleteDepartmentCommand.cs",
               "RelativeDocumentMoniker": "EmployeeProfile.Application\\Commands\\Departments\\DeleteDepartmentCommand.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\Commands\\Departments\\DeleteDepartmentCommand.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\Commands\\Departments\\DeleteDepartmentCommand.cs",
               "RelativeToolTip": "EmployeeProfile.Application\\Commands\\Departments\\DeleteDepartmentCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -973,11 +974,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 58,
               "Title": "20250509154653_updatingDatabase.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Infrastructure\\Migrations\\20250509154653_updatingDatabase.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Infrastructure\\Migrations\\20250509154653_updatingDatabase.cs",
               "RelativeDocumentMoniker": "EmployeeProfile.Infrastructure\\Migrations\\20250509154653_updatingDatabase.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Infrastructure\\Migrations\\20250509154653_updatingDatabase.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Infrastructure\\Migrations\\20250509154653_updatingDatabase.cs",
               "RelativeToolTip": "EmployeeProfile.Infrastructure\\Migrations\\20250509154653_updatingDatabase.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -985,23 +986,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "Entity.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\Entity.cs",
-              "RelativeDocumentMoniker": "EmployeeProfile.Domain\\Entity.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\Entity.cs",
-              "RelativeToolTip": "EmployeeProfile.Domain\\Entity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T15:42:10.025Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 59,
               "Title": "MigrationService.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Infrastructure\\Migrations\\MigrationService.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Infrastructure\\Migrations\\MigrationService.cs",
               "RelativeDocumentMoniker": "EmployeeProfile.Infrastructure\\Migrations\\MigrationService.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Infrastructure\\Migrations\\MigrationService.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Infrastructure\\Migrations\\MigrationService.cs",
               "RelativeToolTip": "EmployeeProfile.Infrastructure\\Migrations\\MigrationService.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAnwCUAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1009,11 +998,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 60,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.API\\Program.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.API\\Program.cs",
               "RelativeDocumentMoniker": "EmployeeProfile.API\\Program.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.API\\Program.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.API\\Program.cs",
               "RelativeToolTip": "EmployeeProfile.API\\Program.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1021,27 +1010,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 61,
               "Title": "QueryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Infrastructure\\Repositories\\QueryRepository.cs",
+              "DocumentMoniker": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Infrastructure\\Repositories\\QueryRepository.cs",
               "RelativeDocumentMoniker": "EmployeeProfile.Infrastructure\\Repositories\\QueryRepository.cs",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.Infrastructure\\Repositories\\QueryRepository.cs",
+              "ToolTip": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Infrastructure\\Repositories\\QueryRepository.cs",
               "RelativeToolTip": "EmployeeProfile.Infrastructure\\Repositories\\QueryRepository.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAowCAAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T14:53:23.166Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "EmployeeProfile.API.csproj",
-              "DocumentMoniker": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.API\\EmployeeProfile.API.csproj",
-              "RelativeDocumentMoniker": "EmployeeProfile.API\\EmployeeProfile.API.csproj",
-              "ToolTip": "C:\\Users\\Ahmad\\Desktop\\github\\Backend-Task\\Backend Task\\EmployeeProfile.API\\EmployeeProfile.API.csproj",
-              "RelativeToolTip": "EmployeeProfile.API\\EmployeeProfile.API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-09T15:23:17.257Z"
             }
           ]
         }
