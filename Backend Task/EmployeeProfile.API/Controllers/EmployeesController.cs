@@ -26,19 +26,19 @@ public class EmployeesController : ControllerBase
         return Ok(result);
     }
 
-    [HttpGet("{id}")]
+    [HttpGet("{employeeNumber}")]
 
-    public async Task<ActionResult<Employee>> Get(Guid id)
+    public async Task<ActionResult<Employee>> Get(string employeeNumber)
     {
-        var result = await _mediator.Send(new GetEmployeeProfileQuery {EmployeeId=id});
+        var result = await _mediator.Send(new GetEmployeeProfileQuery {EmployeeNo= employeeNumber });
         return Ok(result);
     }
 
     [HttpPost]
-    public async Task<ActionResult<Guid>> Create(CreateEmployeeCommand command)
+    public async Task<ActionResult<string>> Create(CreateEmployeeCommand command)
     {
         var result = await _mediator.Send(command);
-        return CreatedAtAction(nameof(Get), new { id = result }, result);
+        return CreatedAtAction(nameof(Get), new { number = result }, result);
     }
 
     [HttpPut("{id}")]

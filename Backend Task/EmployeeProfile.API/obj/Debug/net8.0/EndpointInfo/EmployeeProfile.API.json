@@ -278,20 +278,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "string",
-                  "format": "uuid"
+                  "type": "string"
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "string",
-                  "format": "uuid"
+                  "type": "string"
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "string",
-                  "format": "uuid"
+                  "type": "string"
                 }
               }
             }
@@ -299,19 +296,18 @@
         }
       }
     },
-    "/api/Employees/{id}": {
+    "/api/Employees/{number}": {
       "get": {
         "tags": [
           "Employees"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "number",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string",
-              "format": "uuid"
+              "type": "string"
             }
           }
         ],
@@ -337,7 +333,9 @@
             }
           }
         }
-      },
+      }
+    },
+    "/api/Employees/{id}": {
       "put": {
         "tags": [
           "Employees"
@@ -949,8 +947,7 @@
         "properties": {
           "id": {
             "type": "string",
-            "format": "uuid",
-            "readOnly": true
+            "format": "uuid"
           },
           "name": {
             "type": "string",
@@ -970,11 +967,6 @@
       "Employee": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid",
-            "readOnly": true
-          },
           "employeeNo": {
             "type": "string",
             "nullable": true
@@ -1029,8 +1021,7 @@
         "properties": {
           "id": {
             "type": "string",
-            "format": "uuid",
-            "readOnly": true
+            "format": "uuid"
           },
           "name": {
             "type": "string",

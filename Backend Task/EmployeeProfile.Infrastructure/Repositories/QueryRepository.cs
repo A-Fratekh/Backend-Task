@@ -46,5 +46,13 @@ namespace EmployeeProfile.Application.Repositories
 
             return entity;
         }
+
+        public async Task<T> GetByNoAsync(string number)
+        {
+            var entity = await _context.Set<T>().FindAsync(number);
+            if (entity == null) throw new KeyNotFoundException($"Entity with Number {number} not found");
+
+            return entity;
+        }
     }
 }

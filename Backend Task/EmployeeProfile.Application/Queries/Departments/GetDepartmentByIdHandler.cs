@@ -36,6 +36,11 @@ namespace EmployeeProfile.Application.Queries.Departments
                 {
                     Id = o.Id,
                     Name = o.Name,
+                    department=new DepartmentDTO
+                    {
+                        Id = o.DepartmentId,
+                        Name = o.Department.Name,
+                    }
                  
                 }).ToList()
             };

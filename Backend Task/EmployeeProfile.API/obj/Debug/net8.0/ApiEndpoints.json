@@ -149,33 +149,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Guid",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "EmployeeProfile.API.Controllers.EmployeesController",
-    "Method": "Get",
-    "RelativePath": "api/Employees/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "EmployeeProfile.Domain.Aggregates.EmployeeAggregate.Employee",
+        "Type": "System.String",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -226,6 +200,32 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmployeeProfile.API.Controllers.EmployeesController",
+    "Method": "Get",
+    "RelativePath": "api/Employees/{number}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "number",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "EmployeeProfile.Domain.Aggregates.EmployeeAggregate.Employee",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "EmployeeProfile.API.Controllers.GradesController",

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using EmployeeProfile.Domain.Aggregates.DepartmentAggregate;
 using EmployeeProfile.Domain.Aggregates.OccupationAggregate;
 
@@ -6,6 +7,7 @@ namespace EmployeeProfile.Domain.Aggregates.EmployeeAggregate;
 
 public class Employee : Entity, IAggregateRoot
 {
+    [Key]
     public string EmployeeNo { get; private set; }
     public string Name { get; private set; }
     public DateTime HireDate { get; private set; }

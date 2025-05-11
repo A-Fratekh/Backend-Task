@@ -51,7 +51,7 @@ public class AppDbContext : DbContext
         // Employee
         modelBuilder.Entity<Employee>(entity =>
         {
-            entity.HasKey(e => e.Id);
+            entity.HasKey(e => e.EmployeeNo);
             entity.Property(e => e.EmployeeNo).IsRequired().HasMaxLength(20);
             entity.Property(e => e.Name).IsRequired().HasMaxLength(100);
             //entity.HasOne(e => e.Department)

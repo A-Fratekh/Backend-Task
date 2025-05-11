@@ -2,7 +2,7 @@
 
 namespace EmployeeProfile.Application.Commands.Employees;
 
-public class CreateEmployeeCommand : IRequest<Guid>
+public class CreateEmployeeCommand : IRequest<string>
 {
     public string EmployeeNo { get; set; }
     public string Name { get; set; }

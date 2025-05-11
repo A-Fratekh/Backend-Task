@@ -1,9 +1,12 @@
-﻿using EmployeeProfile.Domain.Aggregates.OccupationAggregate;
+﻿using System.ComponentModel.DataAnnotations;
+using EmployeeProfile.Domain.Aggregates.OccupationAggregate;
 
 namespace EmployeeProfile.Domain.Aggregates.DepartmentAggregate;
 
 public class Department :Entity, IAggregateRoot
 {
+    [Key]
+    public Guid Id { get; set; }   
     public string Name { get; private set; }
     public ICollection<Occupation> Occupations { get; private set; }
 

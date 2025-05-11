@@ -1,6 +1,9 @@
-﻿namespace EmployeeProfile.Domain.Aggregates.OccupationAggregate;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace EmployeeProfile.Domain.Aggregates.OccupationAggregate;
 public class Grade
 {
+    [Key]
     public Guid Id { get; private set; }
     public string Name { get; private set; }
     public Guid OccupationId { get; private set; }

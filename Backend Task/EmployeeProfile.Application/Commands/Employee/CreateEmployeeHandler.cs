@@ -4,7 +4,7 @@ using EmployeeProfile.Domain.Aggregates.EmployeeAggregate;
 
 namespace EmployeeProfile.Application.Commands.Employees;
 
-public class CreateEmployeeHandler : IRequestHandler<CreateEmployeeCommand, Guid>
+public class CreateEmployeeHandler : IRequestHandler<CreateEmployeeCommand, string>
 {
     private readonly ICommandRepository<Employee> _employeeCommandRepository;
     private readonly IQueryRepository<Employee> _employeeQueryRepository;
@@ -16,7 +16,7 @@ public class CreateEmployeeHandler : IRequestHandler<CreateEmployeeCommand, Guid
         _employeeQueryRepository = employeeQueryRepository;
     }
 
-    public async Task<Guid> Handle(CreateEmployeeCommand request, CancellationToken cancellationToken)
+    public async Task<string> Handle(CreateEmployeeCommand request, CancellationToken cancellationToken)
     {
         var employee = new Employee (request.EmployeeNo, request.Name, request.HireDate, request.DepartmentId, request.OccupationId, request.GradeId);
         IEnumerable<Employee> employees = await _employeeQueryRepository.GetAllAsync(null);
@@ -31,7 +31,7 @@ public class CreateEmployeeHandler : IRequestHandler<CreateEmployeeCommand, Guid
                     }
                 }
                 await _employeeCommandRepository.AddAsync(employee);
-            return employee.Id;
+            return employee.Name;
         }
         catch
         {

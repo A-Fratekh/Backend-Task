@@ -32,8 +32,8 @@ public class GetOccupationHandler : IRequestHandler<GetOccupationQuery, Occupati
             department = new DepartmentDTO
             {
                 Id = department.Id,
-                Name = department.Name
-            }
+                Name = department.Name,
+            },
         
         };
     }

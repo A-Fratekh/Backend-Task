@@ -27,7 +27,7 @@ public class GetEmployeeProfileHandler : IRequestHandler<GetEmployeeProfileQuery
 
     public async Task<EmployeeProfileDTO> Handle(GetEmployeeProfileQuery request, CancellationToken cancellationToken)
     {
-        var employee = await _employeeRepository.GetByIdAsync(request.EmployeeId);
+        var employee = await _employeeRepository.GetByNoAsync(request.EmployeeNo);
         if (employee == null)
             return null;
 
@@ -37,8 +37,10 @@ public class GetEmployeeProfileHandler : IRequestHandler<GetEmployeeProfileQuery
 
         return new EmployeeProfileDTO
         {
+            
             EmployeeNo = employee.EmployeeNo,
             Name = employee.Name,
+            HireDate=employee.HireDate,
             DepartmentId = employee.DepartmentId,
             DepartmentName = department.Name,
             OccupationId = employee.OccupationId,
