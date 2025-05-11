@@ -27,7 +27,7 @@ public class GetEmployeeProfileHandler : IRequestHandler<GetEmployeeProfileQuery
 
     public async Task<EmployeeProfileDTO> Handle(GetEmployeeProfileQuery request, CancellationToken cancellationToken)
     {
-        var employee = await _employeeRepository.GetByNoAsync(request.EmployeeNo);
+        var employee = await _employeeRepository.GetByIdAsync(request.EmployeeNo);
         if (employee == null)
             return null;
 
