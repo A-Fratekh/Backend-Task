@@ -278,17 +278,20 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "string"
+                  "type": "integer",
+                  "format": "int32"
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "string"
+                  "type": "integer",
+                  "format": "int32"
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "string"
+                  "type": "integer",
+                  "format": "int32"
                 }
               }
             }
@@ -296,18 +299,19 @@
         }
       }
     },
-    "/api/Employees/{number}": {
+    "/api/Employees/{employeeNumber}": {
       "get": {
         "tags": [
           "Employees"
         ],
         "parameters": [
           {
-            "name": "number",
+            "name": "employeeNumber",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],
@@ -386,8 +390,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string",
-              "format": "uuid"
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],
@@ -847,17 +851,13 @@
       "CreateEmployeeCommand": {
         "type": "object",
         "properties": {
-          "employeeNo": {
-            "type": "string",
-            "nullable": true
-          },
           "name": {
             "type": "string",
             "nullable": true
           },
           "hireDate": {
             "type": "string",
-            "format": "date-time"
+            "format": "date"
           },
           "departmentId": {
             "type": "string",
@@ -916,8 +916,8 @@
         "type": "object",
         "properties": {
           "id": {
-            "type": "string",
-            "format": "uuid"
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -968,8 +968,9 @@
         "type": "object",
         "properties": {
           "employeeNo": {
-            "type": "string",
-            "nullable": true
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
           },
           "name": {
             "type": "string",
@@ -977,7 +978,7 @@
           },
           "hireDate": {
             "type": "string",
-            "format": "date-time"
+            "format": "date"
           },
           "departmentId": {
             "type": "string",
@@ -1064,7 +1065,7 @@
           },
           "hireDate": {
             "type": "string",
-            "format": "date-time"
+            "format": "date"
           },
           "departmentId": {
             "type": "string",

@@ -28,36 +28,36 @@ public class EmployeesController : ControllerBase
 
     [HttpGet("{employeeNumber}")]
 
-    public async Task<ActionResult<Employee>> Get(string employeeNumber)
+    public async Task<ActionResult<Employee>> Get(int employeeNumber)
     {
         var result = await _mediator.Send(new GetEmployeeProfileQuery {EmployeeNo= employeeNumber });
         return Ok(result);
     }
 
     [HttpPost]
-    public async Task<ActionResult<string>> Create(CreateEmployeeCommand command)
+    public async Task<ActionResult<int>> Create(CreateEmployeeCommand request)
     {
-        var result = await _mediator.Send(command);
+        var result = await _mediator.Send(request);
         return CreatedAtAction(nameof(Get), new { number = result }, result);
     }
 
     [HttpPut("{id}")]
-    public async Task<ActionResult> Update(Guid id, UpdateEmployeeCommand command)
+    public async Task<ActionResult> Update(Guid id, UpdateEmployeeCommand request)
     {
-        if (id != command.Id)
+        if (id != request.Id)
             return BadRequest();
 
-        await _mediator.Send(command);
+        await _mediator.Send(request);
         return NoContent();
     }
 
     [HttpDelete("{id}")]
-    public async Task<ActionResult> Delete(Guid id, DeleteEmployeeCommand command)
+    public async Task<ActionResult> Delete(int id, DeleteEmployeeCommand request)
     {
-        if (id != command.Id)
+        if (id != request.Id)
             return BadRequest();
 
-        await _mediator.Send(command);
+        await _mediator.Send(request);
         return Ok();
     }
 }

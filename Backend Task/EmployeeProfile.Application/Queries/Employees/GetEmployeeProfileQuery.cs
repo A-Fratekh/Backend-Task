@@ -6,5 +6,5 @@ namespace EmployeeProfile.Application.Queries.Employees;
 
 public class GetEmployeeProfileQuery :IRequest<EmployeeProfileDTO>
 {
-    public string EmployeeNo { get; set; }
+    public int EmployeeNo { get; set; }
 }

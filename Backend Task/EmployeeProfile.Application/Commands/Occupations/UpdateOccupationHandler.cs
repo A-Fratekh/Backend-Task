@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EmployeeProfile.Application.UnitOfWork;
 using EmployeeProfile.Domain.Aggregates.OccupationAggregate;
 using EmployeeProfile.Domain.Repositories;
 using MediatR;
@@ -13,11 +14,14 @@ public class UpdateOccupationHandler : IRequestHandler<UpdateOccupationCommand, 
 {
     private readonly IQueryRepository<Occupation> _occupationQueryRepository;
     private readonly ICommandRepository<Occupation> _occupationCommandRepository;
-
-    public UpdateOccupationHandler(IQueryRepository<Occupation> gradeQueryRepository, ICommandRepository<Occupation> gradeCommandRepository)
+    private readonly IUnitOfWork _unitOfWork;
+    public UpdateOccupationHandler(IQueryRepository<Occupation> gradeQueryRepository,
+        ICommandRepository<Occupation> gradeCommandRepository,
+        IUnitOfWork unitOfWork)
     {
         _occupationQueryRepository = gradeQueryRepository;
         _occupationCommandRepository = gradeCommandRepository;
+        _unitOfWork = unitOfWork;
     }
 
     public async Task<Guid> Handle(UpdateOccupationCommand request, CancellationToken cancellationToken)
@@ -27,6 +31,7 @@ public class UpdateOccupationHandler : IRequestHandler<UpdateOccupationCommand, 
 
         occupation.Update(request.Name);
         await _occupationCommandRepository.UpdateAsync(occupation);
+        await _unitOfWork.SaveChangesAsync(cancellationToken);
         return request.Id;
     }
 }

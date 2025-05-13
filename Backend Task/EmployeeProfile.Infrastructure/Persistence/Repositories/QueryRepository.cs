@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using EmployeeProfile.Domain.Repositories;
 using EmployeeProfile.Infrastructure.Data;
+using System.Linq.Expressions;
 
-namespace EmployeeProfile.Application.Repositories
+namespace EmployeeProfile.Infrastructure.Persistence.Repositories
 {
     public class QueryRepository<T> : IQueryRepository<T> where T : class
     {
@@ -16,6 +17,17 @@ namespace EmployeeProfile.Application.Repositories
         public QueryRepository(AppDbContext context)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
+        }
+
+        public async Task<bool> ExistsAsync(Guid id)
+        {
+            var parameter = Expression.Parameter(typeof(T), "x");
+            var property = Expression.Property(parameter, "Id");
+            var constant = Expression.Constant(id);
+            var equality = Expression.Equal(property, constant);
+            var lambda = Expression.Lambda<Func<T, bool>>(equality, parameter);
+
+            return await _context.Set<T>().AnyAsync(lambda);
         }
 
         public async Task<IEnumerable<T>> GetAllAsync(string? orderBy)
@@ -48,6 +60,13 @@ namespace EmployeeProfile.Application.Repositories
         }
 
         public async Task<T> GetByIdAsync(string id)
+        {
+            var entity = await _context.Set<T>().FindAsync(id);
+            if (entity == null) throw new KeyNotFoundException($"Entity with Number {id} not found");
+
+            return entity;
+        }
+        public async Task<T> GetByIdAsync(int id)
         {
             var entity = await _context.Set<T>().FindAsync(id);
             if (entity == null) throw new KeyNotFoundException($"Entity with Number {id} not found");

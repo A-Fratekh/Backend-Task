@@ -39,29 +39,29 @@ public class GradesController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<Guid>> Create(CreateGradeCommand command)
+    public async Task<ActionResult<Guid>> Create(CreateGradeCommand request)
     {
-        var result = await _mediator.Send(command);
+        var result = await _mediator.Send(request);
         return CreatedAtAction(nameof(Get), new { id = result }, result);
     }
 
     [HttpPut("{id}")]
-    public async Task<ActionResult> Update(Guid id, UpdateGradeCommand command)
+    public async Task<ActionResult> Update(Guid id, UpdateGradeCommand request)
     {
-        if (id != command.Id)
+        if (id != request.Id)
             return BadRequest();
 
-        await _mediator.Send(command);
+        await _mediator.Send(request);
         return NoContent();
     }
 
     [HttpDelete("{id}")]
-    public async Task<ActionResult> Delete(Guid id, DeleteGradeCommand command)
+    public async Task<ActionResult> Delete(Guid id, DeleteGradeCommand request)
     {
-        if (id != command.Id)
+        if (id != request.Id)
             return BadRequest();
 
-        await _mediator.Send(command);
+        await _mediator.Send(request);
         return Ok();
     }
 }

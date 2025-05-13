@@ -26,23 +26,27 @@ namespace EmployeeProfile.Application.Queries.Departments
                 return null;
 
             IEnumerable<Occupation> occupations = await _occupationQueryRepository.GetAllAsync(null);
-           
+            var result = new List<OccupationDTO>();
 
+            foreach (var occupation in occupations)
+            {
+                if (occupation.DepartmentId == department.Id)
+                { 
+                    result.Add(
+                        new OccupationDTO
+                        {
+                            
+                            Id=occupation.Id,
+                            Name=occupation.Name
+                        }
+                        );
+                }
+            }
             var departmentDto = new DepartmentDTO
             {
                 Id = department.Id,
                 Name = department.Name,
-                Occupations = occupations.Select(o => new OccupationDTO
-                {
-                    Id = o.Id,
-                    Name = o.Name,
-                    department=new DepartmentDTO
-                    {
-                        Id = o.DepartmentId,
-                        Name = o.Department.Name,
-                    }
-                 
-                }).ToList()
+                Occupations = result
             };
 
             return departmentDto;

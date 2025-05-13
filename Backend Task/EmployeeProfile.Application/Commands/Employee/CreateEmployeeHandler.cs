@@ -1,24 +1,26 @@
 ﻿using EmployeeProfile.Domain.Repositories;
 using MediatR;
 using EmployeeProfile.Domain.Aggregates.EmployeeAggregate;
+using EmployeeProfile.Application.UnitOfWork;
 
 namespace EmployeeProfile.Application.Commands.Employees;
 
-public class CreateEmployeeHandler : IRequestHandler<CreateEmployeeCommand, string>
+public class CreateEmployeeHandler : IRequestHandler<CreateEmployeeCommand, int>
 {
     private readonly ICommandRepository<Employee> _employeeCommandRepository;
     private readonly IQueryRepository<Employee> _employeeQueryRepository;
+    private readonly IUnitOfWork _unitOfWork;
 
-
-    public CreateEmployeeHandler(ICommandRepository<Employee> employeeCommandRepository, IQueryRepository<Employee> employeeQueryRepository)
+    public CreateEmployeeHandler(ICommandRepository<Employee> employeeCommandRepository, IQueryRepository<Employee> employeeQueryRepository, IUnitOfWork unitOfWork)
     {
         _employeeCommandRepository = employeeCommandRepository;
         _employeeQueryRepository = employeeQueryRepository;
+        _unitOfWork = unitOfWork;
     }
 
-    public async Task<string> Handle(CreateEmployeeCommand request, CancellationToken cancellationToken)
+    public async Task<int> Handle(CreateEmployeeCommand request, CancellationToken cancellationToken)
     {
-        var employee = new Employee (request.EmployeeNo, request.Name, request.HireDate, request.DepartmentId, request.OccupationId, request.GradeId);
+        var employee = new Employee ( request.Name, request.HireDate, request.DepartmentId, request.OccupationId, request.GradeId);
         IEnumerable<Employee> employees = await _employeeQueryRepository.GetAllAsync(null);
         try
         {
@@ -31,7 +33,8 @@ public class CreateEmployeeHandler : IRequestHandler<CreateEmployeeCommand, stri
                     }
                 }
                 await _employeeCommandRepository.AddAsync(employee);
-            return employee.Name;
+                await _unitOfWork.SaveChangesAsync(cancellationToken);
+            return employee.EmployeeNo;
         }
         catch
         {

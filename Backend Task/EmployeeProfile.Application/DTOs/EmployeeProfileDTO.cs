@@ -1,10 +1,13 @@
-﻿namespace EmployeeProfile.Application.DTOs;
+﻿using System.Text.Json.Serialization;
+using EmployeeProfile.Application.Validators;
+
+namespace EmployeeProfile.Application.DTOs;
 
 public class EmployeeProfileDTO
 {
-    public string EmployeeNo { get; set; }
+    public int EmployeeNo { get; set; }
     public string Name { get; set; }
-    public DateTime HireDate { get; set; }
+    public DateOnly HireDate { get; set; }
     public Guid DepartmentId { get; set; }
     public string DepartmentName { get; set; }
     public Guid OccupationId { get; set; }

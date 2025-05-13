@@ -28,7 +28,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "command",
+        "Name": "request",
         "Type": "EmployeeProfile.Application.Commands.Departments.CreateDepartmentCommand",
         "IsRequired": true
       }
@@ -85,7 +85,7 @@
         "IsRequired": true
       },
       {
-        "Name": "command",
+        "Name": "request",
         "Type": "EmployeeProfile.Application.Commands.Departments.UpdateDepartmentCommand",
         "IsRequired": true
       }
@@ -106,7 +106,7 @@
         "IsRequired": true
       },
       {
-        "Name": "command",
+        "Name": "request",
         "Type": "EmployeeProfile.Application.Commands.Departments.DeleteDepartmentCommand",
         "IsRequired": true
       }
@@ -142,14 +142,40 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "command",
+        "Name": "request",
         "Type": "EmployeeProfile.Application.Commands.Employees.CreateEmployeeCommand",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.String",
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EmployeeProfile.API.Controllers.EmployeesController",
+    "Method": "Get",
+    "RelativePath": "api/Employees/{employeeNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "EmployeeProfile.Domain.Aggregates.EmployeeAggregate.Employee",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -173,7 +199,7 @@
         "IsRequired": true
       },
       {
-        "Name": "command",
+        "Name": "request",
         "Type": "EmployeeProfile.Application.Commands.Employees.UpdateEmployeeCommand",
         "IsRequired": true
       }
@@ -190,42 +216,16 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.Guid",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
-        "Name": "command",
+        "Name": "request",
         "Type": "EmployeeProfile.Application.Commands.Employees.DeleteEmployeeCommand",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EmployeeProfile.API.Controllers.EmployeesController",
-    "Method": "Get",
-    "RelativePath": "api/Employees/{number}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "number",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "EmployeeProfile.Domain.Aggregates.EmployeeAggregate.Employee",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
   },
   {
     "ContainingType": "EmployeeProfile.API.Controllers.GradesController",
@@ -256,7 +256,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "command",
+        "Name": "request",
         "Type": "EmployeeProfile.Application.Commands.Grades.CreateGradeCommand",
         "IsRequired": true
       }
@@ -313,7 +313,7 @@
         "IsRequired": true
       },
       {
-        "Name": "command",
+        "Name": "request",
         "Type": "EmployeeProfile.Application.Commands.Grades.UpdateGradeCommand",
         "IsRequired": true
       }
@@ -334,7 +334,7 @@
         "IsRequired": true
       },
       {
-        "Name": "command",
+        "Name": "request",
         "Type": "EmployeeProfile.Application.Commands.Grades.DeleteGradeCommand",
         "IsRequired": true
       }
@@ -370,7 +370,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "command",
+        "Name": "request",
         "Type": "EmployeeProfile.Application.Commands.Occupations.CreateOccupationCommand",
         "IsRequired": true
       }
@@ -427,7 +427,7 @@
         "IsRequired": true
       },
       {
-        "Name": "command",
+        "Name": "request",
         "Type": "EmployeeProfile.Application.Commands.Occupations.UpdateOccupationCommand",
         "IsRequired": true
       }
@@ -448,7 +448,7 @@
         "IsRequired": true
       },
       {
-        "Name": "command",
+        "Name": "request",
         "Type": "EmployeeProfile.Application.Commands.Occupations.DeleteOccupationcommand",
         "IsRequired": true
       }

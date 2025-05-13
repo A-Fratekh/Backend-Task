@@ -220,6 +220,8 @@ D:\Ahmad\Desktop\Backend task\Backend Task\EmployeeProfile.API\bin\Debug\net8.0\
 D:\Ahmad\Desktop\Backend task\Backend Task\EmployeeProfile.API\bin\Debug\net8.0\EmployeeProfile.API.pdb
 D:\Ahmad\Desktop\Backend task\Backend Task\EmployeeProfile.API\bin\Debug\net8.0\Azure.Core.dll
 D:\Ahmad\Desktop\Backend task\Backend Task\EmployeeProfile.API\bin\Debug\net8.0\Azure.Identity.dll
+D:\Ahmad\Desktop\Backend task\Backend Task\EmployeeProfile.API\bin\Debug\net8.0\FluentValidation.dll
+D:\Ahmad\Desktop\Backend task\Backend Task\EmployeeProfile.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 D:\Ahmad\Desktop\Backend task\Backend Task\EmployeeProfile.API\bin\Debug\net8.0\Humanizer.dll
 D:\Ahmad\Desktop\Backend task\Backend Task\EmployeeProfile.API\bin\Debug\net8.0\MediatR.dll
 D:\Ahmad\Desktop\Backend task\Backend Task\EmployeeProfile.API\bin\Debug\net8.0\MediatR.Contracts.dll

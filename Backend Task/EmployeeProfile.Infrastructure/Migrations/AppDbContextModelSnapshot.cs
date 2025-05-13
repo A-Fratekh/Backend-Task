@@ -40,9 +40,12 @@ namespace EmployeeProfile.Infrastructure.Migrations
 
             modelBuilder.Entity("EmployeeProfile.Domain.Aggregates.EmployeeAggregate.Employee", b =>
                 {
-                    b.Property<string>("EmployeeNo")
+                    b.Property<int>("EmployeeNo")
+                        .ValueGeneratedOnAdd()
                         .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EmployeeNo"));
 
                     b.Property<Guid>("DepartmentId")
                         .HasColumnType("uniqueidentifier");
@@ -50,8 +53,8 @@ namespace EmployeeProfile.Infrastructure.Migrations
                     b.Property<Guid>("GradeId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("HireDate")
-                        .HasColumnType("datetime2");
+                    b.Property<DateOnly>("HireDate")
+                        .HasColumnType("date");
 
                     b.Property<string>("Name")
                         .IsRequired()

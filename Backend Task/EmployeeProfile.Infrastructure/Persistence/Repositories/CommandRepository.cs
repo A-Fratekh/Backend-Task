@@ -1,8 +1,7 @@
-﻿
-using EmployeeProfile.Domain.Repositories;
+﻿using EmployeeProfile.Domain.Repositories;
 using EmployeeProfile.Infrastructure.Data;
 
-namespace EmployeeProfile.Infrastructure.Repositories
+namespace EmployeeProfile.Infrastructure.Persistence.Repositories
 {
     public class CommandRepository<T> : ICommandRepository<T> where T : class
     {
@@ -19,7 +18,7 @@ namespace EmployeeProfile.Infrastructure.Repositories
                 throw new ArgumentNullException(nameof(entity));
 
             await _context.Set<T>().AddAsync(entity);
-            await _context.SaveChangesAsync();
+           
 
         }
 
@@ -29,7 +28,7 @@ namespace EmployeeProfile.Infrastructure.Repositories
                 throw new ArgumentNullException(nameof(entity));
 
              _context.Set<T>().Update(entity);
-            await _context.SaveChangesAsync();
+            
         }
 
         public async Task DeleteAsync(T entity)
@@ -38,12 +37,8 @@ namespace EmployeeProfile.Infrastructure.Repositories
                 throw new ArgumentNullException(nameof(entity));
 
             _context.Set<T>().Remove(entity);
-            await _context.SaveChangesAsync();
+            
         }
 
-        public async Task SaveChangesAsync()
-        {
-            await _context.SaveChangesAsync();
-        }
     }
 }

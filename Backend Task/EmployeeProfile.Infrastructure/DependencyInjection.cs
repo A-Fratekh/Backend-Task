@@ -3,9 +3,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using EmployeeProfile.Domain.Repositories;
 using EmployeeProfile.Infrastructure.Data;
-using EmployeeProfile.Infrastructure.Repositories;
-using EmployeeProfile.Application.Repositories;
 using EmployeeProfile.Infrastructure.Migrations;
+using EmployeeProfile.Infrastructure.Persistence.Repositories;
+
 
 namespace EmployeeProfile.Infrastructure
 {
@@ -27,6 +27,7 @@ namespace EmployeeProfile.Infrastructure
             services.AddScoped(typeof(ICommandRepository<>), typeof(CommandRepository<>));
             services.AddScoped(typeof(IQueryRepository<>), typeof(QueryRepository<>));
             services.AddHostedService<MigrationService>();
+
 
 
             return services;

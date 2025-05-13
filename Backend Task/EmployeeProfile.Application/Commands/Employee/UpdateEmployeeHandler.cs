@@ -1,17 +1,21 @@
 ﻿using EmployeeProfile.Domain.Repositories;
 using EmployeeProfile.Domain.Aggregates.EmployeeAggregate;
 using MediatR;
+using EmployeeProfile.Application.UnitOfWork;
 namespace EmployeeProfile.Application.Commands.Employees;
 
 public class UpdateEmployeeHandler : IRequestHandler<UpdateEmployeeCommand, Guid>
 {
         private readonly IQueryRepository<Employee> _employeeReadRepository;
         private readonly ICommandRepository<Employee> _employeeRepository;
-
-    public UpdateEmployeeHandler(IQueryRepository<Employee> employeeReadRepository ,ICommandRepository<Employee> employeeRepository)
+        private readonly IUnitOfWork _unitOfWork;
+    public UpdateEmployeeHandler(IQueryRepository<Employee> employeeReadRepository 
+        ,ICommandRepository<Employee> employeeRepository
+        ,IUnitOfWork unitOfWork)
     {
         _employeeReadRepository = employeeReadRepository;
         _employeeRepository = employeeRepository;
+        _unitOfWork = unitOfWork;
     }
 
     public async Task<Guid> Handle(UpdateEmployeeCommand request, CancellationToken cancellationToken)
@@ -29,6 +33,7 @@ public class UpdateEmployeeHandler : IRequestHandler<UpdateEmployeeCommand, Guid
             );
 
         await _employeeRepository.UpdateAsync(employee);
+        await _unitOfWork.SaveChangesAsync(cancellationToken);
         return request.Id;
     }
 }

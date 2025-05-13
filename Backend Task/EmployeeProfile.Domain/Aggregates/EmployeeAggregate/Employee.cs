@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using EmployeeProfile.Domain.Aggregates.DepartmentAggregate;
 using EmployeeProfile.Domain.Aggregates.OccupationAggregate;
 
@@ -8,9 +9,11 @@ namespace EmployeeProfile.Domain.Aggregates.EmployeeAggregate;
 public class Employee : Entity, IAggregateRoot
 {
     [Key]
-    public string EmployeeNo { get; private set; }
+    public int EmployeeNo { get; private set; }
+   
     public string Name { get; private set; }
-    public DateTime HireDate { get; private set; }
+
+    public DateOnly HireDate { get; private set; }
     [ForeignKey(nameof(Department))]
     public Guid DepartmentId { get; private set; }
     [ForeignKey(nameof(Occupation))]
@@ -20,10 +23,9 @@ public class Employee : Entity, IAggregateRoot
 
     private Employee() { }
 
-    public Employee(string employeeNo, string name, DateTime hireDate,
+    public Employee(string name, DateOnly hireDate,
         Guid departmentId, Guid occupationId, Guid gradeId)
     {
-        EmployeeNo = employeeNo ?? throw new ArgumentNullException(nameof(employeeNo));
         Name = name ?? throw new ArgumentNullException(nameof(name));
         HireDate = hireDate;
         DepartmentId = departmentId;
@@ -31,7 +33,7 @@ public class Employee : Entity, IAggregateRoot
         GradeId = gradeId;
     }
 
-    public void Update(string name, DateTime hireDate,
+    public void Update(string name, DateOnly hireDate,
         Guid departmentId, Guid occupationId, Guid gradeId)
     {
         Name = name ?? throw new ArgumentNullException(nameof(name));

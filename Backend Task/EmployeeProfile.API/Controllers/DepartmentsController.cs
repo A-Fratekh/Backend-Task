@@ -37,29 +37,29 @@ public class DepartmentsController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<Guid>> Create(CreateDepartmentCommand command)
+    public async Task<ActionResult<Guid>> Create(CreateDepartmentCommand request)
     {
-        var result = await _mediator.Send(command);
+        var result = await _mediator.Send(request);
         return CreatedAtAction(nameof(Get), new { id = result }, result);
     }
 
     [HttpPut("{id}")]
-    public async Task<ActionResult> Update(Guid id, UpdateDepartmentCommand command)
+    public async Task<ActionResult> Update(Guid id, UpdateDepartmentCommand request)
     {
-        if (id != command.Id)
+        if (id != request.Id)
             return BadRequest();
 
-        await _mediator.Send(command);
+        await _mediator.Send(request);
         return NoContent();
     }
 
     [HttpDelete("{id}")]
-    public async Task<ActionResult> Delete(Guid id, DeleteDepartmentCommand command)
+    public async Task<ActionResult> Delete(Guid id, DeleteDepartmentCommand request)
     {
-        if (id != command.Id)
+        if (id != request.Id)
             return BadRequest();
 
-        await _mediator.Send(command);
+        await _mediator.Send(request);
         return Ok();
     }
 }

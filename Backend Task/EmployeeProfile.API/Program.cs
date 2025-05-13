@@ -4,6 +4,12 @@ using Microsoft.OpenApi.Models;
 using MediatR;
 using EmployeeProfile.Application.Queries.Departments;
 using EmployeeProfile.Infrastructure;
+using FluentValidation;
+using FluentValidation.Validators;
+using EmployeeProfile.Application.Validators;
+using Microsoft.AspNetCore.Mvc;
+using EmployeeProfile.Application.UnitOfWork;
+using EmployeeProfile.Infrastructure.Persistence;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,8 +20,11 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Employee Profile", Version = "v1" });
 });
-
+builder.Services.AddValidatorsFromAssemblyContaining<EmployeeValidator>();
+builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
 builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
 
 
 builder.Services.AddMediatR(cfg =>
