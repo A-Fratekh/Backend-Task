@@ -26,7 +26,7 @@ public class UpdateDepartmentHandler : IRequestHandler<UpdateDepartmentCommand, 
         if (department == null)
             throw new Exception($"Department with id {request.Id} not found");
 
-        department.Update(request.Name, request.Occupations);
+        department.Update(request.Name);
         await _departmentRepository.UpdateAsync(department);
         await _unitOfWork.SaveChangesAsync(cancellationToken);
         return request.Id;

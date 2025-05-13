@@ -18,7 +18,7 @@ public class CreateOccupationHandler : IRequestHandler<CreateOccupationCommand, 
     }
     public async Task<Guid> Handle(CreateOccupationCommand request, CancellationToken cancellationToken)
     {
-        var occupation = new Occupation(request.Name, request.Departments, request.Grades);
+        var occupation = new Occupation(request.Name);
         await _occupationCommandRepository.AddAsync(occupation);
         await _unitOfWork.SaveChangesAsync(cancellationToken);
         return occupation.Id;

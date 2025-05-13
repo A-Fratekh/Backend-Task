@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 namespace EmployeeProfile.Domain.Aggregates.GradeAggregate;
-public class Grade : Entity, IAggregateRoot
+public class Grade : AggregateRoot
 {
     [Key]
     public Guid Id { get; private set; }

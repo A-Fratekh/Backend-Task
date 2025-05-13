@@ -24,7 +24,6 @@ public class GetAllDepartmentsHandler : IRequestHandler<GetAllDepartmentsQuery, 
             {
                 Id = department.Id,
                 Name = department.Name,
-                Occupations = department.Occupations,
             });
 
         }

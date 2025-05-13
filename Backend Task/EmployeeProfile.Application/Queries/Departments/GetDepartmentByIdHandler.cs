@@ -28,7 +28,6 @@ namespace EmployeeProfile.Application.Queries.Departments
             {
                 Id = department.Id,
                 Name = department.Name,
-                Occupations = department.Occupations,
             };
 
             return departmentDto;

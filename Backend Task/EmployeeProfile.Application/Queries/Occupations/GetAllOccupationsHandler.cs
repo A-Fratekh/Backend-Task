@@ -31,8 +31,6 @@ public class GetAllOccupationsHandler : IRequestHandler<GetAllOccupationsQuery, 
             {
                 Id = occupation.Id,
                 Name = occupation.Name,
-                Departments = occupation.Departments,
-                Grades= occupation.Grades,
                 
             });
         }

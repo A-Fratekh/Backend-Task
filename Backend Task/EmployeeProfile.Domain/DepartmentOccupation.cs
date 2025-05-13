@@ -13,7 +13,11 @@ public class DepartmentOccupation
 {
     [ForeignKey(nameof(Department))]
     public Guid DepartmentId { get; set; }
+
     [ForeignKey(nameof(Occupation))]
-    public Guid OccupationID { get; set; }
+    public Guid OccupationId { get; set; }
+
+    public Department Department { get; set; }
+    public Occupation Occupation { get; set; }
 
 }

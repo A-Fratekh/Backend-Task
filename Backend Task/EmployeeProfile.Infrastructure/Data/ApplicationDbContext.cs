@@ -17,18 +17,46 @@ public class AppDbContext : DbContext
     public DbSet<Occupation> Occupations { get; set; }
     public DbSet<Grade> Grades { get; set; }
     public DbSet<Employee> Employees { get; set; }
+    public DbSet<OccupationGrade> OccupationGrades { get; set; }
+    public DbSet<DepartmentOccupation> DepartmentOccupations { get; set; }
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<OccupationGrade>(
+            entity => {
+                entity.HasKey(e => new { e.OccupationId, e.GradeId });
+                entity.HasOne(og => og.Occupation)
+                .WithMany()
+                .HasForeignKey(og => og.OccupationId);
+                entity.HasOne(og => og.Grade)
+                .WithMany()
+                .HasForeignKey(og => og.GradeId);
+                
+                }
+            
+            );
+
+        modelBuilder.Entity<DepartmentOccupation>(
+            entity => {
+                entity.HasOne(od => od.Department)
+                .WithMany()
+                .HasForeignKey(od => od.DepartmentId);
+                entity.HasKey(e => new { e.OccupationId, e.DepartmentId });
+                entity.HasOne(od => od.Occupation)
+                .WithMany()
+                .HasForeignKey(od => od.OccupationId);
+
+
+            }
+
+            );
 
         // Department
         modelBuilder.Entity<Department>(entity =>
         {
             entity.HasKey(e => e.Id);
             entity.Property(e => e.Name).IsRequired().HasMaxLength(100);
-            entity.HasMany(e => e.Occupations)
-            .WithMany()
-            .UsingEntity<DepartmentOccupation>();
         });
 
         // Occupation
@@ -36,7 +64,6 @@ public class AppDbContext : DbContext
         {
             entity.HasKey(e => e.Id);
             entity.Property(e => e.Name).IsRequired().HasMaxLength(100);
-            entity.HasMany(e=>e.Grades).WithMany().UsingEntity<OccupationGrade>();
         });
 
         // Grade

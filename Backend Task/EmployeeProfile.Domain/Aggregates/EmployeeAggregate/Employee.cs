@@ -2,13 +2,11 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics;
 using System.Text.Json.Serialization;
-using EmployeeProfile.Domain.Aggregates.DepartmentAggregate;
-using EmployeeProfile.Domain.Aggregates.GradeAggregate;
-using EmployeeProfile.Domain.Aggregates.OccupationAggregate;
+
 
 namespace EmployeeProfile.Domain.Aggregates.EmployeeAggregate;
 
-public class Employee : Entity, IAggregateRoot
+public class Employee : AggregateRoot
 {
     [Key]
     public int EmployeeNo { get; private set; }

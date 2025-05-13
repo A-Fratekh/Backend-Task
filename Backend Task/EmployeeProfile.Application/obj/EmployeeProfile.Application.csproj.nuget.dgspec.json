@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Ahmad\\Desktop\\Backend task\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\EmployeeProfile.Application.csproj": {}
+    "C:\\Users\\Ahmad\\Desktop\\github\\BackendNew\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\EmployeeProfile.Application.csproj": {}
   },
   "projects": {
-    "D:\\Ahmad\\Desktop\\Backend task\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\EmployeeProfile.Application.csproj": {
+    "C:\\Users\\Ahmad\\Desktop\\github\\BackendNew\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\EmployeeProfile.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Ahmad\\Desktop\\Backend task\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\EmployeeProfile.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Ahmad\\Desktop\\github\\BackendNew\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\EmployeeProfile.Application.csproj",
         "projectName": "EmployeeProfile.Application",
-        "projectPath": "D:\\Ahmad\\Desktop\\Backend task\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\EmployeeProfile.Application.csproj",
-        "packagesPath": "C:\\Users\\a.fratekh\\.nuget\\packages\\",
-        "outputPath": "D:\\Ahmad\\Desktop\\Backend task\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\obj\\",
+        "projectPath": "C:\\Users\\Ahmad\\Desktop\\github\\BackendNew\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\EmployeeProfile.Application.csproj",
+        "packagesPath": "C:\\Users\\Ahmad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ahmad\\Desktop\\github\\BackendNew\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\a.fratekh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ahmad\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,15 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Ahmad\\Desktop\\Backend task\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj": {
-                "projectPath": "D:\\Ahmad\\Desktop\\Backend task\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj"
+              "C:\\Users\\Ahmad\\Desktop\\github\\BackendNew\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj": {
+                "projectPath": "C:\\Users\\Ahmad\\Desktop\\github\\BackendNew\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj"
               }
             }
           }
@@ -49,7 +48,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -80,24 +79,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Ahmad\\Desktop\\Backend task\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj": {
+    "C:\\Users\\Ahmad\\Desktop\\github\\BackendNew\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Ahmad\\Desktop\\Backend task\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Ahmad\\Desktop\\github\\BackendNew\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj",
         "projectName": "EmployeeProfile.Domain",
-        "projectPath": "D:\\Ahmad\\Desktop\\Backend task\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj",
-        "packagesPath": "C:\\Users\\a.fratekh\\.nuget\\packages\\",
-        "outputPath": "D:\\Ahmad\\Desktop\\Backend task\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Ahmad\\Desktop\\github\\BackendNew\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj",
+        "packagesPath": "C:\\Users\\Ahmad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ahmad\\Desktop\\github\\BackendNew\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\a.fratekh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ahmad\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -106,7 +105,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -125,7 +123,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -146,7 +144,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -26,8 +26,6 @@ public class GetOccupationHandler : IRequestHandler<GetOccupationQuery, Occupati
         return new OccupationDTO {
             Id = occupation.Id,
             Name = occupation.Name,
-            Grades = occupation.Grades,
-            Departments=occupation.Departments,
         
         };
     }

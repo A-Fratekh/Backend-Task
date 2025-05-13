@@ -31,7 +31,6 @@ public class GetGradeHandler : IRequestHandler<GetGradeQuery, GradeDTO>
         {
             Id = grade.Id,
             Name = grade.Name,
-           Occupations=grade.Occupations,
             
         };
     }

@@ -33,7 +33,6 @@ public class GetAllGradesHandler : IRequestHandler<GetAllGradesQuery, List<Grade
                 {
                     Id = grade.Id,
                     Name = grade.Name,
-                    Occupations = grade.Occupations
 
                 });
         }

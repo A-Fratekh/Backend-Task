@@ -15,4 +15,8 @@ public class OccupationGrade
     public Guid OccupationId { get; set; }
     [ForeignKey(nameof(Grade))]
     public Guid GradeId { get; set; }
+
+    public Occupation Occupation { get; set; }
+    public Grade Grade { get; set; }
+
 }
