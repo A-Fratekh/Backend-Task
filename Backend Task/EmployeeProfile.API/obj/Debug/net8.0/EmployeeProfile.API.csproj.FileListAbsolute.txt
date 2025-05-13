@@ -417,3 +417,10 @@ D:\Ahmad\Desktop\Backend task\Backend Task\EmployeeProfile.API\obj\Debug\net8.0\
 D:\Ahmad\Desktop\Backend task\Backend Task\EmployeeProfile.API\obj\Debug\net8.0\EmployeeProfile.API.pdb
 D:\Ahmad\Desktop\Backend task\Backend Task\EmployeeProfile.API\obj\Debug\net8.0\EmployeeProfile.API.genruntimeconfig.cache
 D:\Ahmad\Desktop\Backend task\Backend Task\EmployeeProfile.API\obj\Debug\net8.0\ref\EmployeeProfile.API.dll
+D:\Ahmad\Desktop\Backend task\Backend-Task\Backend Task\EmployeeProfile.API\obj\Debug\net8.0\EmployeeProfile.API.csproj.AssemblyReference.cache
+D:\Ahmad\Desktop\Backend task\Backend-Task\Backend Task\EmployeeProfile.API\obj\Debug\net8.0\EmployeeProfile.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ahmad\Desktop\Backend task\Backend-Task\Backend Task\EmployeeProfile.API\obj\Debug\net8.0\EmployeeProfile.API.AssemblyInfoInputs.cache
+D:\Ahmad\Desktop\Backend task\Backend-Task\Backend Task\EmployeeProfile.API\obj\Debug\net8.0\EmployeeProfile.API.AssemblyInfo.cs
+D:\Ahmad\Desktop\Backend task\Backend-Task\Backend Task\EmployeeProfile.API\obj\Debug\net8.0\EmployeeProfile.API.csproj.CoreCompileInputs.cache
+D:\Ahmad\Desktop\Backend task\Backend-Task\Backend Task\EmployeeProfile.API\obj\Debug\net8.0\EmployeeProfile.API.MvcApplicationPartsAssemblyInfo.cache
+D:\Ahmad\Desktop\Backend task\Backend-Task\Backend Task\EmployeeProfile.API\obj\Debug\net8.0\EmployeeProfile.API.sourcelink.json

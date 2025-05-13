@@ -22,3 +22,8 @@ D:\Ahmad\Desktop\Backend task\Backend Task\EmployeeProfile.Domain\obj\Debug\net8
 D:\Ahmad\Desktop\Backend task\Backend Task\EmployeeProfile.Domain\obj\Debug\net8.0\refint\EmployeeProfile.Domain.dll
 D:\Ahmad\Desktop\Backend task\Backend Task\EmployeeProfile.Domain\obj\Debug\net8.0\EmployeeProfile.Domain.pdb
 D:\Ahmad\Desktop\Backend task\Backend Task\EmployeeProfile.Domain\obj\Debug\net8.0\ref\EmployeeProfile.Domain.dll
+D:\Ahmad\Desktop\Backend task\Backend-Task\Backend Task\EmployeeProfile.Domain\obj\Debug\net8.0\EmployeeProfile.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ahmad\Desktop\Backend task\Backend-Task\Backend Task\EmployeeProfile.Domain\obj\Debug\net8.0\EmployeeProfile.Domain.AssemblyInfoInputs.cache
+D:\Ahmad\Desktop\Backend task\Backend-Task\Backend Task\EmployeeProfile.Domain\obj\Debug\net8.0\EmployeeProfile.Domain.AssemblyInfo.cs
+D:\Ahmad\Desktop\Backend task\Backend-Task\Backend Task\EmployeeProfile.Domain\obj\Debug\net8.0\EmployeeProfile.Domain.csproj.CoreCompileInputs.cache
+D:\Ahmad\Desktop\Backend task\Backend-Task\Backend Task\EmployeeProfile.Domain\obj\Debug\net8.0\EmployeeProfile.Domain.sourcelink.json

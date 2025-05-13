@@ -6485,11 +6485,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.API\\EmployeeProfile.API.csproj",
+      "projectUniqueName": "D:\\Ahmad\\Desktop\\Backend task\\Backend-Task\\Backend Task\\EmployeeProfile.API\\EmployeeProfile.API.csproj",
       "projectName": "EmployeeProfile.API",
-      "projectPath": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.API\\EmployeeProfile.API.csproj",
+      "projectPath": "D:\\Ahmad\\Desktop\\Backend task\\Backend-Task\\Backend Task\\EmployeeProfile.API\\EmployeeProfile.API.csproj",
       "packagesPath": "C:\\Users\\a.fratekh\\.nuget\\packages\\",
-      "outputPath": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.API\\obj\\",
+      "outputPath": "D:\\Ahmad\\Desktop\\Backend task\\Backend-Task\\Backend Task\\EmployeeProfile.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6511,14 +6511,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\EmployeeProfile.Application.csproj": {
-              "projectPath": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Application\\EmployeeProfile.Application.csproj"
+            "D:\\Ahmad\\Desktop\\Backend task\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\EmployeeProfile.Application.csproj": {
+              "projectPath": "D:\\Ahmad\\Desktop\\Backend task\\Backend-Task\\Backend Task\\EmployeeProfile.Application\\EmployeeProfile.Application.csproj"
             },
-            "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj": {
-              "projectPath": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj"
+            "D:\\Ahmad\\Desktop\\Backend task\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj": {
+              "projectPath": "D:\\Ahmad\\Desktop\\Backend task\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj"
             },
-            "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj": {
-              "projectPath": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj"
+            "D:\\Ahmad\\Desktop\\Backend task\\Backend-Task\\Backend Task\\EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj": {
+              "projectPath": "D:\\Ahmad\\Desktop\\Backend task\\Backend-Task\\Backend Task\\EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj"
             }
           }
         }

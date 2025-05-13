@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using EmployeeProfile.Application.UnitOfWork;
-using EmployeeProfile.Domain.Aggregates.OccupationAggregate;
+using EmployeeProfile.Domain.Aggregates.GradeAggregate;
 using EmployeeProfile.Domain.Repositories;
 using MediatR;
 

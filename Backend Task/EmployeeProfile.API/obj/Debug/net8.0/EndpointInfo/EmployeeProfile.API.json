@@ -844,6 +844,13 @@
           "name": {
             "type": "string",
             "nullable": true
+          },
+          "occupations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Occupation"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -859,17 +866,14 @@
             "type": "string",
             "format": "date"
           },
-          "departmentId": {
-            "type": "string",
-            "format": "uuid"
+          "department": {
+            "$ref": "#/components/schemas/Department"
           },
-          "occupationId": {
-            "type": "string",
-            "format": "uuid"
+          "occupation": {
+            "$ref": "#/components/schemas/Occupation"
           },
-          "gradeId": {
-            "type": "string",
-            "format": "uuid"
+          "grade": {
+            "$ref": "#/components/schemas/Grade"
           }
         },
         "additionalProperties": false
@@ -881,9 +885,12 @@
             "type": "string",
             "nullable": true
           },
-          "occupationId": {
-            "type": "string",
-            "format": "uuid"
+          "occupation": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Occupation"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -895,9 +902,19 @@
             "type": "string",
             "nullable": true
           },
-          "departmentId": {
-            "type": "string",
-            "format": "uuid"
+          "departments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Department"
+            },
+            "nullable": true
+          },
+          "grades": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Grade"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -958,8 +975,7 @@
             "items": {
               "$ref": "#/components/schemas/Occupation"
             },
-            "nullable": true,
-            "readOnly": true
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -980,17 +996,14 @@
             "type": "string",
             "format": "date"
           },
-          "departmentId": {
-            "type": "string",
-            "format": "uuid"
+          "department": {
+            "$ref": "#/components/schemas/Department"
           },
-          "occupationId": {
-            "type": "string",
-            "format": "uuid"
+          "occupation": {
+            "$ref": "#/components/schemas/Occupation"
           },
-          "gradeId": {
-            "type": "string",
-            "format": "uuid"
+          "grade": {
+            "$ref": "#/components/schemas/Grade"
           }
         },
         "additionalProperties": false
@@ -1007,12 +1020,12 @@
             "type": "string",
             "nullable": true
           },
-          "occupationId": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "occupation": {
-            "$ref": "#/components/schemas/Occupation"
+          "occupations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Occupation"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1028,12 +1041,19 @@
             "type": "string",
             "nullable": true
           },
-          "departmentId": {
-            "type": "string",
-            "format": "uuid"
+          "departments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Department"
+            },
+            "nullable": true
           },
-          "department": {
-            "$ref": "#/components/schemas/Department"
+          "grades": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Grade"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1047,6 +1067,13 @@
           },
           "name": {
             "type": "string",
+            "nullable": true
+          },
+          "occupations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Occupation"
+            },
             "nullable": true
           }
         },
@@ -1067,17 +1094,14 @@
             "type": "string",
             "format": "date"
           },
-          "departmentId": {
-            "type": "string",
-            "format": "uuid"
+          "department": {
+            "$ref": "#/components/schemas/Department"
           },
-          "occupationId": {
-            "type": "string",
-            "format": "uuid"
+          "occupation": {
+            "$ref": "#/components/schemas/Occupation"
           },
-          "gradeId": {
-            "type": "string",
-            "format": "uuid"
+          "grade": {
+            "$ref": "#/components/schemas/Grade"
           }
         },
         "additionalProperties": false
@@ -1092,6 +1116,13 @@
           "name": {
             "type": "string",
             "nullable": true
+          },
+          "occupations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Occupation"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1105,6 +1136,20 @@
           },
           "name": {
             "type": "string",
+            "nullable": true
+          },
+          "grades": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Grade"
+            },
+            "nullable": true
+          },
+          "departments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Department"
+            },
             "nullable": true
           }
         },

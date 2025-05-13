@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jmh/XA2q+3g=",
+  "dgSpecHash": "kP0EGOa25TI=",
   "success": true,
-  "projectFilePath": "D:\\Ahmad\\Desktop\\Backend task\\Backend Task\\EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj",
+  "projectFilePath": "D:\\Ahmad\\Desktop\\Backend task\\Backend-Task\\Backend Task\\EmployeeProfile.Infrastructure\\EmployeeProfile.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\a.fratekh\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\a.fratekh\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

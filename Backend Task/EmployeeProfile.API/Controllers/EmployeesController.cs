@@ -38,7 +38,7 @@ public class EmployeesController : ControllerBase
     public async Task<ActionResult<int>> Create(CreateEmployeeCommand request)
     {
         var result = await _mediator.Send(request);
-        return CreatedAtAction(nameof(Get), new { number = result }, result);
+        return CreatedAtAction(nameof(Get), new { employeeNumber = result }, result);
     }
 
     [HttpPut("{id}")]

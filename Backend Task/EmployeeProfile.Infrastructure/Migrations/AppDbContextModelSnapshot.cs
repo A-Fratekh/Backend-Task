@@ -66,10 +66,16 @@ namespace EmployeeProfile.Infrastructure.Migrations
 
                     b.HasKey("EmployeeNo");
 
+                    b.HasIndex("DepartmentId");
+
+                    b.HasIndex("GradeId");
+
+                    b.HasIndex("OccupationId");
+
                     b.ToTable("Employees");
                 });
 
-            modelBuilder.Entity("EmployeeProfile.Domain.Aggregates.OccupationAggregate.Grade", b =>
+            modelBuilder.Entity("EmployeeProfile.Domain.Aggregates.GradeAggregate.Grade", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -80,12 +86,7 @@ namespace EmployeeProfile.Infrastructure.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<Guid>("OccupationId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("OccupationId");
 
                     b.ToTable("Grades");
                 });
@@ -96,9 +97,6 @@ namespace EmployeeProfile.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("DepartmentId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -106,36 +104,94 @@ namespace EmployeeProfile.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("DepartmentId");
-
                     b.ToTable("Occupations");
                 });
 
-            modelBuilder.Entity("EmployeeProfile.Domain.Aggregates.OccupationAggregate.Grade", b =>
+            modelBuilder.Entity("EmployeeProfile.Domain.DepartmentOccupation", b =>
                 {
+                    b.Property<Guid>("DepartmentId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("OccupationID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("DepartmentId", "OccupationID");
+
+                    b.HasIndex("OccupationID");
+
+                    b.ToTable("DepartmentOccupation");
+                });
+
+            modelBuilder.Entity("EmployeeProfile.Domain.OccupationGrade", b =>
+                {
+                    b.Property<Guid>("GradeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("OccupationId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("GradeId", "OccupationId");
+
+                    b.HasIndex("OccupationId");
+
+                    b.ToTable("OccupationGrade");
+                });
+
+            modelBuilder.Entity("EmployeeProfile.Domain.Aggregates.EmployeeAggregate.Employee", b =>
+                {
+                    b.HasOne("EmployeeProfile.Domain.Aggregates.DepartmentAggregate.Department", "Department")
+                        .WithMany()
+                        .HasForeignKey("DepartmentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EmployeeProfile.Domain.Aggregates.GradeAggregate.Grade", "Grade")
+                        .WithMany()
+                        .HasForeignKey("GradeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("EmployeeProfile.Domain.Aggregates.OccupationAggregate.Occupation", "Occupation")
                         .WithMany()
                         .HasForeignKey("OccupationId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Department");
+
+                    b.Navigation("Grade");
 
                     b.Navigation("Occupation");
                 });
 
-            modelBuilder.Entity("EmployeeProfile.Domain.Aggregates.OccupationAggregate.Occupation", b =>
+            modelBuilder.Entity("EmployeeProfile.Domain.DepartmentOccupation", b =>
                 {
-                    b.HasOne("EmployeeProfile.Domain.Aggregates.DepartmentAggregate.Department", "Department")
-                        .WithMany("Occupations")
+                    b.HasOne("EmployeeProfile.Domain.Aggregates.DepartmentAggregate.Department", null)
+                        .WithMany()
                         .HasForeignKey("DepartmentId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Department");
+                    b.HasOne("EmployeeProfile.Domain.Aggregates.OccupationAggregate.Occupation", null)
+                        .WithMany()
+                        .HasForeignKey("OccupationID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
-            modelBuilder.Entity("EmployeeProfile.Domain.Aggregates.DepartmentAggregate.Department", b =>
+            modelBuilder.Entity("EmployeeProfile.Domain.OccupationGrade", b =>
                 {
-                    b.Navigation("Occupations");
+                    b.HasOne("EmployeeProfile.Domain.Aggregates.GradeAggregate.Grade", null)
+                        .WithMany()
+                        .HasForeignKey("GradeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EmployeeProfile.Domain.Aggregates.OccupationAggregate.Occupation", null)
+                        .WithMany()
+                        .HasForeignKey("OccupationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

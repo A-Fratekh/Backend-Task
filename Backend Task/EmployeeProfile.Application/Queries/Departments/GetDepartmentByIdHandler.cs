@@ -11,42 +11,24 @@ namespace EmployeeProfile.Application.Queries.Departments
     public class GetDepartmentByIdHandler : IRequestHandler<GetDepartmentByIdQuery, DepartmentDTO>
     {
         private readonly IQueryRepository<Department> _departmentQueryRepository;
-        private readonly IQueryRepository<Occupation> _occupationQueryRepository;
 
-        public GetDepartmentByIdHandler(IQueryRepository<Department> departmentQueryRepository, IQueryRepository<Occupation> occupationQueryRepository)
+        public GetDepartmentByIdHandler(IQueryRepository<Department> departmentQueryRepository)
         {
             _departmentQueryRepository = departmentQueryRepository;
-            _occupationQueryRepository = occupationQueryRepository;
         }
 
         public async Task<DepartmentDTO> Handle(GetDepartmentByIdQuery request, CancellationToken cancellationToken)
         {
             var department = await _departmentQueryRepository.GetByIdAsync(request.Id);
             if (department == null)
-                return null;
+                throw new ArgumentNullException();
 
-            IEnumerable<Occupation> occupations = await _occupationQueryRepository.GetAllAsync(null);
-            var result = new List<OccupationDTO>();
 
-            foreach (var occupation in occupations)
-            {
-                if (occupation.DepartmentId == department.Id)
-                { 
-                    result.Add(
-                        new OccupationDTO
-                        {
-                            
-                            Id=occupation.Id,
-                            Name=occupation.Name
-                        }
-                        );
-                }
-            }
             var departmentDto = new DepartmentDTO
             {
                 Id = department.Id,
                 Name = department.Name,
-                Occupations = result
+                Occupations = department.Occupations,
             };
 
             return departmentDto;

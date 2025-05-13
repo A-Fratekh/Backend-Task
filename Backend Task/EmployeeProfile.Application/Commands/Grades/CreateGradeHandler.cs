@@ -1,5 +1,5 @@
 ﻿using EmployeeProfile.Application.UnitOfWork;
-using EmployeeProfile.Domain.Aggregates.OccupationAggregate;
+using EmployeeProfile.Domain.Aggregates.GradeAggregate;
 using EmployeeProfile.Domain.Repositories;
 using MediatR;
 
@@ -19,7 +19,7 @@ namespace EmployeeProfile.Application.Commands.Grades
 
         public async Task<Guid> Handle(CreateGradeCommand request, CancellationToken cancellationToken)
         {
-            var grade = new Grade(request.Name, request.OccupationId);
+            var grade = new Grade(request.Name);
             await _gradeCommandRepository.AddAsync(grade);
             await _unitOfWork.SaveChangesAsync(cancellationToken);
             return grade.Id;

@@ -3,7 +3,7 @@ using EmployeeProfile.Application.Commands.Grades;
 using EmployeeProfile.Application.Queries.Departments;
 using EmployeeProfile.Application.Queries.Grades;
 using EmployeeProfile.Domain.Aggregates.DepartmentAggregate;
-using EmployeeProfile.Domain.Aggregates.OccupationAggregate;
+using EmployeeProfile.Domain.Aggregates.GradeAggregate;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

@@ -6,5 +6,5 @@ public class DepartmentDTO
 {
     public Guid Id { get; set; }
     public string Name { get; set; }
-    public ICollection<OccupationDTO>? Occupations { get; set; } = new List<OccupationDTO>();
+    public ICollection<Occupation> Occupations { get; set; } = new List<Occupation>();
 }

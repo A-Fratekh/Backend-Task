@@ -15,25 +15,19 @@ namespace EmployeeProfile.Application.Queries.Occupations;
 public class GetOccupationHandler : IRequestHandler<GetOccupationQuery, OccupationDTO>
 {
     private readonly IQueryRepository<Occupation> _occupationQueryRepository;
-    private readonly IQueryRepository<Department> _departmentQueryRepository;
-    public GetOccupationHandler(IQueryRepository<Occupation> occupationQueryRepository, IQueryRepository<Department> departmentQueryRepository)
+    public GetOccupationHandler(IQueryRepository<Occupation> occupationQueryRepository)
     {
         _occupationQueryRepository = occupationQueryRepository;
-        _departmentQueryRepository = departmentQueryRepository;
     }
     public async Task<OccupationDTO> Handle(GetOccupationQuery request, CancellationToken cancellationToken)
     {
         var occupation = await _occupationQueryRepository.GetByIdAsync(request.Id);
-        var department = await _departmentQueryRepository.GetByIdAsync(occupation.DepartmentId);
 
         return new OccupationDTO {
             Id = occupation.Id,
             Name = occupation.Name,
-            department = new DepartmentDTO
-            {
-                Id = department.Id,
-                Name = department.Name,
-            },
+            Grades = occupation.Grades,
+            Departments=occupation.Departments,
         
         };
     }

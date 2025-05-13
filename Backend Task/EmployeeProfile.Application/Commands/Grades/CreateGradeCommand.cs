@@ -1,9 +1,10 @@
-﻿using MediatR;
+﻿using EmployeeProfile.Domain.Aggregates.OccupationAggregate;
+using MediatR;
 
 namespace EmployeeProfile.Application.Commands.Grades;
 
 public class CreateGradeCommand : IRequest<Guid>
 {
     public string Name { get; set; }
-    public Guid OccupationId { get; set; }
+    public ICollection<Occupation> Occupation { get; set; }
 }

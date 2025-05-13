@@ -1,6 +1,7 @@
 ﻿using EmployeeProfile.Application.DTOs;
 using EmployeeProfile.Domain.Aggregates.DepartmentAggregate;
 using EmployeeProfile.Domain.Aggregates.EmployeeAggregate;
+using EmployeeProfile.Domain.Aggregates.GradeAggregate;
 using EmployeeProfile.Domain.Aggregates.OccupationAggregate;
 using EmployeeProfile.Domain.Repositories;
 using MediatR;
@@ -41,11 +42,8 @@ public class GetEmployeesListQueryHandler : IRequestHandler<GetEmployeesListQuer
             {
                 EmployeeNo = employee.EmployeeNo,
                 Name = employee.Name,
-                DepartmentId = employee.DepartmentId,
-                DepartmentName = department?.Name,
-                OccupationId = employee.OccupationId,
+                Department = department.Name,
                 Occupation = occupation?.Name,
-                GradeId = employee.GradeId,
                 Grade = grade?.Name,
                 HireDate = employee.HireDate
             });
