@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using EmployeeProfile.Domain.Aggregates.GradeAggregate;
 using EmployeeProfile.Domain.Aggregates.OccupationAggregate;
 
-namespace EmployeeProfile.Domain;
+namespace EmployeeProfile.Domain.Aggregates;
 
 public class OccupationGrade
 {

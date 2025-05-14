@@ -17,7 +17,13 @@ public class DepartmentOccupation
     [ForeignKey(nameof(Occupation))]
     public Guid OccupationId { get; set; }
 
-    public Department Department { get; set; }
-    public Occupation Occupation { get; set; }
+    private DepartmentOccupation() { }
+
+    public DepartmentOccupation(Guid departmentId, Guid occupationId)
+    {
+        DepartmentId = departmentId;
+        OccupationId = occupationId;
+    }
+
 
 }

@@ -13,6 +13,5 @@ public class UpdateOccupationCommand: IRequest<Guid>
 {
     public Guid Id { get; set; }
     public string Name { get; set; }
-    public ICollection<Grade> Grades { get; set; } 
-    public ICollection<Department> Departments { get; set; }
+    public List<Guid> DepartmentIds { get; set; }
 }

@@ -7,5 +7,5 @@ namespace EmployeeProfile.Application.Commands.Occupations;
 public class CreateOccupationCommand : IRequest<Guid>
 {
     public string Name { get; set; }
-    public ICollection<Guid> Departments { get; set; } 
+    public List<Guid> DepartmentIds { get; set; }
 }

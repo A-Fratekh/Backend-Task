@@ -33,6 +33,10 @@ namespace EmployeeProfile.Infrastructure.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.PrimitiveCollection<string>("OccupationIds")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Departments");
@@ -91,6 +95,10 @@ namespace EmployeeProfile.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.PrimitiveCollection<string>("DepartmentIds")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -101,22 +109,7 @@ namespace EmployeeProfile.Infrastructure.Migrations
                     b.ToTable("Occupations");
                 });
 
-            modelBuilder.Entity("EmployeeProfile.Domain.DepartmentOccupation", b =>
-                {
-                    b.Property<Guid>("OccupationId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("DepartmentId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("OccupationId", "DepartmentId");
-
-                    b.HasIndex("DepartmentId");
-
-                    b.ToTable("DepartmentOccupations");
-                });
-
-            modelBuilder.Entity("EmployeeProfile.Domain.OccupationGrade", b =>
+            modelBuilder.Entity("EmployeeProfile.Domain.Aggregates.OccupationGrade", b =>
                 {
                     b.Property<Guid>("OccupationId")
                         .HasColumnType("uniqueidentifier");
@@ -133,24 +126,25 @@ namespace EmployeeProfile.Infrastructure.Migrations
 
             modelBuilder.Entity("EmployeeProfile.Domain.DepartmentOccupation", b =>
                 {
-                    b.HasOne("EmployeeProfile.Domain.Aggregates.DepartmentAggregate.Department", "Department")
-                        .WithMany()
-                        .HasForeignKey("DepartmentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Property<Guid>("OccupationId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.HasOne("EmployeeProfile.Domain.Aggregates.OccupationAggregate.Occupation", "Occupation")
-                        .WithMany()
-                        .HasForeignKey("OccupationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Property<Guid>("DepartmentId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Navigation("Department");
+                    b.Property<Guid?>("OccupationId1")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Navigation("Occupation");
+                    b.HasKey("OccupationId", "DepartmentId");
+
+                    b.HasIndex("DepartmentId");
+
+                    b.HasIndex("OccupationId1");
+
+                    b.ToTable("DepartmentOccupations");
                 });
 
-            modelBuilder.Entity("EmployeeProfile.Domain.OccupationGrade", b =>
+            modelBuilder.Entity("EmployeeProfile.Domain.Aggregates.OccupationGrade", b =>
                 {
                     b.HasOne("EmployeeProfile.Domain.Aggregates.GradeAggregate.Grade", "Grade")
                         .WithMany()
@@ -167,6 +161,35 @@ namespace EmployeeProfile.Infrastructure.Migrations
                     b.Navigation("Grade");
 
                     b.Navigation("Occupation");
+                });
+
+            modelBuilder.Entity("EmployeeProfile.Domain.DepartmentOccupation", b =>
+                {
+                    b.HasOne("EmployeeProfile.Domain.Aggregates.DepartmentAggregate.Department", null)
+                        .WithMany("DepartmentOccupations")
+                        .HasForeignKey("DepartmentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EmployeeProfile.Domain.Aggregates.OccupationAggregate.Occupation", null)
+                        .WithMany()
+                        .HasForeignKey("OccupationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EmployeeProfile.Domain.Aggregates.OccupationAggregate.Occupation", null)
+                        .WithMany("DepartmentOccupations")
+                        .HasForeignKey("OccupationId1");
+                });
+
+            modelBuilder.Entity("EmployeeProfile.Domain.Aggregates.DepartmentAggregate.Department", b =>
+                {
+                    b.Navigation("DepartmentOccupations");
+                });
+
+            modelBuilder.Entity("EmployeeProfile.Domain.Aggregates.OccupationAggregate.Occupation", b =>
+                {
+                    b.Navigation("DepartmentOccupations");
                 });
 #pragma warning restore 612, 618
         }

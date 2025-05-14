@@ -14,24 +14,34 @@ namespace EmployeeProfile.Application.Queries.Occupations;
 public class GetAllOccupationsHandler : IRequestHandler<GetAllOccupationsQuery, List<OccupationDTO>>
 {
     private readonly IQueryRepository<Occupation> _occupationQueryRepository;
+    private readonly IQueryRepository<Department> _departmentQueryRepository;
 
-    public GetAllOccupationsHandler(IQueryRepository<Occupation> occupationQueryRepository)
+
+    public GetAllOccupationsHandler(IQueryRepository<Occupation> occupationQueryRepository, IQueryRepository<Department> departmentQueryRepository)
     {
         _occupationQueryRepository = occupationQueryRepository;
+        _departmentQueryRepository = departmentQueryRepository;
     }
 
     public async Task<List<OccupationDTO>> Handle(GetAllOccupationsQuery request, CancellationToken cancellationToken)
     {
         var occupations = await _occupationQueryRepository.GetAllAsync(null);
         var result = new List<OccupationDTO>();
+
         foreach(var occupation in occupations)
         {
-
+            var departments = new List<string>();
+            foreach (var departmentId in occupation.DepartmentIds)
+            {
+                var department = await _departmentQueryRepository.GetByIdAsync(departmentId);
+                departments.Add(department.Name);
+            }
             result.Add(new OccupationDTO
             {
                 Id = occupation.Id,
                 Name = occupation.Name,
-                
+                DepartmentIds = occupation.DepartmentIds,
+                Departments = departments
             });
         }
 

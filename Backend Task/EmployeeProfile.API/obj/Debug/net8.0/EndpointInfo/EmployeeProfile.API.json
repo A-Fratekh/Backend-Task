@@ -844,6 +844,14 @@
           "name": {
             "type": "string",
             "nullable": true
+          },
+          "occupationIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -899,7 +907,7 @@
             "type": "string",
             "nullable": true
           },
-          "departments": {
+          "departmentIds": {
             "type": "array",
             "items": {
               "type": "string",
@@ -955,11 +963,42 @@
         "properties": {
           "id": {
             "type": "string",
-            "format": "uuid"
+            "format": "uuid",
+            "readOnly": true
           },
           "name": {
             "type": "string",
             "nullable": true
+          },
+          "occupationIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "nullable": true
+          },
+          "departmentOccupations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DepartmentOccupation"
+            },
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DepartmentOccupation": {
+        "type": "object",
+        "properties": {
+          "departmentId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "occupationId": {
+            "type": "string",
+            "format": "uuid"
           }
         },
         "additionalProperties": false
@@ -1015,11 +1054,28 @@
         "properties": {
           "id": {
             "type": "string",
-            "format": "uuid"
+            "format": "uuid",
+            "readOnly": true
           },
           "name": {
             "type": "string",
             "nullable": true
+          },
+          "departmentIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "nullable": true
+          },
+          "departmentOccupations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DepartmentOccupation"
+            },
+            "nullable": true,
+            "readOnly": true
           }
         },
         "additionalProperties": false
@@ -1033,6 +1089,14 @@
           },
           "name": {
             "type": "string",
+            "nullable": true
+          },
+          "occupationIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            },
             "nullable": true
           }
         },
@@ -1100,17 +1164,11 @@
             "type": "string",
             "nullable": true
           },
-          "grades": {
+          "departmentIds": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/Grade"
-            },
-            "nullable": true
-          },
-          "departments": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Department"
+              "type": "string",
+              "format": "uuid"
             },
             "nullable": true
           }

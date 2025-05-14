@@ -7,10 +7,11 @@ using Microsoft.EntityFrameworkCore;
 using EmployeeProfile.Domain.Repositories;
 using EmployeeProfile.Infrastructure.Data;
 using System.Linq.Expressions;
+using EmployeeProfile.Domain.Aggregates;
 
 namespace EmployeeProfile.Infrastructure.Persistence.Repositories
 {
-    public class QueryRepository<T> : IQueryRepository<T> where T : class
+    public class QueryRepository<T> : IQueryRepository<T> where T : AggregateRoot
     {
         private readonly AppDbContext _context;
 
@@ -55,14 +56,6 @@ namespace EmployeeProfile.Infrastructure.Persistence.Repositories
 
             if (entity == null)
                 throw new KeyNotFoundException($"Entity with ID {id} not found");
-
-            return entity;
-        }
-
-        public async Task<T> GetByIdAsync(string id)
-        {
-            var entity = await _context.Set<T>().FindAsync(id);
-            if (entity == null) throw new KeyNotFoundException($"Entity with Number {id} not found");
 
             return entity;
         }

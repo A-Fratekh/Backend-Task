@@ -1,9 +1,10 @@
-﻿using EmployeeProfile.Domain.Repositories;
+﻿using EmployeeProfile.Domain.Aggregates;
+using EmployeeProfile.Domain.Repositories;
 using EmployeeProfile.Infrastructure.Data;
 
 namespace EmployeeProfile.Infrastructure.Persistence.Repositories
 {
-    public class CommandRepository<T> : ICommandRepository<T> where T : class
+    public class CommandRepository<T> : ICommandRepository<T> where T : AggregateRoot
     {
         private readonly AppDbContext _context;
 

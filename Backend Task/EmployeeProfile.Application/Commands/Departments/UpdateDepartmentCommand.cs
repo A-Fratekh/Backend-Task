@@ -8,4 +8,5 @@ public class UpdateDepartmentCommand : IRequest<Guid>
 {
     public Guid Id { get; set; }
     public string Name { get; set; }
+    public List<Guid> OccupationIds { get; set; }
 }

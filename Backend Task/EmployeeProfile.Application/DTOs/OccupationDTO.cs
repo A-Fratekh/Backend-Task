@@ -7,7 +7,7 @@ public class OccupationDTO
 {
     public Guid Id { get; set; }
     public string Name { get; set; }
-    public ICollection<Guid> Departments { get; set; }
-    public ICollection<Grade> Grades { get; set; }
+    public ICollection<Guid> DepartmentIds { get; set; }
+    public List<string> Departments { get; set; }
 }
 

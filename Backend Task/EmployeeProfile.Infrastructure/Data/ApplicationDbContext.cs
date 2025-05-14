@@ -1,4 +1,5 @@
 ﻿using EmployeeProfile.Domain;
+using EmployeeProfile.Domain.Aggregates;
 using EmployeeProfile.Domain.Aggregates.DepartmentAggregate;
 using EmployeeProfile.Domain.Aggregates.EmployeeAggregate;
 using EmployeeProfile.Domain.Aggregates.GradeAggregate;
@@ -39,13 +40,15 @@ public class AppDbContext : DbContext
 
         modelBuilder.Entity<DepartmentOccupation>(
             entity => {
-                entity.HasOne(od => od.Department)
-                .WithMany()
-                .HasForeignKey(od => od.DepartmentId);
                 entity.HasKey(e => new { e.OccupationId, e.DepartmentId });
-                entity.HasOne(od => od.Occupation)
+                entity.HasOne<Department>()
+                .WithMany(d => d.DepartmentOccupations)
+                .HasForeignKey(od => od.DepartmentId)
+                .OnDelete(DeleteBehavior.Cascade);
+                entity.HasOne<Occupation>()
                 .WithMany()
-                .HasForeignKey(od => od.OccupationId);
+                .HasForeignKey(od => od.OccupationId)
+                .OnDelete(DeleteBehavior.Cascade);
 
 
             }
