@@ -37,7 +37,6 @@ public class DeleteOccupationHandler : IRequestHandler<DeleteOccupationcommand, 
         if (occupation == null) 
             throw new ArgumentNullException($"Occupation with ID : {request.Id} couldn't be found");
 
-        await _occupationCommandRepository.DeleteAsync(occupation);
             var departments = await _departmentQueryRepository.GetAllAsync(null);
             foreach (var dept in departments)
             {
@@ -45,6 +44,7 @@ public class DeleteOccupationHandler : IRequestHandler<DeleteOccupationcommand, 
                 dept.Update(dept.Name, dept.OccupationIds);
             await _departmentCommandRepository.UpdateAsync(dept);
             }
+        await _occupationCommandRepository.DeleteAsync(occupation);
         await _unitOfWork.SaveChangesAsync(cancellationToken);
         return request.Id;
     }

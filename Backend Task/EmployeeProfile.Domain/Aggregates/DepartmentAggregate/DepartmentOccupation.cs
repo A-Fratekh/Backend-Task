@@ -4,10 +4,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using EmployeeProfile.Domain.Aggregates.DepartmentAggregate;
 using EmployeeProfile.Domain.Aggregates.OccupationAggregate;
 
-namespace EmployeeProfile.Domain;
+namespace EmployeeProfile.Domain.Aggregates.DepartmentAggregate;
 
 public class DepartmentOccupation
 {

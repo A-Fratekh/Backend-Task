@@ -1068,14 +1068,6 @@
               "format": "uuid"
             },
             "nullable": true
-          },
-          "departmentOccupations": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DepartmentOccupation"
-            },
-            "nullable": true,
-            "readOnly": true
           }
         },
         "additionalProperties": false

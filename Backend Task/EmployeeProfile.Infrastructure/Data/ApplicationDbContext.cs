@@ -1,5 +1,4 @@
-﻿using EmployeeProfile.Domain;
-using EmployeeProfile.Domain.Aggregates;
+﻿using EmployeeProfile.Domain.Aggregates;
 using EmployeeProfile.Domain.Aggregates.DepartmentAggregate;
 using EmployeeProfile.Domain.Aggregates.EmployeeAggregate;
 using EmployeeProfile.Domain.Aggregates.GradeAggregate;

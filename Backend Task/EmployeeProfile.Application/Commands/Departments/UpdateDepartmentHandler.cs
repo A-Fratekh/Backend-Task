@@ -39,9 +39,12 @@ public class UpdateDepartmentHandler : IRequestHandler<UpdateDepartmentCommand, 
         foreach (var occupationId in department.OccupationIds)
         {
             var occupation = await _occupationQueryRepository.GetByIdAsync(occupationId);
-            occupation.DepartmentIds.Add(department.Id);
-            occupation.Update(occupation.Name, occupation.DepartmentIds);
-            await _occupationRepository.UpdateAsync(occupation);
+            if (!occupation.DepartmentIds.Contains(department.Id))
+            { 
+                occupation.DepartmentIds.Add(department.Id);
+                occupation.Update(occupation.Name, occupation.DepartmentIds);
+                await _occupationRepository.UpdateAsync(occupation);
+            }
         }
         await _unitOfWork.SaveChangesAsync(cancellationToken);
         return request.Id;

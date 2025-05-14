@@ -29,21 +29,14 @@ public class CreateOccupationHandler : IRequestHandler<CreateOccupationCommand, 
     {
         var occupation = new Occupation(request.Name, request.DepartmentIds);
         await _occupationCommandRepository.AddAsync(occupation);
-
-        foreach (var departmentId in request.DepartmentIds)
+        
+        foreach (var departmentId in occupation.DepartmentIds)
         {
-            occupation.DepartmentOccupations.Add(new DepartmentOccupation(departmentId, occupation.Id));
-        }
-
-        var departments = await _departmentQueryRepository.GetAllAsync(null);
-        occupation.DepartmentOccupations.ForEach(async d => {
-            var department = await _departmentQueryRepository.GetByIdAsync(d.DepartmentId);
+            var department = await _departmentQueryRepository.GetByIdAsync(departmentId);
             department.OccupationIds.Add(occupation.Id);
             department.Update(department.Name, department.OccupationIds);
             await _departmentRepository.UpdateAsync(department);
-        });
-           
-        
+        }
         await _unitOfWork.SaveChangesAsync(cancellationToken);
         return occupation.Id;
     }

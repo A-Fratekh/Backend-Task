@@ -29,22 +29,18 @@ public class CreateDepartmentHandler : IRequestHandler<CreateDepartmentCommand, 
     public async Task<Guid> Handle(CreateDepartmentCommand request, CancellationToken cancellationToken)
     {
         var department = new Department(request.Name, request.OccupationIds);
-
-        foreach (var occupationId in request.OccupationIds)
-        {
-            department.DepartmentOccupations.Add(new DepartmentOccupation(department.Id, occupationId));
-        }
         await _departmentRepository.AddAsync(department);
-        var occupations = await _occupationQueryRepository.GetAllAsync(null);
-        department.DepartmentOccupations.ForEach(async o =>
+        foreach (var occupationId in department.OccupationIds)
         {
-            var occupation = await _occupationQueryRepository.GetByIdAsync(o.OccupationId);
+            var occupation = await _occupationQueryRepository.GetByIdAsync(occupationId);
             occupation.DepartmentIds.Add(department.Id);
             occupation.Update(occupation.Name, occupation.DepartmentIds);
             await _occupationRepository.UpdateAsync(occupation);
-
-        });
-           
+        }
+        foreach (var occupationId in department.OccupationIds)
+        {
+            department.DepartmentOccupations.Add(new DepartmentOccupation(department.Id, occupationId));
+        }
         await _unitOfWork.SaveChangesAsync(cancellationToken);
         return department.Id;
     }
