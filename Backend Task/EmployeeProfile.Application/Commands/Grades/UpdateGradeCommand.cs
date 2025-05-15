@@ -12,5 +12,5 @@ public class UpdateGradeCommand : IRequest<Guid>
 {
     public Guid Id { get; set; }
     public string Name { get; set; }
-    public ICollection<Occupation> Occupations { get; set; }
+    public List<Guid> OccupationIds { get; set; }
 }

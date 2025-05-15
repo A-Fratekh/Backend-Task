@@ -15,9 +15,13 @@ namespace EmployeeProfile.Application.Queries.Grades;
 public class GetAllGradesHandler : IRequestHandler<GetAllGradesQuery, List<GradeDTO>>
 {
     private readonly IQueryRepository<Grade> _gradeQueryRepository;
-    public GetAllGradesHandler(IQueryRepository<Grade> gradeQueryRepository)
+    private readonly IQueryRepository<Occupation> _occupationQueryRepository;
+
+    public GetAllGradesHandler(IQueryRepository<Grade> gradeQueryRepository,
+        IQueryRepository<Occupation> occupationQueryRepository)
     {
         _gradeQueryRepository = gradeQueryRepository;
+        _occupationQueryRepository = occupationQueryRepository;
     }
 
     public async Task<List<GradeDTO>> Handle(GetAllGradesQuery request, CancellationToken cancellationToken)
@@ -27,12 +31,20 @@ public class GetAllGradesHandler : IRequestHandler<GetAllGradesQuery, List<Grade
 
         foreach(var grade in grades)
         {
+            var occupations = new List<string>();
+            foreach(var occupationId in grade.OccupationIds)
+            {
+                var occupation = await _occupationQueryRepository.GetByIdAsync(occupationId);
+                occupations.Add(occupation.Name);
+            }
 
             result.Add(
                 new GradeDTO
                 {
                     Id = grade.Id,
                     Name = grade.Name,
+                    OccupationIds = grade.OccupationIds,
+                    Occupations = occupations
 
                 });
         }

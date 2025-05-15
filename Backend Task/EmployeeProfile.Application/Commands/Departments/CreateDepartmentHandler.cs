@@ -34,7 +34,7 @@ public class CreateDepartmentHandler : IRequestHandler<CreateDepartmentCommand, 
         {
             var occupation = await _occupationQueryRepository.GetByIdAsync(occupationId);
             occupation.DepartmentIds.Add(department.Id);
-            occupation.Update(occupation.Name, occupation.DepartmentIds);
+            occupation.Update(occupation.Name, occupation.DepartmentIds, occupation.GradeIds);
             await _occupationRepository.UpdateAsync(occupation);
         }
         foreach (var occupationId in department.OccupationIds)

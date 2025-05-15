@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using EmployeeProfile.Application.UnitOfWork;
 using EmployeeProfile.Domain.Aggregates.DepartmentAggregate;
+using EmployeeProfile.Domain.Aggregates.GradeAggregate;
 using EmployeeProfile.Domain.Aggregates.OccupationAggregate;
 using EmployeeProfile.Domain.Repositories;
 using MediatR;
@@ -17,29 +18,34 @@ public class UpdateOccupationHandler : IRequestHandler<UpdateOccupationCommand, 
     private readonly ICommandRepository<Occupation> _occupationCommandRepository;
     private readonly ICommandRepository<Department> _departmentRepository;
     private readonly IQueryRepository<Department> _departmentQueryRepository;
+    private readonly ICommandRepository<Grade> _gradeRepository;
+    private readonly IQueryRepository<Grade> _gradeQueryRepository;
     private readonly IUnitOfWork _unitOfWork;
 
     public UpdateOccupationHandler(IQueryRepository<Occupation> occupationQueryRepository,
         ICommandRepository<Occupation> occupationCommandRepository,
         ICommandRepository<Department> departmentRepository,
         IQueryRepository<Department> departmentQueryRepository,
+        ICommandRepository<Grade> gradeRepository,
+        IQueryRepository<Grade> gradeQueryRepository,
         IUnitOfWork unitOfWork)
     {
         _occupationQueryRepository = occupationQueryRepository;
         _occupationCommandRepository = occupationCommandRepository;
         _departmentRepository = departmentRepository;
         _departmentQueryRepository = departmentQueryRepository;
+        _gradeRepository = gradeRepository;
+        _gradeQueryRepository = gradeQueryRepository;
         _unitOfWork = unitOfWork;
     }
 
     public async Task<Guid> Handle(UpdateOccupationCommand request, CancellationToken cancellationToken)
     {
         var occupation = await _occupationQueryRepository.GetByIdAsync(request.Id);
-        if (occupation == null) throw new ArgumentNullException($"Occupation with Id : {request.Id} couldn't be found");
+        occupation = occupation?? throw new ArgumentNullException($"Occupation with Id : {request.Id} couldn't be found");
 
-        occupation.Update(request.Name, request.DepartmentIds);
+        occupation.Update(request.Name, request.DepartmentIds, request.GradeIds);
         await _occupationCommandRepository.UpdateAsync(occupation);
-        var departments = await _departmentQueryRepository.GetAllAsync(null);
         foreach (var departmentId in occupation.DepartmentIds)
         {
             var department = await _departmentQueryRepository.GetByIdAsync(departmentId);
@@ -48,6 +54,17 @@ public class UpdateOccupationHandler : IRequestHandler<UpdateOccupationCommand, 
                 department.OccupationIds.Add(occupation.Id);
                 department.Update(department.Name, department.OccupationIds);
                 await _departmentRepository.UpdateAsync(department);
+            }
+        }
+
+        foreach (var gradeId in occupation.GradeIds)
+        {
+            var grade = await _gradeQueryRepository.GetByIdAsync(gradeId);
+            if (!grade.OccupationIds.Contains(occupation.Id))
+            {
+                grade.OccupationIds.Add(occupation.Id);
+                grade.Update(grade.Name, grade.OccupationIds);
+                await _gradeRepository.UpdateAsync(grade);
             }
         }
 

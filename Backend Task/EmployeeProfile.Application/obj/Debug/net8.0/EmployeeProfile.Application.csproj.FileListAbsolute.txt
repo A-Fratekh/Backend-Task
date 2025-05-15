@@ -36,22 +36,6 @@ D:\Ahmad\Desktop\Backend task\Backend-Task\Backend Task\EmployeeProfile.Applicat
 D:\Ahmad\Desktop\Backend task\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\EmployeeProfile.Application.AssemblyInfo.cs
 D:\Ahmad\Desktop\Backend task\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\EmployeeProfile.Application.csproj.CoreCompileInputs.cache
 D:\Ahmad\Desktop\Backend task\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\EmployeeProfile.Application.sourcelink.json
-D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\bin\Debug\net8.0\EmployeeProfile.Application.deps.json
-D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\bin\Debug\net8.0\EmployeeProfile.Application.dll
-D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\bin\Debug\net8.0\EmployeeProfile.Application.pdb
-D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\bin\Debug\net8.0\EmployeeProfile.Domain.dll
-D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\bin\Debug\net8.0\EmployeeProfile.Domain.pdb
-D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\EmployeeProfile.Application.csproj.AssemblyReference.cache
-D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\EmployeeProfile.Application.GeneratedMSBuildEditorConfig.editorconfig
-D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\EmployeeProfile.Application.AssemblyInfoInputs.cache
-D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\EmployeeProfile.Application.AssemblyInfo.cs
-D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\EmployeeProfile.Application.csproj.CoreCompileInputs.cache
-D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\EmployeeProfile.Application.sourcelink.json
-D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\Employee.FB1ECE91.Up2Date
-D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\EmployeeProfile.Application.dll
-D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\refint\EmployeeProfile.Application.dll
-D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\EmployeeProfile.Application.pdb
-D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\ref\EmployeeProfile.Application.dll
 C:\Users\Ahmad\Desktop\github\BackendNew\Backend-Task\Backend Task\EmployeeProfile.Application\bin\Debug\net8.0\EmployeeProfile.Application.deps.json
 C:\Users\Ahmad\Desktop\github\BackendNew\Backend-Task\Backend Task\EmployeeProfile.Application\bin\Debug\net8.0\EmployeeProfile.Application.dll
 C:\Users\Ahmad\Desktop\github\BackendNew\Backend-Task\Backend Task\EmployeeProfile.Application\bin\Debug\net8.0\EmployeeProfile.Application.pdb
@@ -68,3 +52,19 @@ C:\Users\Ahmad\Desktop\github\BackendNew\Backend-Task\Backend Task\EmployeeProfi
 C:\Users\Ahmad\Desktop\github\BackendNew\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\refint\EmployeeProfile.Application.dll
 C:\Users\Ahmad\Desktop\github\BackendNew\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\EmployeeProfile.Application.pdb
 C:\Users\Ahmad\Desktop\github\BackendNew\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\ref\EmployeeProfile.Application.dll
+D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\bin\Debug\net8.0\EmployeeProfile.Application.deps.json
+D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\bin\Debug\net8.0\EmployeeProfile.Application.dll
+D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\bin\Debug\net8.0\EmployeeProfile.Application.pdb
+D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\bin\Debug\net8.0\EmployeeProfile.Domain.dll
+D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\bin\Debug\net8.0\EmployeeProfile.Domain.pdb
+D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\EmployeeProfile.Application.csproj.AssemblyReference.cache
+D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\EmployeeProfile.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\EmployeeProfile.Application.AssemblyInfoInputs.cache
+D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\EmployeeProfile.Application.AssemblyInfo.cs
+D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\EmployeeProfile.Application.csproj.CoreCompileInputs.cache
+D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\EmployeeProfile.Application.sourcelink.json
+D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\Employee.FB1ECE91.Up2Date
+D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\EmployeeProfile.Application.dll
+D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\refint\EmployeeProfile.Application.dll
+D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\EmployeeProfile.Application.pdb
+D:\Ahmad\Desktop\Backend task - v2\Backend-Task\Backend Task\EmployeeProfile.Application\obj\Debug\net8.0\ref\EmployeeProfile.Application.dll

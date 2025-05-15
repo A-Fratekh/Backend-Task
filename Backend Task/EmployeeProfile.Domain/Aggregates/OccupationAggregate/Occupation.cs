@@ -12,18 +12,25 @@ public class Occupation : AggregateRoot
     public string Name { get; private set; }
     public List<Guid> DepartmentIds { get; private set; }
 
+    public List <OccupationGrade> OccupationGrades { get; private set; }
+    public List<Guid> GradeIds { get; private set; }
+
     private Occupation() { }
 
-    public Occupation(string name, List<Guid> departmentIds)
+    public Occupation(string name, List<Guid> departmentIds, List<Guid> gradeIds)
     {
         Name = name ?? throw new ArgumentNullException(nameof(name));
         DepartmentIds = departmentIds;
+        OccupationGrades = new List<OccupationGrade>();
+        GradeIds = gradeIds;
     }
 
-    public void Update(string name, List<Guid> departmentIds)
+    public void Update(string name, List<Guid> departmentIds, List<Guid> gradeIds)
     {
         Name = name ?? throw new ArgumentNullException(nameof(name));
         DepartmentIds = departmentIds;
+        OccupationGrades = new List<OccupationGrade>();
+        GradeIds = gradeIds;
     }
 
 }

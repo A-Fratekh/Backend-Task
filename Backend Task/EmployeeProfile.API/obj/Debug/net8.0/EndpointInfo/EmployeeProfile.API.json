@@ -889,7 +889,7 @@
             "type": "string",
             "nullable": true
           },
-          "occupationsId": {
+          "occupationIds": {
             "type": "array",
             "items": {
               "type": "string",
@@ -908,6 +908,14 @@
             "nullable": true
           },
           "departmentIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "nullable": true
+          },
+          "gradeIds": {
             "type": "array",
             "items": {
               "type": "string",
@@ -1045,6 +1053,14 @@
           "name": {
             "type": "string",
             "nullable": true
+          },
+          "occupationIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1068,6 +1084,42 @@
               "format": "uuid"
             },
             "nullable": true
+          },
+          "occupationGrades": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OccupationGrade"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "gradeIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "OccupationGrade": {
+        "type": "object",
+        "properties": {
+          "occupationId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "gradeId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "occupation": {
+            "$ref": "#/components/schemas/Occupation"
+          },
+          "grade": {
+            "$ref": "#/components/schemas/Grade"
           }
         },
         "additionalProperties": false
@@ -1135,10 +1187,11 @@
             "type": "string",
             "nullable": true
           },
-          "occupations": {
+          "occupationIds": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/Occupation"
+              "type": "string",
+              "format": "uuid"
             },
             "nullable": true
           }
@@ -1157,6 +1210,14 @@
             "nullable": true
           },
           "departmentIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "nullable": true
+          },
+          "gradeIds": {
             "type": "array",
             "items": {
               "type": "string",

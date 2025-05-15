@@ -5,9 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using EmployeeProfile.Domain.Aggregates.GradeAggregate;
-using EmployeeProfile.Domain.Aggregates.OccupationAggregate;
 
-namespace EmployeeProfile.Domain.Aggregates;
+namespace EmployeeProfile.Domain.Aggregates.OccupationAggregate;
 
 public class OccupationGrade
 {
@@ -19,4 +18,9 @@ public class OccupationGrade
     public Occupation Occupation { get; set; }
     public Grade Grade { get; set; }
 
+    public OccupationGrade(Guid occupationId, Guid gradeId)
+    {
+        OccupationId = occupationId;
+        GradeId = gradeId;
+    }
 }

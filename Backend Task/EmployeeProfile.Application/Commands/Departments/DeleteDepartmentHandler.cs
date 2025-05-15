@@ -32,7 +32,7 @@ public class DeleteDepartmentHandler : IRequestHandler<DeleteDepartmentCommand, 
         foreach (var occupation in occupations)
         {
             occupation.DepartmentIds.Remove(department.Id);
-            occupation.Update(occupation.Name, occupation.DepartmentIds);
+            occupation.Update(occupation.Name, occupation.DepartmentIds, occupation.GradeIds);
             await _occupationRepository.UpdateAsync(occupation);
         }
         await _departmentRepository.DeleteAsync(department);

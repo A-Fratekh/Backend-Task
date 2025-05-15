@@ -42,7 +42,7 @@ public class UpdateDepartmentHandler : IRequestHandler<UpdateDepartmentCommand, 
             if (!occupation.DepartmentIds.Contains(department.Id))
             { 
                 occupation.DepartmentIds.Add(department.Id);
-                occupation.Update(occupation.Name, occupation.DepartmentIds);
+                occupation.Update(occupation.Name, occupation.DepartmentIds, occupation.GradeIds);
                 await _occupationRepository.UpdateAsync(occupation);
             }
         }
