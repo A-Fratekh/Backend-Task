@@ -27,12 +27,14 @@ namespace EmployeeProfile.Application.Commands.Grades
         public async Task<Guid> Handle(CreateGradeCommand request, CancellationToken cancellationToken)
         {
             var grade = new Grade(request.Name, request.OccupationIds);
+            
             await _gradeCommandRepository.AddAsync(grade);
             foreach(var occupationId in grade.OccupationIds)
             {
                 var occupation =await _occupationQueryRepository.GetByIdAsync(occupationId);
                 occupation.GradeIds.Add(grade.Id);
                 occupation.Update(occupation.Name,occupation.DepartmentIds, occupation.GradeIds);
+                occupation.AddOccupationGrade(new OccupationGrade(occupationId, grade.Id));
                 await _occupationCommandRepository.UpdateAsync(occupation);
             }
             await _unitOfWork.SaveChangesAsync(cancellationToken);

@@ -31,6 +31,7 @@ public class DeleteDepartmentHandler : IRequestHandler<DeleteDepartmentCommand, 
         var occupations = await _occupationQueryRepository.GetAllAsync(null);
         foreach (var occupation in occupations)
         {
+            department.RemoveDepartmentOccupation(new DepartmentOccupation(department.Id, occupation.Id));
             occupation.DepartmentIds.Remove(department.Id);
             occupation.Update(occupation.Name, occupation.DepartmentIds, occupation.GradeIds);
             await _occupationRepository.UpdateAsync(occupation);

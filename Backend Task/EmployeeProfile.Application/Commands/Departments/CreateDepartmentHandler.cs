@@ -29,6 +29,11 @@ public class CreateDepartmentHandler : IRequestHandler<CreateDepartmentCommand, 
     public async Task<Guid> Handle(CreateDepartmentCommand request, CancellationToken cancellationToken)
     {
         var department = new Department(request.Name, request.OccupationIds);
+        foreach (var occupationId in department.OccupationIds)
+        {
+            var deptOcc = new DepartmentOccupation(department.Id, occupationId);
+            department.AddDepartmentOccupation(deptOcc);
+        }
         await _departmentRepository.AddAsync(department);
         foreach (var occupationId in department.OccupationIds)
         {
@@ -36,10 +41,6 @@ public class CreateDepartmentHandler : IRequestHandler<CreateDepartmentCommand, 
             occupation.DepartmentIds.Add(department.Id);
             occupation.Update(occupation.Name, occupation.DepartmentIds, occupation.GradeIds);
             await _occupationRepository.UpdateAsync(occupation);
-        }
-        foreach (var occupationId in department.OccupationIds)
-        {
-            department.DepartmentOccupations.Add(new DepartmentOccupation(department.Id, occupationId));
         }
         await _unitOfWork.SaveChangesAsync(cancellationToken);
         return department.Id;

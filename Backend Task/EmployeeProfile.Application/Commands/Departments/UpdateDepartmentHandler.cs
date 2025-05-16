@@ -34,6 +34,11 @@ public class UpdateDepartmentHandler : IRequestHandler<UpdateDepartmentCommand, 
             throw new Exception($"Department with id {request.Id} not found");
 
         department.Update(request.Name, request.OccupationIds);
+        foreach(var occupationId in department.OccupationIds)
+        {
+            var deptOcc = new DepartmentOccupation(department.Id, occupationId);
+            department.AddDepartmentOccupation(deptOcc);
+        }
         await _departmentRepository.UpdateAsync(department);
         var occupations = await _occupationQueryRepository.GetAllAsync(null);
         foreach (var occupationId in department.OccupationIds)

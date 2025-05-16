@@ -45,6 +45,7 @@ public class UpdateGradeHandler : IRequestHandler<UpdateGradeCommand, Guid>
             {
                 occupation.GradeIds.Add(occupation.Id);
                 occupation.Update(occupation.Name,occupation.DepartmentIds, occupation.GradeIds);
+                occupation.AddOccupationGrade(new OccupationGrade(occupationId, grade.Id));
                 await _occupationCommandRepository.UpdateAsync(occupation);
             }
         }

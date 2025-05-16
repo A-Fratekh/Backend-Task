@@ -36,12 +36,17 @@ public class CreateOccupationHandler : IRequestHandler<CreateOccupationCommand, 
     {
         var occupation = new Occupation(request.Name, request.DepartmentIds, request.GradeIds);
         await _occupationCommandRepository.AddAsync(occupation);
-        
+        foreach (var gradeId in occupation.GradeIds)
+        {
+            var occGrade = new OccupationGrade(occupation.Id, gradeId);
+            occupation.AddOccupationGrade(new OccupationGrade(occupation.Id, gradeId));
+        }
         foreach (var departmentId in occupation.DepartmentIds)
         {
             var department = await _departmentQueryRepository.GetByIdAsync(departmentId);
             department.OccupationIds.Add(occupation.Id);
             department.Update(department.Name, department.OccupationIds);
+            department.AddDepartmentOccupation(new DepartmentOccupation(departmentId, occupation.Id));
             await _departmentRepository.UpdateAsync(department);
         }
 

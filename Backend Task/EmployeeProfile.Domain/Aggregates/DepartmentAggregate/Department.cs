@@ -9,7 +9,9 @@ public class Department : AggregateRoot
     public Guid Id { get; private set; }   
     public string Name { get; private set; }
     public List<Guid> OccupationIds { get; private set; }
-    public List<DepartmentOccupation> DepartmentOccupations { get; private set; }
+
+    private readonly List<DepartmentOccupation> _departmentOccupations = [];
+    public virtual IReadOnlyList<DepartmentOccupation> DepartmentOccupations => _departmentOccupations.ToList();
 
 
     private Department() { } 
@@ -17,15 +19,21 @@ public class Department : AggregateRoot
     public Department(string name, List<Guid> occupationIds)
     {
         Name = name ?? throw new ArgumentNullException(nameof(name));
-        DepartmentOccupations = new List<DepartmentOccupation>();
         OccupationIds= occupationIds;
     }
    
+    public void AddDepartmentOccupation (DepartmentOccupation occupation)
+    {
+        _departmentOccupations.Add(occupation);
+    }
 
+    public void RemoveDepartmentOccupation(DepartmentOccupation occupation)
+    {
+        _departmentOccupations.Remove(occupation);
+    }
     public void Update(string name, List<Guid> occupationIds)
     {
         Name = name ?? throw new ArgumentNullException(nameof(name));
-        DepartmentOccupations = new List<DepartmentOccupation>();
         OccupationIds=occupationIds;
     }
 }
