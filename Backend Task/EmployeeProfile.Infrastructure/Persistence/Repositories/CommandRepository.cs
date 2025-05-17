@@ -8,9 +8,10 @@ namespace EmployeeProfile.Infrastructure.Persistence.Repositories
     {
         private readonly AppDbContext _context;
 
-        public CommandRepository(AppDbContext context)
+        public CommandRepository()
         {
-            _context = context ?? throw new ArgumentNullException(nameof(context));
+
+            _context = new AppDbContext(disableChangeTracking: false);
         }
 
         public async Task AddAsync(T entity)

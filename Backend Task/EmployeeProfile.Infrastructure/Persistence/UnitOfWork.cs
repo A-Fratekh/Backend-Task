@@ -8,14 +8,9 @@ using EmployeeProfile.Infrastructure.Data;
 
 namespace EmployeeProfile.Infrastructure.Persistence;
 
-public class UnitOfWork : IUnitOfWork
+public class UnitOfWork(AppDbContext context) : IUnitOfWork
 {
-    private readonly AppDbContext _context;
-
-    public UnitOfWork(AppDbContext context)
-    {
-        _context = context;
-    }
+    private readonly AppDbContext _context = context;
 
     public async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {

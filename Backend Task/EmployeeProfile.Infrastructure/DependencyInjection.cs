@@ -5,6 +5,7 @@ using EmployeeProfile.Domain.Repositories;
 using EmployeeProfile.Infrastructure.Data;
 using EmployeeProfile.Infrastructure.Migrations;
 using EmployeeProfile.Infrastructure.Persistence.Repositories;
+using EmployeeProfile.Application.Persistence.Repositories;
 
 
 namespace EmployeeProfile.Infrastructure

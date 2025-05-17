@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ahmad\\Desktop\\github\\BackendNew\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj": {}
+    "C:\\Users\\Ahmad\\Desktop\\github\\Backend Final\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ahmad\\Desktop\\github\\BackendNew\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj": {
+    "C:\\Users\\Ahmad\\Desktop\\github\\Backend Final\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ahmad\\Desktop\\github\\BackendNew\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Ahmad\\Desktop\\github\\Backend Final\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj",
         "projectName": "EmployeeProfile.Domain",
-        "projectPath": "C:\\Users\\Ahmad\\Desktop\\github\\BackendNew\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj",
+        "projectPath": "C:\\Users\\Ahmad\\Desktop\\github\\Backend Final\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\EmployeeProfile.Domain.csproj",
         "packagesPath": "C:\\Users\\Ahmad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ahmad\\Desktop\\github\\BackendNew\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Ahmad\\Desktop\\github\\Backend Final\\Backend-Task\\Backend Task\\EmployeeProfile.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

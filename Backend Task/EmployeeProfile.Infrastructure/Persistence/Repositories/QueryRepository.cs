@@ -9,27 +9,17 @@ using EmployeeProfile.Infrastructure.Data;
 using System.Linq.Expressions;
 using EmployeeProfile.Domain.Aggregates;
 
-namespace EmployeeProfile.Infrastructure.Persistence.Repositories
+namespace EmployeeProfile.Application.Persistence.Repositories
 {
     public class QueryRepository<T> : IQueryRepository<T> where T : AggregateRoot
     {
         private readonly AppDbContext _context;
 
-        public QueryRepository(AppDbContext context)
+        public QueryRepository()
         {
-            _context = context ?? throw new ArgumentNullException(nameof(context));
+            _context = new AppDbContext(disableChangeTracking: true);
         }
 
-        public async Task<bool> ExistsAsync(Guid id)
-        {
-            var parameter = Expression.Parameter(typeof(T), "x");
-            var property = Expression.Property(parameter, "Id");
-            var constant = Expression.Constant(id);
-            var equality = Expression.Equal(property, constant);
-            var lambda = Expression.Lambda<Func<T, bool>>(equality, parameter);
-
-            return await _context.Set<T>().AnyAsync(lambda);
-        }
 
         public async Task<IEnumerable<T>> GetAllAsync(string? orderBy)
         {
