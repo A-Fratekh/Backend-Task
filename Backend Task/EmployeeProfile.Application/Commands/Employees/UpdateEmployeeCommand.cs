@@ -5,9 +5,9 @@ using MediatR;
 
 namespace EmployeeProfile.Application.Commands.Employees;
 
-public class UpdateEmployeeCommand : IRequest<Guid>
+public class UpdateEmployeeCommand : IRequest
 {
-    public Guid Id { get; set; }
+    public int EmployeeNo { get; set; }
     public string Name { get; set; }
     public DateOnly HireDate { get; set; }
     public Guid DepartmentId { get; set; }

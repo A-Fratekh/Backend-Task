@@ -8,7 +8,7 @@ using EmployeeProfile.Domain;
 using EmployeeProfile.Domain.Aggregates.OccupationAggregate;
 
 namespace EmployeeProfile.Application.Commands.Departments;
-public class CreateDepartmentHandler : IRequestHandler<CreateDepartmentCommand>
+public class CreateDepartmentHandler : IRequestHandler<CreateDepartmentCommand, Guid>
 {
     private readonly ICommandRepository<Department> _departmentRepository;
     private readonly IQueryRepository<Occupation> _occupationQueryRepository;
@@ -24,7 +24,9 @@ public class CreateDepartmentHandler : IRequestHandler<CreateDepartmentCommand>
         _occupationRepository = occupationRepository;
     }
 
-    public async Task Handle(CreateDepartmentCommand request, CancellationToken cancellationToken)
+
+
+    public Task<Guid> Handle(CreateDepartmentCommand request, CancellationToken cancellationToken)
     {
         var department = new Department(request.Name, request.OccupationIds);
         foreach (var occupationId in department.OccupationIds)
@@ -32,13 +34,15 @@ public class CreateDepartmentHandler : IRequestHandler<CreateDepartmentCommand>
             var deptOcc = new DepartmentOccupation(department.Id, occupationId);
             department.AddDepartmentOccupation(deptOcc);
         }
-        await _departmentRepository.AddAsync(department);
+        _departmentRepository.Add(department);
         foreach (var occupationId in department.OccupationIds)
         {
-            var occupation = await _occupationQueryRepository.GetByIdAsync(occupationId);
+            var occupation = _occupationQueryRepository.GetById(occupationId);
             occupation.DepartmentIds.Add(department.Id);
             occupation.Update(occupation.Name, occupation.DepartmentIds, occupation.GradeIds);
-            await _occupationRepository.UpdateAsync(occupation);
+            _occupationRepository.Update(occupation);
         }
+
+        return Task.FromResult(department.Id);
     }
 }

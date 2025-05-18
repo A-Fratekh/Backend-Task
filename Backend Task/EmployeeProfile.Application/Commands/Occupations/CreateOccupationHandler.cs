@@ -15,27 +15,24 @@ public class CreateOccupationHandler : IRequestHandler<CreateOccupationCommand, 
     private readonly IQueryRepository<Department> _departmentQueryRepository;
     private readonly ICommandRepository<Grade> _gradeRepository;
     private readonly IQueryRepository<Grade> _gradeQueryRepository;
-    private readonly IUnitOfWork _unitOfWork;
 
     public CreateOccupationHandler(ICommandRepository<Occupation> occupationCommandRepository,
         ICommandRepository<Department> departmentRepository,
         IQueryRepository<Department> departmentQueryRepository,
         ICommandRepository<Grade> gradeRepository,
-        IQueryRepository<Grade> gradeQueryRepository,
-        IUnitOfWork unitOfWork)
+        IQueryRepository<Grade> gradeQueryRepository)
     {
         _occupationCommandRepository = occupationCommandRepository;
         _departmentRepository = departmentRepository;
         _departmentQueryRepository = departmentQueryRepository;
         _gradeRepository = gradeRepository;
         _gradeQueryRepository = gradeQueryRepository;
-        _unitOfWork = unitOfWork;
     }
 
-    public async Task<Guid> Handle(CreateOccupationCommand request, CancellationToken cancellationToken)
+    public Task<Guid> Handle(CreateOccupationCommand request, CancellationToken cancellationToken)
     {
         var occupation = new Occupation(request.Name, request.DepartmentIds, request.GradeIds);
-        await _occupationCommandRepository.AddAsync(occupation);
+         _occupationCommandRepository.Add(occupation);
         foreach (var gradeId in occupation.GradeIds)
         {
             var occGrade = new OccupationGrade(occupation.Id, gradeId);
@@ -43,21 +40,20 @@ public class CreateOccupationHandler : IRequestHandler<CreateOccupationCommand, 
         }
         foreach (var departmentId in occupation.DepartmentIds)
         {
-            var department = await _departmentQueryRepository.GetByIdAsync(departmentId);
+            var department =  _departmentQueryRepository.GetById(departmentId);
             department.OccupationIds.Add(occupation.Id);
             department.Update(department.Name, department.OccupationIds);
             department.AddDepartmentOccupation(new DepartmentOccupation(departmentId, occupation.Id));
-            await _departmentRepository.UpdateAsync(department);
+             _departmentRepository.Update(department);
         }
 
         foreach (var gradeId in occupation.GradeIds)
         {
-            var grade = await _gradeQueryRepository.GetByIdAsync(gradeId);
+            var grade =  _gradeQueryRepository.GetById(gradeId);
             grade.OccupationIds.Add(occupation.Id);
             grade.Update(grade.Name, grade.OccupationIds);
-            await _gradeRepository.UpdateAsync(grade);
+             _gradeRepository.Update(grade);
         }
-        await _unitOfWork.SaveChangesAsync(cancellationToken);
-        return occupation.Id;
+        return Task.FromResult(occupation.Id);
     }
 }

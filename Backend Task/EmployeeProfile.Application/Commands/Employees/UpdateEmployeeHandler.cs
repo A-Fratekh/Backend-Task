@@ -4,7 +4,7 @@ using MediatR;
 using EmployeeProfile.Application.UnitOfWork;
 namespace EmployeeProfile.Application.Commands.Employees;
 
-public class UpdateEmployeeHandler : IRequestHandler<UpdateEmployeeCommand, Guid>
+public class UpdateEmployeeHandler : IRequestHandler<UpdateEmployeeCommand>
 {
         private readonly IQueryRepository<Employee> _employeeReadRepository;
         private readonly ICommandRepository<Employee> _employeeRepository;
@@ -18,11 +18,11 @@ public class UpdateEmployeeHandler : IRequestHandler<UpdateEmployeeCommand, Guid
         _unitOfWork = unitOfWork;
     }
 
-    public async Task<Guid> Handle(UpdateEmployeeCommand request, CancellationToken cancellationToken)
+    public  Task Handle(UpdateEmployeeCommand request, CancellationToken cancellationToken)
     {
-        var employee = await _employeeReadRepository.GetByIdAsync(request.Id);
+        var employee =  _employeeReadRepository.GetById(request.EmployeeNo);
         if (employee == null)
-            throw new Exception($"Employee with id {request.Id} not found");
+            throw new Exception($"Employee with number {request.EmployeeNo} not found");
 
         employee.Update(
             request.Name,
@@ -32,9 +32,9 @@ public class UpdateEmployeeHandler : IRequestHandler<UpdateEmployeeCommand, Guid
             request.GradeId
             );
 
-        await _employeeRepository.UpdateAsync(employee);
-        await _unitOfWork.SaveChangesAsync(cancellationToken);
-        return request.Id;
+        _employeeRepository.Update(employee);
+        
+        return Task.CompletedTask;
     }
 }
 

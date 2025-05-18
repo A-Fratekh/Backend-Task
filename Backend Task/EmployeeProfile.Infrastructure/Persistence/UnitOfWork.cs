@@ -10,17 +10,18 @@ using EmployeeProfile.Infrastructure.Data;
 
 namespace EmployeeProfile.Infrastructure.Persistence;
 
-public class UnitOfWork<T> : IUnitOfWork<T> where T : AggregateRoot
+public class UnitOfWork : IUnitOfWork
 {
     private readonly AppDbContext _context;
-    private readonly IQueryRepository<T> _readRepository;
-    private readonly ICommandRepository<T> _writeRepository;
 
-    public UnitOfWork(AppDbContext context, IQueryRepository<T> readRepository, ICommandRepository<T> writeRepository)
+    public UnitOfWork(AppDbContext context)
     {
         _context = context;
-        _readRepository = readRepository;
-        _writeRepository = writeRepository;
+    }
+
+    public void Dispose()
+    {
+        _context.Dispose();
     }
 
     public int SaveChanges()

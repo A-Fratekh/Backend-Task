@@ -15,9 +15,9 @@ namespace EmployeeProfile.API.Controllers;
 public class DepartmentsController : ControllerBase
 {
     private readonly IMediator _mediator;
-    private readonly IUnitOfWork<Department> _unitOfWork;
+    private readonly IUnitOfWork _unitOfWork;
 
-    public DepartmentsController(IMediator mediator, IUnitOfWork<Department> unitOfWork)
+    public DepartmentsController(IMediator mediator, IUnitOfWork unitOfWork)
     {
         _mediator = mediator;
         _unitOfWork = unitOfWork;
@@ -41,9 +41,9 @@ public class DepartmentsController : ControllerBase
     }
 
     [HttpPost]
-    public Task<ActionResult> Create(CreateDepartmentCommand request)
+    public async Task<ActionResult<Guid>> Create(CreateDepartmentCommand request)
     {
-        var result = _mediator.Send(request);
+        var result = await _mediator.Send(request);
         _unitOfWork.SaveChanges();
         return CreatedAtAction(nameof(Get), new { id = result }, result);
     }

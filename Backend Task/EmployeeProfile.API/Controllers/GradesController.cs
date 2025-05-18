@@ -2,6 +2,7 @@
 using EmployeeProfile.Application.Commands.Grades;
 using EmployeeProfile.Application.Queries.Departments;
 using EmployeeProfile.Application.Queries.Grades;
+using EmployeeProfile.Application.UnitOfWork;
 using EmployeeProfile.Domain.Aggregates.DepartmentAggregate;
 using EmployeeProfile.Domain.Aggregates.GradeAggregate;
 using MediatR;
@@ -15,10 +16,12 @@ namespace EmployeeProfile.API.Controllers;
 public class GradesController : ControllerBase
 {
     private readonly IMediator _mediator;
+    private readonly IUnitOfWork _unitOfWork;
 
-    public GradesController(IMediator mediator)
+    public GradesController(IMediator mediator, IUnitOfWork unitOfWork)
     {
         _mediator = mediator;
+        _unitOfWork = unitOfWork;
     }
 
     [HttpGet]
@@ -42,6 +45,7 @@ public class GradesController : ControllerBase
     public async Task<ActionResult<Guid>> Create(CreateGradeCommand request)
     {
         var result = await _mediator.Send(request);
+        _unitOfWork.SaveChanges();
         return CreatedAtAction(nameof(Get), new { id = result }, result);
     }
 
@@ -52,6 +56,7 @@ public class GradesController : ControllerBase
             return BadRequest();
 
         await _mediator.Send(request);
+        _unitOfWork.SaveChanges();
         return NoContent();
     }
 
@@ -60,8 +65,8 @@ public class GradesController : ControllerBase
     {
         if (id != request.Id)
             return BadRequest();
-
         await _mediator.Send(request);
+        _unitOfWork.SaveChanges();
         return Ok();
     }
 }

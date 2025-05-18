@@ -12,7 +12,7 @@ using MediatR;
 
 namespace EmployeeProfile.Application.Commands.Occupations;
 
-public class UpdateOccupationHandler : IRequestHandler<UpdateOccupationCommand, Guid>
+public class UpdateOccupationHandler : IRequestHandler<UpdateOccupationCommand>
 {
     private readonly IQueryRepository<Occupation> _occupationQueryRepository;
     private readonly ICommandRepository<Occupation> _occupationCommandRepository;
@@ -39,38 +39,37 @@ public class UpdateOccupationHandler : IRequestHandler<UpdateOccupationCommand, 
         _unitOfWork = unitOfWork;
     }
 
-    public async Task<Guid> Handle(UpdateOccupationCommand request, CancellationToken cancellationToken)
+    public  Task Handle(UpdateOccupationCommand request, CancellationToken cancellationToken)
     {
-        var occupation = await _occupationQueryRepository.GetByIdAsync(request.Id);
+        var occupation = _occupationQueryRepository.GetById(request.Id);
         occupation = occupation?? throw new ArgumentNullException($"Occupation with Id : {request.Id} couldn't be found");
         occupation.Update(request.Name, request.DepartmentIds, request.GradeIds);
 
-        await _occupationCommandRepository.UpdateAsync(occupation);
+         _occupationCommandRepository.Update(occupation);
 
         foreach (var departmentId in occupation.DepartmentIds)
         {
-            var department = await _departmentQueryRepository.GetByIdAsync(departmentId);
+            var department = _departmentQueryRepository.GetById(departmentId);
             if (!department.OccupationIds.Contains(occupation.Id))
             {
                 department.OccupationIds.Add(occupation.Id);
                 department.Update(department.Name, department.OccupationIds);
                 department.AddDepartmentOccupation(new DepartmentOccupation(departmentId, occupation.Id));
-                await _departmentRepository.UpdateAsync(department);
+                _departmentRepository.Update(department);
             }
         }
 
         foreach (var gradeId in occupation.GradeIds)
         {
-            var grade = await _gradeQueryRepository.GetByIdAsync(gradeId);
+            var grade = _gradeQueryRepository.GetById(gradeId);
             if (!grade.OccupationIds.Contains(occupation.Id))
             {
                 grade.OccupationIds.Add(occupation.Id);
                 grade.Update(grade.Name, grade.OccupationIds);
-                await _gradeRepository.UpdateAsync(grade);
+                _gradeRepository.Update(grade);
             }
         }
 
-        await _unitOfWork.SaveChangesAsync(cancellationToken);
-        return request.Id;
+        return Task.CompletedTask;
     }
 }

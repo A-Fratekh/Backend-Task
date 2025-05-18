@@ -161,15 +161,41 @@
   },
   {
     "ContainingType": "EmployeeProfile.API.Controllers.EmployeesController",
+    "Method": "Delete",
+    "RelativePath": "api/Employees/{employeeNo}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeNo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "EmployeeProfile.Application.Commands.Employees.DeleteEmployeeCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmployeeProfile.API.Controllers.EmployeesController",
     "Method": "Get",
-    "RelativePath": "api/Employees/{employeeNumber}",
+    "RelativePath": "api/Employees/{employeeNos}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "employeeNumber",
+        "Name": "employeeNo",
         "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "employeeNos",
+        "Type": "",
         "IsRequired": true
       }
     ],
@@ -194,34 +220,18 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
+        "Name": "EmployeeNo",
+        "Type": "System.Int32",
+        "IsRequired": false
       },
       {
         "Name": "request",
         "Type": "EmployeeProfile.Application.Commands.Employees.UpdateEmployeeCommand",
         "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EmployeeProfile.API.Controllers.EmployeesController",
-    "Method": "Delete",
-    "RelativePath": "api/Employees/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
       },
       {
-        "Name": "request",
-        "Type": "EmployeeProfile.Application.Commands.Employees.DeleteEmployeeCommand",
+        "Name": "id",
+        "Type": "",
         "IsRequired": true
       }
     ],

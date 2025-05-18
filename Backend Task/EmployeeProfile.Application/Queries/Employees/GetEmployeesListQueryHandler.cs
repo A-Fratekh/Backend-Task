@@ -27,16 +27,16 @@ public class GetEmployeesListQueryHandler : IRequestHandler<GetEmployeesListQuer
         _gradeRepository = gradeRepository;
     }
 
-    public async Task<List<EmployeeProfileDTO>> Handle(GetEmployeesListQuery request, CancellationToken cancellationToken)
+    public Task<List<EmployeeProfileDTO>> Handle(GetEmployeesListQuery request, CancellationToken cancellationToken)
     {
-        var employees = await _employeeRepository.GetAllAsync(request.OrderBy);
+        var employees =  _employeeRepository.GetAll(request.OrderBy);
         var result = new List<EmployeeProfileDTO>();
 
         foreach (var employee in employees)
         {
-            var department = await _departmentRepository.GetByIdAsync(employee.DepartmentId);
-            var occupation = await _occupationRepository.GetByIdAsync(employee.OccupationId);
-            var grade = await _gradeRepository.GetByIdAsync(employee.GradeId);
+            var department = _departmentRepository.GetById(employee.DepartmentId);
+            var occupation = _occupationRepository.GetById(employee.OccupationId);
+            var grade = _gradeRepository.GetById(employee.GradeId);
 
             result.Add(new EmployeeProfileDTO
             {
@@ -49,6 +49,6 @@ public class GetEmployeesListQueryHandler : IRequestHandler<GetEmployeesListQuer
             });
         }
 
-        return result;
+        return Task.FromResult(result);
     }
 }

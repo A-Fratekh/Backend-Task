@@ -5,7 +5,7 @@ namespace EmployeeProfile.Domain.Repositories;
 
 public interface IQueryRepository<T> where T : AggregateRoot
 {
-    Task<T> GetByIdAsync(Guid id);
-    Task<T> GetByIdAsync(int id);
-    Task<IEnumerable<T>> GetAllAsync(string? orderBy);
+    T GetById(Guid id);
+    T GetById(int id);
+    IEnumerable<T> GetAll(string? orderBy);
 }

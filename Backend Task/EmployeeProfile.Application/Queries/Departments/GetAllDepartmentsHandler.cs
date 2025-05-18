@@ -17,17 +17,17 @@ public class GetAllDepartmentsHandler : IRequestHandler<GetAllDepartmentsQuery, 
         _occupationQueryRepository = occupationQueryRepository;
     }
 
-    public async Task<List<DepartmentDTO>> Handle(GetAllDepartmentsQuery request, CancellationToken cancellationToken)
+    public Task<List<DepartmentDTO>> Handle(GetAllDepartmentsQuery request, CancellationToken cancellationToken)
     {
-        var result = new List<DepartmentDTO>();
-        var departments = await _departmentRepository.GetAllAsync(null);
+        List<DepartmentDTO> result = new List<DepartmentDTO>();
+        var departments =  _departmentRepository.GetAll(null);
         
         foreach(var department in departments)
         {
             var occupations = new List<string>();
             foreach (var occupationId in department.OccupationIds)
             {
-                var occupation = await _occupationQueryRepository.GetByIdAsync(occupationId);
+                var occupation = _occupationQueryRepository.GetById(occupationId);
                 occupations.Add(occupation.Name);
             }
                 result.Add(new DepartmentDTO
@@ -39,7 +39,7 @@ public class GetAllDepartmentsHandler : IRequestHandler<GetAllDepartmentsQuery, 
             });
 
         }
-        return result;
+        return Task.FromResult(result);
     }
 }
 

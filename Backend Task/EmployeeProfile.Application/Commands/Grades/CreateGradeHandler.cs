@@ -11,34 +11,30 @@ namespace EmployeeProfile.Application.Commands.Grades
         private readonly ICommandRepository<Grade> _gradeCommandRepository;
         private readonly ICommandRepository<Occupation> _occupationCommandRepository;
         private readonly IQueryRepository<Occupation> _occupationQueryRepository;
-        private readonly IUnitOfWork _unitOfWork;
 
         public CreateGradeHandler(ICommandRepository<Grade> gradeCommandRepository,
             ICommandRepository<Occupation> occupationCommandRepository, 
-            IQueryRepository<Occupation> occupationQueryRepository, 
-            IUnitOfWork unitOfWork)
+            IQueryRepository<Occupation> occupationQueryRepository)
         {
             _gradeCommandRepository = gradeCommandRepository;
             _occupationCommandRepository = occupationCommandRepository;
             _occupationQueryRepository = occupationQueryRepository;
-            _unitOfWork = unitOfWork;
         }
 
-        public async Task<Guid> Handle(CreateGradeCommand request, CancellationToken cancellationToken)
+        public Task<Guid> Handle(CreateGradeCommand request, CancellationToken cancellationToken)
         {
             var grade = new Grade(request.Name, request.OccupationIds);
             
-            await _gradeCommandRepository.AddAsync(grade);
+             _gradeCommandRepository.Add(grade);
             foreach(var occupationId in grade.OccupationIds)
             {
-                var occupation =await _occupationQueryRepository.GetByIdAsync(occupationId);
+                var occupation =_occupationQueryRepository.GetById(occupationId);
                 occupation.GradeIds.Add(grade.Id);
                 occupation.Update(occupation.Name,occupation.DepartmentIds, occupation.GradeIds);
                 occupation.AddOccupationGrade(new OccupationGrade(occupationId, grade.Id));
-                await _occupationCommandRepository.UpdateAsync(occupation);
+                _occupationCommandRepository.Update(occupation);
             }
-            await _unitOfWork.SaveChangesAsync(cancellationToken);
-            return grade.Id;
+            return Task.FromResult(grade.Id);
         }
     }
 }

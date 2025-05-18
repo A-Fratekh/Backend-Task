@@ -22,19 +22,21 @@ public class DeleteDepartmentHandler : IRequestHandler<DeleteDepartmentCommand>
         _occupationQueryRepository = occupationQueryRepository;
     }
 
-    public async Task Handle(DeleteDepartmentCommand request, CancellationToken cancellationToken)
+    public  Task Handle(DeleteDepartmentCommand request, CancellationToken cancellationToken)
     {
-        var department = await _departmentQueryRepository.GetByIdAsync(request.Id);
+        var department = _departmentQueryRepository.GetById(request.Id);
         if (department == null)
             throw new Exception($"Department with id {request.Id} not found");
-        var occupations = await _occupationQueryRepository.GetAllAsync(null);
+        var occupations = _occupationQueryRepository.GetAll(null);
         foreach (var occupation in occupations)
         {
             department.RemoveDepartmentOccupation(new DepartmentOccupation(department.Id, occupation.Id));
             occupation.DepartmentIds.Remove(department.Id);
             occupation.Update(occupation.Name, occupation.DepartmentIds, occupation.GradeIds);
-            await _occupationRepository.UpdateAsync(occupation);
+            _occupationRepository.Update(occupation);
         }
-        await _departmentRepository.DeleteAsync(department);
+        _departmentRepository.Delete(department);
+
+        return Task.CompletedTask;
     }
 }

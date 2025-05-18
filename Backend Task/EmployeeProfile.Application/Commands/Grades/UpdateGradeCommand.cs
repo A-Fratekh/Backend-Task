@@ -8,7 +8,7 @@ using MediatR;
 
 namespace EmployeeProfile.Application.Commands.Grades;
 
-public class UpdateGradeCommand : IRequest<Guid>
+public class UpdateGradeCommand : IRequest
 {
     public Guid Id { get; set; }
     public string Name { get; set; }

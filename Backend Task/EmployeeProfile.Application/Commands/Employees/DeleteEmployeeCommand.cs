@@ -2,7 +2,7 @@
 
 namespace EmployeeProfile.Application.Commands.Employees;
 
-public class DeleteEmployeeCommand : IRequest<int>
+public class DeleteEmployeeCommand : IRequest
 {
-    public int Id { get; set; }
+    public int EmployeeNo { get; set; }
 }

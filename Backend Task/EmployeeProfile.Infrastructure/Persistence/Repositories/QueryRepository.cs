@@ -9,52 +9,54 @@ using EmployeeProfile.Infrastructure.Data;
 using System.Linq.Expressions;
 using EmployeeProfile.Domain.Aggregates;
 
-namespace EmployeeProfile.Application.Persistence.Repositories
+namespace EmployeeProfile.Application.Persistence.Repositories;
+
+public class QueryRepository<T> : IQueryRepository<T> where T : AggregateRoot
 {
-    public class QueryRepository<T> : IQueryRepository<T> where T : AggregateRoot
+    private readonly AppDbContext _context;
+
+    public QueryRepository(AppDbContext context)
     {
-        private readonly AppDbContext _context;
+        _context = context;
+        _context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
+    }
 
-        public QueryRepository(AppDbContext context)
+    public IEnumerable<T> GetAll(string? orderBy)
+    {
+        IQueryable<T> query = _context.Set<T>();
+
+        if (!string.IsNullOrEmpty(orderBy))
         {
-            _context = context;
-        }
-
-
-        public async Task<IEnumerable<T>> GetAllAsync(string? orderBy)
-        {
-            IQueryable<T> query = _context.Set<T>();
-
-            if (!string.IsNullOrEmpty(orderBy))
+            try
             {
-                try
-                {
-                    query = query.OrderBy(e => EF.Property<object>(e, orderBy));
-                }
-                catch
-                {
-                    throw new InvalidOperationException();
-                }
+                query = query.OrderBy(e => EF.Property<object>(e, orderBy));
             }
-
-            return await query.ToListAsync();
+            catch
+            {
+                throw new InvalidOperationException();
+            }
         }
 
-        public async Task<T> GetByIdAsync(Guid id)
-        {
-            var entity = await _context.Set<T>().FindAsync(id);
+        return query.ToList();
+    }
 
-            if (entity == null)
-                throw new KeyNotFoundException($"Entity with ID {id} not found");
+    public T GetById(Guid id)
+    {
+        var entity = _context.Set<T>().Find(id);
 
-            return entity;
-        }
-        public async Task<T> GetByIdAsync(int id)
-        {
-            var entity = await _context.Set<T>().FindAsync(id);
-            if (entity == null) throw new KeyNotFoundException($"Entity with Number {id} not found");
+        if (entity == null)
+            throw new KeyNotFoundException($"Entity with ID {id} not found");
 
-            return entity;
-        }
+        return entity;
+    }
+
+    public T GetById(int id)
+    {
+        var entity = _context.Set<T>().Find(id);
+
+        if (entity == null)
+            throw new KeyNotFoundException($"Entity with Number {id} not found");
+
+        return entity;
     }
 }

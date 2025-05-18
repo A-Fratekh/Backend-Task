@@ -26,17 +26,17 @@ public class GetEmployeeProfileHandler : IRequestHandler<GetEmployeeProfileQuery
         _gradeRepository = gradeRepository;
     }
 
-    public async Task<EmployeeProfileDTO> Handle(GetEmployeeProfileQuery request, CancellationToken cancellationToken)
+    public Task<EmployeeProfileDTO> Handle(GetEmployeeProfileQuery request, CancellationToken cancellationToken)
     {
-        var employee = await _employeeRepository.GetByIdAsync(request.EmployeeNo);
+        var employee = _employeeRepository.GetById(request.EmployeeNo);
         if (employee == null)
             return null;
 
-        var department = await _departmentRepository.GetByIdAsync(employee.DepartmentId);
-        var occupation = await _occupationRepository.GetByIdAsync(employee.OccupationId);
-        var grade = await _gradeRepository.GetByIdAsync(employee.GradeId);
+        var department = _departmentRepository.GetById(employee.DepartmentId);
+        var occupation = _occupationRepository.GetById(employee.OccupationId);
+        var grade = _gradeRepository.GetById(employee.GradeId);
 
-        return new EmployeeProfileDTO
+        return Task.FromResult(new EmployeeProfileDTO
         {
             
             EmployeeNo = employee.EmployeeNo,
@@ -45,6 +45,7 @@ public class GetEmployeeProfileHandler : IRequestHandler<GetEmployeeProfileQuery
             Department=department.Name,
             Occupation = occupation.Name,
             Grade = grade.Name
-        };
+        }
+        );
     }
 }

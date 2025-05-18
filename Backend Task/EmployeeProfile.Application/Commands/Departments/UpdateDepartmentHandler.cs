@@ -24,25 +24,25 @@ public class UpdateDepartmentHandler : IRequestHandler<UpdateDepartmentCommand>
         _occupationRepository = occupationRepository;
     }
 
-    public async Task Handle(UpdateDepartmentCommand request, CancellationToken cancellationToken)
+    public Task Handle(UpdateDepartmentCommand request, CancellationToken cancellationToken)
     {
-        var department = await _departmentQueryRepository.GetByIdAsync(request.Id);
+        var department =  _departmentQueryRepository.GetById(request.Id);
         if (department == null)
             throw new Exception($"Department with id {request.Id} not found");
 
         department.Update(request.Name, request.OccupationIds);
-        await _departmentRepository.UpdateAsync(department);
-        var occupations = await _occupationQueryRepository.GetAllAsync(null);
+        _departmentRepository.Update(department);
+        var occupations = _occupationQueryRepository.GetAll(null);
         foreach (var occupationId in department.OccupationIds)
         {
-            var occupation = await _occupationQueryRepository.GetByIdAsync(occupationId);
+            var occupation =  _occupationQueryRepository.GetById(occupationId);
             if (!occupation.DepartmentIds.Contains(department.Id))
             { 
                 occupation.DepartmentIds.Add(department.Id);
                 occupation.Update(occupation.Name, occupation.DepartmentIds, occupation.GradeIds);
-                await _occupationRepository.UpdateAsync(occupation);
+                     _occupationRepository.Update(occupation);
             }
         }
-
+        return Task.CompletedTask;
     }
 }

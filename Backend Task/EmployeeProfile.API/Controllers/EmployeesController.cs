@@ -2,6 +2,7 @@
 using EmployeeProfile.Application.Commands.Departments;
 using EmployeeProfile.Application.Commands.Employees;
 using EmployeeProfile.Application.Queries.Employees;
+using EmployeeProfile.Application.UnitOfWork;
 using EmployeeProfile.Domain.Aggregates.EmployeeAggregate;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -14,10 +15,12 @@ namespace EmployeeProfile.API.Controllers;
 public class EmployeesController : ControllerBase
 {
     private readonly IMediator _mediator;
+    private readonly IUnitOfWork _unitOfWork;
 
-    public EmployeesController(IMediator mediator)
+    public EmployeesController(IMediator mediator, IUnitOfWork unitOfWork)
     {
         _mediator = mediator;
+        _unitOfWork = unitOfWork;
     }
     [HttpGet]
     public async Task<ActionResult<List<Employee>>> GetAll()
@@ -26,11 +29,10 @@ public class EmployeesController : ControllerBase
         return Ok(result);
     }
 
-    [HttpGet("{employeeNumber}")]
-
-    public async Task<ActionResult<Employee>> Get(int employeeNumber)
+    [HttpGet("{employeeNo}")]
+    public async Task<ActionResult<Employee>> Get(int employeeNo)
     {
-        var result = await _mediator.Send(new GetEmployeeProfileQuery {EmployeeNo= employeeNumber });
+        var result = await _mediator.Send(new GetEmployeeProfileQuery {EmployeeNo= employeeNo });
         return Ok(result);
     }
 
@@ -38,26 +40,28 @@ public class EmployeesController : ControllerBase
     public async Task<ActionResult<int>> Create(CreateEmployeeCommand request)
     {
         var result = await _mediator.Send(request);
-        return CreatedAtAction(nameof(Get), new { employeeNumber = result }, result);
+        _unitOfWork.SaveChanges();
+        return CreatedAtAction(nameof(Get), new { employeeNo = result }, result);
     }
 
     [HttpPut("{id}")]
-    public async Task<ActionResult> Update(Guid id, UpdateEmployeeCommand request)
+    public async Task<ActionResult> Update(int EmployeeNo, UpdateEmployeeCommand request)
     {
-        if (id != request.Id)
+        if (EmployeeNo != request.EmployeeNo)
             return BadRequest();
 
         await _mediator.Send(request);
+        _unitOfWork.SaveChanges();
         return NoContent();
     }
 
-    [HttpDelete("{id}")]
-    public async Task<ActionResult> Delete(int id, DeleteEmployeeCommand request)
+    [HttpDelete("{employeeNo}")]
+    public async Task<ActionResult> Delete(int employeeNo, DeleteEmployeeCommand request)
     {
-        if (id != request.Id)
+        if (employeeNo != request.EmployeeNo)
             return BadRequest();
-
         await _mediator.Send(request);
+        _unitOfWork.SaveChanges();
         return Ok();
     }
 }

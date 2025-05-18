@@ -21,9 +21,9 @@ namespace EmployeeProfile.Application.Queries.Departments
             _occupationQueryRepository = occupationQueryRepository;
         }
 
-        public async Task<DepartmentDTO> Handle(GetDepartmentByIdQuery request, CancellationToken cancellationToken)
+        public Task<DepartmentDTO> Handle(GetDepartmentByIdQuery request, CancellationToken cancellationToken)
         {
-            var department = await _departmentQueryRepository.GetByIdAsync(request.Id);
+            var department = _departmentQueryRepository.GetById(request.Id);
             if (department == null)
                 throw new ArgumentNullException();
 
@@ -31,7 +31,7 @@ namespace EmployeeProfile.Application.Queries.Departments
             var occupations = new List<string>();
             foreach (var occupationId in department.OccupationIds)
             {
-                var occupation = await _occupationQueryRepository.GetByIdAsync(occupationId);
+                var occupation = _occupationQueryRepository.GetById(occupationId);
                 occupations.Add(occupation.Name);
             }
             var departmentDto = new DepartmentDTO
@@ -42,7 +42,7 @@ namespace EmployeeProfile.Application.Queries.Departments
                 Occupations = occupations
             };
 
-            return departmentDto;
+            return Task.FromResult(departmentDto);
         }
     }
 }

@@ -24,17 +24,17 @@ public class GetAllGradesHandler : IRequestHandler<GetAllGradesQuery, List<Grade
         _occupationQueryRepository = occupationQueryRepository;
     }
 
-    public async Task<List<GradeDTO>> Handle(GetAllGradesQuery request, CancellationToken cancellationToken)
+    public Task<List<GradeDTO>> Handle(GetAllGradesQuery request, CancellationToken cancellationToken)
     {
         var result = new List<GradeDTO>();
-        var grades = await _gradeQueryRepository.GetAllAsync(null);
+        var grades =  _gradeQueryRepository.GetAll(null);
 
         foreach(var grade in grades)
         {
             var occupations = new List<string>();
             foreach(var occupationId in grade.OccupationIds)
             {
-                var occupation = await _occupationQueryRepository.GetByIdAsync(occupationId);
+                var occupation = _occupationQueryRepository.GetById(occupationId);
                 occupations.Add(occupation.Name);
             }
 
@@ -49,6 +49,6 @@ public class GetAllGradesHandler : IRequestHandler<GetAllGradesQuery, List<Grade
                 });
         }
 
-        return result;
+        return Task.FromResult(result);
     }
 }
