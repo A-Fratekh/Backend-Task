@@ -15,9 +15,9 @@ namespace EmployeeProfile.Application.Persistence.Repositories
     {
         private readonly AppDbContext _context;
 
-        public QueryRepository()
+        public QueryRepository(AppDbContext context)
         {
-            _context = new AppDbContext(disableChangeTracking: true);
+            _context = context;
         }
 
 

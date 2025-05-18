@@ -2,10 +2,9 @@
 using EmployeeProfile.Domain.Aggregates.DepartmentAggregate;
 using MediatR;
 
-namespace EmployeeProfile.Application.Queries.Departments
+namespace EmployeeProfile.Application.Queries.Departments;
+
+public class GetDepartmentByIdQuery : IRequest<DepartmentDTO>
 {
-    public class GetDepartmentByIdQuery : IRequest<DepartmentDTO>
-    {
-        public Guid Id { get; set; }
-    }
+    public Guid Id { get; set; }
 }

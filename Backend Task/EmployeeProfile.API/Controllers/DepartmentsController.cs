@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using EmployeeProfile.Application.Queries.Departments;
 using EmployeeProfile.Domain.Aggregates.DepartmentAggregate;
 using System.Linq.Expressions;
+using EmployeeProfile.Application.UnitOfWork;
 
 namespace EmployeeProfile.API.Controllers;
 
@@ -14,10 +15,12 @@ namespace EmployeeProfile.API.Controllers;
 public class DepartmentsController : ControllerBase
 {
     private readonly IMediator _mediator;
+    private readonly IUnitOfWork<Department> _unitOfWork;
 
-    public DepartmentsController(IMediator mediator)
+    public DepartmentsController(IMediator mediator, IUnitOfWork<Department> unitOfWork)
     {
         _mediator = mediator;
+        _unitOfWork = unitOfWork;
     }
 
     [HttpGet]
@@ -33,13 +36,15 @@ public class DepartmentsController : ControllerBase
         var result = await _mediator.Send(new GetDepartmentByIdQuery { Id = id });
         if (result == null)
             return NotFound();
+
         return Ok(result);
     }
 
     [HttpPost]
-    public async Task<ActionResult<Guid>> Create(CreateDepartmentCommand request)
+    public Task<ActionResult> Create(CreateDepartmentCommand request)
     {
-        var result = await _mediator.Send(request);
+        var result = _mediator.Send(request);
+        _unitOfWork.SaveChanges();
         return CreatedAtAction(nameof(Get), new { id = result }, result);
     }
 
@@ -50,6 +55,7 @@ public class DepartmentsController : ControllerBase
             return BadRequest();
 
         await _mediator.Send(request);
+        _unitOfWork.SaveChanges();
         return NoContent();
     }
 
@@ -60,6 +66,7 @@ public class DepartmentsController : ControllerBase
             return BadRequest();
 
         await _mediator.Send(request);
+        _unitOfWork.SaveChanges();
         return Ok();
     }
 }

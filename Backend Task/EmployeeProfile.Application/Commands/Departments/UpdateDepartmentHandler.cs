@@ -6,39 +6,31 @@ using EmployeeProfile.Application.UnitOfWork;
 using EmployeeProfile.Domain.Aggregates.OccupationAggregate;
 namespace EmployeeProfile.Application.Commands.Departments;
 
-public class UpdateDepartmentHandler : IRequestHandler<UpdateDepartmentCommand, Guid>
+public class UpdateDepartmentHandler : IRequestHandler<UpdateDepartmentCommand>
 {
     private readonly ICommandRepository<Department> _departmentRepository;
     private readonly IQueryRepository<Department> _departmentQueryRepository;
     private readonly IQueryRepository<Occupation> _occupationQueryRepository;
     private readonly ICommandRepository<Occupation> _occupationRepository;
-    private readonly IUnitOfWork _unitOfWork;
 
     public UpdateDepartmentHandler(ICommandRepository<Department> departmentRepository,
         IQueryRepository<Department> departmentQueryRepository,
         IQueryRepository<Occupation> occupationQueryRepository,
-        ICommandRepository<Occupation> occupationRepository,
-        IUnitOfWork unitOfWork)
+        ICommandRepository<Occupation> occupationRepository)
     {
         _departmentRepository = departmentRepository;
         _departmentQueryRepository = departmentQueryRepository;
         _occupationQueryRepository = occupationQueryRepository;
         _occupationRepository = occupationRepository;
-        _unitOfWork = unitOfWork;
     }
 
-    public async Task<Guid> Handle(UpdateDepartmentCommand request, CancellationToken cancellationToken)
+    public async Task Handle(UpdateDepartmentCommand request, CancellationToken cancellationToken)
     {
         var department = await _departmentQueryRepository.GetByIdAsync(request.Id);
         if (department == null)
             throw new Exception($"Department with id {request.Id} not found");
 
         department.Update(request.Name, request.OccupationIds);
-        foreach(var occupationId in department.OccupationIds)
-        {
-            var deptOcc = new DepartmentOccupation(department.Id, occupationId);
-            department.AddDepartmentOccupation(deptOcc);
-        }
         await _departmentRepository.UpdateAsync(department);
         var occupations = await _occupationQueryRepository.GetAllAsync(null);
         foreach (var occupationId in department.OccupationIds)
@@ -51,7 +43,6 @@ public class UpdateDepartmentHandler : IRequestHandler<UpdateDepartmentCommand, 
                 await _occupationRepository.UpdateAsync(occupation);
             }
         }
-        await _unitOfWork.SaveChangesAsync(cancellationToken);
-        return request.Id;
+
     }
 }

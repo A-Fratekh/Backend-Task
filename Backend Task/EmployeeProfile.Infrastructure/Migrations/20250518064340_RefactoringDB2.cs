@@ -5,7 +5,7 @@
 namespace EmployeeProfile.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class EditingRelations2 : Migration
+    public partial class RefactoringDB2 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

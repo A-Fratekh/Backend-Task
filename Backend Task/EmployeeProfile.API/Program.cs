@@ -25,8 +25,6 @@ builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBeh
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
-
-
 builder.Services.AddMediatR(cfg =>
 {
     cfg.RegisterServicesFromAssemblies(typeof(Program).Assembly);

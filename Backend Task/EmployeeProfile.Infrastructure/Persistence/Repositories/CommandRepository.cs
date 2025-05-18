@@ -7,13 +7,11 @@ namespace EmployeeProfile.Infrastructure.Persistence.Repositories
     public class CommandRepository<T> : ICommandRepository<T> where T : AggregateRoot
     {
         private readonly AppDbContext _context;
-
-        public CommandRepository()
+        public CommandRepository(AppDbContext context)
         {
 
-            _context = new AppDbContext(disableChangeTracking: false);
+            _context = context;
         }
-
         public async Task AddAsync(T entity)
         {
             if (entity == null)
@@ -23,7 +21,6 @@ namespace EmployeeProfile.Infrastructure.Persistence.Repositories
            
 
         }
-
         public async Task UpdateAsync(T entity)
         {
             if (entity == null)
@@ -32,7 +29,6 @@ namespace EmployeeProfile.Infrastructure.Persistence.Repositories
              _context.Set<T>().Update(entity);
             
         }
-
         public async Task DeleteAsync(T entity)
         {
             if (entity == null)
@@ -41,6 +37,5 @@ namespace EmployeeProfile.Infrastructure.Persistence.Repositories
             _context.Set<T>().Remove(entity);
             
         }
-
     }
 }

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EmployeeProfile.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250514155704_editingRelationsOfOccupations2")]
-    partial class editingRelationsOfOccupations2
+    [Migration("20250518064340_RefactoringDB2")]
+    partial class RefactoringDB2
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -102,6 +102,10 @@ namespace EmployeeProfile.Infrastructure.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.PrimitiveCollection<string>("OccupationIds")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Grades");
@@ -113,6 +117,14 @@ namespace EmployeeProfile.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.PrimitiveCollection<string>("DepartmentIds")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.PrimitiveCollection<string>("GradeIds")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -123,7 +135,7 @@ namespace EmployeeProfile.Infrastructure.Migrations
                     b.ToTable("Occupations");
                 });
 
-            modelBuilder.Entity("EmployeeProfile.Domain.Aggregates.OccupationGrade", b =>
+            modelBuilder.Entity("EmployeeProfile.Domain.Aggregates.OccupationAggregate.OccupationGrade", b =>
                 {
                     b.Property<Guid>("OccupationId")
                         .HasColumnType("uniqueidentifier");
@@ -131,9 +143,19 @@ namespace EmployeeProfile.Infrastructure.Migrations
                     b.Property<Guid>("GradeId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<Guid>("GradeId1")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("OccupationId1")
+                        .HasColumnType("uniqueidentifier");
+
                     b.HasKey("OccupationId", "GradeId");
 
                     b.HasIndex("GradeId");
+
+                    b.HasIndex("GradeId1");
+
+                    b.HasIndex("OccupationId1");
 
                     b.ToTable("OccupationGrades");
                 });
@@ -153,17 +175,29 @@ namespace EmployeeProfile.Infrastructure.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("EmployeeProfile.Domain.Aggregates.OccupationGrade", b =>
+            modelBuilder.Entity("EmployeeProfile.Domain.Aggregates.OccupationAggregate.OccupationGrade", b =>
                 {
-                    b.HasOne("EmployeeProfile.Domain.Aggregates.GradeAggregate.Grade", "Grade")
+                    b.HasOne("EmployeeProfile.Domain.Aggregates.GradeAggregate.Grade", null)
                         .WithMany()
                         .HasForeignKey("GradeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("EmployeeProfile.Domain.Aggregates.GradeAggregate.Grade", "Grade")
+                        .WithMany()
+                        .HasForeignKey("GradeId1")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EmployeeProfile.Domain.Aggregates.OccupationAggregate.Occupation", null)
+                        .WithMany("OccupationGrades")
+                        .HasForeignKey("OccupationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("EmployeeProfile.Domain.Aggregates.OccupationAggregate.Occupation", "Occupation")
                         .WithMany()
-                        .HasForeignKey("OccupationId")
+                        .HasForeignKey("OccupationId1")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -175,6 +209,11 @@ namespace EmployeeProfile.Infrastructure.Migrations
             modelBuilder.Entity("EmployeeProfile.Domain.Aggregates.DepartmentAggregate.Department", b =>
                 {
                     b.Navigation("DepartmentOccupations");
+                });
+
+            modelBuilder.Entity("EmployeeProfile.Domain.Aggregates.OccupationAggregate.Occupation", b =>
+                {
+                    b.Navigation("OccupationGrades");
                 });
 #pragma warning restore 612, 618
         }

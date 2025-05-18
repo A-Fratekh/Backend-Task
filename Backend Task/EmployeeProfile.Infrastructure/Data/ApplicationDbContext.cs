@@ -8,15 +8,11 @@ namespace EmployeeProfile.Infrastructure.Data;
 
 public class AppDbContext : DbContext
 {
-    private readonly bool _disableChangeTracking;
     public AppDbContext(DbContextOptions<AppDbContext> options)
        : base(options)
     {
     }
-    public AppDbContext(bool disableChangeTracking)
-    {
-        _disableChangeTracking = disableChangeTracking;
-    }
+
     public DbSet<Department> Departments { get; set; }
     public DbSet<Occupation> Occupations { get; set; }
     public DbSet<Grade> Grades { get; set; }
@@ -24,15 +20,6 @@ public class AppDbContext : DbContext
     public DbSet<OccupationGrade> OccupationGrades { get; set; }
     public DbSet<DepartmentOccupation> DepartmentOccupations { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        optionsBuilder.UseSqlServer("DefaultConnection");
-
-        if (_disableChangeTracking)
-        {
-            optionsBuilder.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
-        }
-    }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<OccupationGrade>(

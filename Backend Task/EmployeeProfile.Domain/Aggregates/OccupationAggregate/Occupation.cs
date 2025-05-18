@@ -11,6 +11,7 @@ public class Occupation : AggregateRoot
     public Guid Id { get; private set; }
     public string Name { get; private set; }
     public List<Guid> DepartmentIds { get; private set; }
+
     private readonly List<OccupationGrade> _occupationGrades = [];
     public virtual IReadOnlyList<OccupationGrade> OccupationGrades => _occupationGrades;
     public List<Guid> GradeIds { get; private set; }

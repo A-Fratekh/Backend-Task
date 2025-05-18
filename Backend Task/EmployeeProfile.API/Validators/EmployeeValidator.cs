@@ -9,7 +9,6 @@ using FluentValidation;
 namespace EmployeeProfile.Application.Validators;
 public class EmployeeValidator : AbstractValidator<CreateEmployeeCommand>
 {
-
     public EmployeeValidator() {
 
         RuleFor(e => e.Name).NotEmpty().WithMessage("Employee name is required")

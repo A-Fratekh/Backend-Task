@@ -8,25 +8,23 @@ using EmployeeProfile.Domain;
 using EmployeeProfile.Domain.Aggregates.OccupationAggregate;
 
 namespace EmployeeProfile.Application.Commands.Departments;
-public class CreateDepartmentHandler : IRequestHandler<CreateDepartmentCommand, Guid>
+public class CreateDepartmentHandler : IRequestHandler<CreateDepartmentCommand>
 {
     private readonly ICommandRepository<Department> _departmentRepository;
     private readonly IQueryRepository<Occupation> _occupationQueryRepository;
     private readonly ICommandRepository<Occupation> _occupationRepository;
-    private readonly IUnitOfWork _unitOfWork;
+    
 
     public CreateDepartmentHandler(ICommandRepository<Department> departmentRepository,
         IQueryRepository<Occupation> occupationQueryRepository,
-        ICommandRepository<Occupation> occupationRepository,
-        IUnitOfWork unitOfWork)
+        ICommandRepository<Occupation> occupationRepository)
     {
         _departmentRepository = departmentRepository;
         _occupationQueryRepository = occupationQueryRepository;
         _occupationRepository = occupationRepository;
-        _unitOfWork = unitOfWork;
     }
 
-    public async Task<Guid> Handle(CreateDepartmentCommand request, CancellationToken cancellationToken)
+    public async Task Handle(CreateDepartmentCommand request, CancellationToken cancellationToken)
     {
         var department = new Department(request.Name, request.OccupationIds);
         foreach (var occupationId in department.OccupationIds)
@@ -42,7 +40,5 @@ public class CreateDepartmentHandler : IRequestHandler<CreateDepartmentCommand, 
             occupation.Update(occupation.Name, occupation.DepartmentIds, occupation.GradeIds);
             await _occupationRepository.UpdateAsync(occupation);
         }
-        await _unitOfWork.SaveChangesAsync(cancellationToken);
-        return department.Id;
     }
 }

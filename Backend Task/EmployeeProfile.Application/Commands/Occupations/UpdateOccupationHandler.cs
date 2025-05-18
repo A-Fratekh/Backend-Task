@@ -45,12 +45,6 @@ public class UpdateOccupationHandler : IRequestHandler<UpdateOccupationCommand, 
         occupation = occupation?? throw new ArgumentNullException($"Occupation with Id : {request.Id} couldn't be found");
         occupation.Update(request.Name, request.DepartmentIds, request.GradeIds);
 
-        foreach (var gradeId in occupation.GradeIds)
-        {
-            var occGrade = new OccupationGrade(occupation.Id, gradeId);
-            occupation.AddOccupationGrade(new OccupationGrade(occupation.Id, gradeId));
-        }
-
         await _occupationCommandRepository.UpdateAsync(occupation);
 
         foreach (var departmentId in occupation.DepartmentIds)

@@ -10,7 +10,6 @@ namespace EmployeeProfile.Application.Validators;
 
 public class DepartmentValidator : AbstractValidator<CreateDepartmentCommand>
 {
-    
     public DepartmentValidator() { 
 
         RuleFor(d=>d.Name).NotEmpty().WithMessage("Department name cannot be empty!")

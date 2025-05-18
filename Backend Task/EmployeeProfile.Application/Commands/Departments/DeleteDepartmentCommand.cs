@@ -2,7 +2,7 @@
 
 namespace EmployeeProfile.Application.Commands.Departments;
 
-public class DeleteDepartmentCommand : IRequest<Guid>
+public class DeleteDepartmentCommand : IRequest
 {
     public Guid Id { get; set; }
 }
