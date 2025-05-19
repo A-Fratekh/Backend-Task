@@ -1,7 +1,6 @@
 ﻿using EmployeeProfile.Domain.Repositories;
 using MediatR;
 using EmployeeProfile.Domain.Aggregates.EmployeeAggregate;
-using EmployeeProfile.Application.UnitOfWork;
 
 namespace EmployeeProfile.Application.Commands.Employees;
 

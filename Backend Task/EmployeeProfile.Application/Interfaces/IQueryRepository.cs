@@ -3,7 +3,7 @@ using EmployeeProfile.Domain.Aggregates;
 
 namespace EmployeeProfile.Domain.Repositories;
 
-public interface IQueryRepository<T> where T : AggregateRoot
+public interface IQueryRepository<T> where T : class
 {
     T GetById(Guid id);
     T GetById(int id);

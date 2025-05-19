@@ -1,5 +1,4 @@
-﻿using EmployeeProfile.Application.UnitOfWork;
-using EmployeeProfile.Domain.Aggregates.EmployeeAggregate;
+﻿using EmployeeProfile.Domain.Aggregates.EmployeeAggregate;
 using EmployeeProfile.Domain.Repositories;
 using MediatR;
 

@@ -299,7 +299,7 @@
         }
       }
     },
-    "/api/Employees/{employeeNos}": {
+    "/api/Employees/{employeeNo}": {
       "get": {
         "tags": [
           "Employees"
@@ -307,18 +307,11 @@
         "parameters": [
           {
             "name": "employeeNo",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "employeeNos",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],
@@ -342,6 +335,46 @@
                 }
               }
             }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Employees"
+        ],
+        "parameters": [
+          {
+            "name": "employeeNo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteEmployeeCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteEmployeeCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteEmployeeCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -384,48 +417,6 @@
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/UpdateEmployeeCommand"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Employees/{employeeNo}": {
-      "delete": {
-        "tags": [
-          "Employees"
-        ],
-        "parameters": [
-          {
-            "name": "employeeNo",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/DeleteEmployeeCommand"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/DeleteEmployeeCommand"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/DeleteEmployeeCommand"
               }
             }
           }
@@ -948,6 +939,14 @@
           "id": {
             "type": "string",
             "format": "uuid"
+          },
+          "occupationIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -968,6 +967,14 @@
           "id": {
             "type": "string",
             "format": "uuid"
+          },
+          "occupationIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -978,6 +985,22 @@
           "id": {
             "type": "string",
             "format": "uuid"
+          },
+          "gradeIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "nullable": true
+          },
+          "departmentIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -992,14 +1015,6 @@
           },
           "name": {
             "type": "string",
-            "nullable": true
-          },
-          "occupationIds": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "format": "uuid"
-            },
             "nullable": true
           },
           "departmentOccupations": {
@@ -1069,14 +1084,6 @@
           "name": {
             "type": "string",
             "nullable": true
-          },
-          "occupationIds": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "format": "uuid"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1093,14 +1100,6 @@
             "type": "string",
             "nullable": true
           },
-          "departmentIds": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "format": "uuid"
-            },
-            "nullable": true
-          },
           "occupationGrades": {
             "type": "array",
             "items": {
@@ -1108,14 +1107,6 @@
             },
             "nullable": true,
             "readOnly": true
-          },
-          "gradeIds": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "format": "uuid"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1223,14 +1214,6 @@
           },
           "name": {
             "type": "string",
-            "nullable": true
-          },
-          "departmentIds": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "format": "uuid"
-            },
             "nullable": true
           },
           "gradeIds": {

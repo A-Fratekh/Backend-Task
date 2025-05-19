@@ -11,7 +11,7 @@ using EmployeeProfile.Domain.Aggregates;
 
 namespace EmployeeProfile.Application.Persistence.Repositories;
 
-public class QueryRepository<T> : IQueryRepository<T> where T : AggregateRoot
+public class QueryRepository<T> : IQueryRepository<T> where T : class
 {
     private readonly AppDbContext _context;
 

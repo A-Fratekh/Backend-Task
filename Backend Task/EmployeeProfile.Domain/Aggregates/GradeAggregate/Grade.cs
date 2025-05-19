@@ -6,20 +6,17 @@ public class Grade : AggregateRoot
     [Key]
     public Guid Id { get; private set; }
     public string Name { get; private set; }
-    public List<Guid> OccupationIds { get; private set; }
     private Grade() { } 
 
-    public Grade(string name, List<Guid> occupationIds)
+    public Grade(string name)
     {
         Id = Guid.NewGuid();
         Name = name ?? throw new ArgumentNullException(nameof(name));
-        OccupationIds = occupationIds;
     }
 
-    public void Update(string name, List<Guid> occupationIds)
+    public void Update(string name)
     {
         Name = name ?? throw new ArgumentNullException(nameof(name));
-        OccupationIds = occupationIds;
 
     }
 }

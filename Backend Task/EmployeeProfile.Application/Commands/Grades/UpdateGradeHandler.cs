@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using EmployeeProfile.Application.UnitOfWork;
+﻿
 using EmployeeProfile.Domain.Aggregates.GradeAggregate;
 using EmployeeProfile.Domain.Aggregates.OccupationAggregate;
 using EmployeeProfile.Domain.Repositories;
@@ -33,20 +28,13 @@ public class UpdateGradeHandler : IRequestHandler<UpdateGradeCommand>
     {
         var grade =  _gradeQueryRepository.GetById(request.Id);
         grade=grade??throw new ArgumentException($"Grade with id : {request.Id} couldn't be found");
-        
-        grade.Update(request.Name, request.OccupationIds);
+        grade.Update(request.Name);
         _gradeCommandRepository.Update(grade);
-        foreach (var occupationId in grade.OccupationIds) {
+        foreach (var occupationId in request.OccupationIds) {
             var occupation = _occupationQueryRepository.GetById(occupationId);
-            if (!occupation.GradeIds.Contains(grade.Id))
-            {
-                occupation.GradeIds.Add(occupation.Id);
-                occupation.Update(occupation.Name,occupation.DepartmentIds, occupation.GradeIds);
                 occupation.AddOccupationGrade(new OccupationGrade(occupationId, grade.Id));
                 _occupationCommandRepository.Update(occupation);
-            }
         }
         return Task.CompletedTask;
-
     }
 }

@@ -16,26 +16,34 @@ public class GetAllGradesHandler : IRequestHandler<GetAllGradesQuery, List<Grade
 {
     private readonly IQueryRepository<Grade> _gradeQueryRepository;
     private readonly IQueryRepository<Occupation> _occupationQueryRepository;
+    private readonly IQueryRepository<OccupationGrade> _occGradeQueryRepository;
+
 
     public GetAllGradesHandler(IQueryRepository<Grade> gradeQueryRepository,
-        IQueryRepository<Occupation> occupationQueryRepository)
+        IQueryRepository<Occupation> occupationQueryRepository,
+        IQueryRepository<OccupationGrade> occGradeQueryRepository)
     {
         _gradeQueryRepository = gradeQueryRepository;
         _occupationQueryRepository = occupationQueryRepository;
+        _occGradeQueryRepository = occGradeQueryRepository;
     }
 
     public Task<List<GradeDTO>> Handle(GetAllGradesQuery request, CancellationToken cancellationToken)
     {
         var result = new List<GradeDTO>();
         var grades =  _gradeQueryRepository.GetAll(null);
+        var occGrades = _occGradeQueryRepository.GetAll(null);
 
-        foreach(var grade in grades)
+        foreach (var grade in grades)
         {
             var occupations = new List<string>();
-            foreach(var occupationId in grade.OccupationIds)
+            foreach (var occGrade in occGrades)
             {
-                var occupation = _occupationQueryRepository.GetById(occupationId);
-                occupations.Add(occupation.Name);
+                if (occGrade.GradeId == grade.Id)
+                {
+                    var occupation = _occupationQueryRepository.GetById(occGrade.OccupationId);
+                    occupations.Add(occupation.Name);
+                }
             }
 
             result.Add(
@@ -43,7 +51,6 @@ public class GetAllGradesHandler : IRequestHandler<GetAllGradesQuery, List<Grade
                 {
                     Id = grade.Id,
                     Name = grade.Name,
-                    OccupationIds = grade.OccupationIds,
                     Occupations = occupations
 
                 });

@@ -10,4 +10,7 @@ namespace EmployeeProfile.Application.Commands.Occupations;
 public class DeleteOccupationcommand : IRequest
 {
     public Guid Id { get; set; }
+    public List<Guid> GradeIds { get; set; }
+    public List<Guid> DepartmentIds { get; set; }
+
 }

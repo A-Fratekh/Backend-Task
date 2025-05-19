@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using EmployeeProfile.Application.UnitOfWork;
+﻿
 using EmployeeProfile.Domain.Aggregates.GradeAggregate;
 using EmployeeProfile.Domain.Aggregates.OccupationAggregate;
 using EmployeeProfile.Domain.Repositories;
@@ -33,12 +28,10 @@ public class DeleteGradeHandler : IRequestHandler<DeleteGradeCommand>
     {
         var grade =  _gradeQueryRepositor.GetById(request.Id) ?? throw new ArgumentException($"Grade with id {request.Id} couldn't be found");
 
-        foreach(var occupationId in grade.OccupationIds)
+        foreach(var occupationId in request.OccupationIds)
         {
             var occupation = _occupationQueryRepository.GetById(occupationId);
             occupation.RemoveOccupationGrade(new OccupationGrade(occupationId, grade.Id));
-            occupation.GradeIds.Remove(grade.Id);
-            occupation.Update(occupation.Name, occupation.DepartmentIds, occupation.GradeIds);
              _occupationCommandRepository.Update(occupation);
         }
         _gradeCommandRepositor.Delete(grade);

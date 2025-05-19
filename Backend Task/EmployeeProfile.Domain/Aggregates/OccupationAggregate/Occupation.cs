@@ -10,19 +10,15 @@ public class Occupation : AggregateRoot
     [Key]
     public Guid Id { get; private set; }
     public string Name { get; private set; }
-    public List<Guid> DepartmentIds { get; private set; }
 
     private readonly List<OccupationGrade> _occupationGrades = [];
     public virtual IReadOnlyList<OccupationGrade> OccupationGrades => _occupationGrades;
-    public List<Guid> GradeIds { get; private set; }
 
     private Occupation() { }
 
-    public Occupation(string name, List<Guid> departmentIds, List<Guid> gradeIds)
+    public Occupation(string name)
     {
         Name = name ?? throw new ArgumentNullException(nameof(name));
-        DepartmentIds = departmentIds;
-        GradeIds = gradeIds;
     }
 
     public void AddOccupationGrade(OccupationGrade occGrade)
@@ -34,11 +30,9 @@ public class Occupation : AggregateRoot
         _occupationGrades.Remove(occGrade);
     }
 
-    public void Update(string name, List<Guid> departmentIds, List<Guid> gradeIds)
+    public void Update(string name)
     {
         Name = name ?? throw new ArgumentNullException(nameof(name));
-        DepartmentIds = departmentIds;
-        GradeIds = gradeIds;
     }
 
 }

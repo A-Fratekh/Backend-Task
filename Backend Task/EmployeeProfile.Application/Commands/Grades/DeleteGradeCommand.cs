@@ -11,4 +11,5 @@ namespace EmployeeProfile.Application.Commands.Grades;
 public class DeleteGradeCommand : IRequest
 {
    public Guid Id { get; set; }
+    public List<Guid> OccupationIds { get; set; }
 }

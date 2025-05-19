@@ -161,6 +161,32 @@
   },
   {
     "ContainingType": "EmployeeProfile.API.Controllers.EmployeesController",
+    "Method": "Get",
+    "RelativePath": "api/Employees/{employeeNo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeNo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "EmployeeProfile.Domain.Aggregates.EmployeeAggregate.Employee",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EmployeeProfile.API.Controllers.EmployeesController",
     "Method": "Delete",
     "RelativePath": "api/Employees/{employeeNo}",
     "HttpMethod": "DELETE",
@@ -179,37 +205,6 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EmployeeProfile.API.Controllers.EmployeesController",
-    "Method": "Get",
-    "RelativePath": "api/Employees/{employeeNos}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "employeeNo",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "employeeNos",
-        "Type": "",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "EmployeeProfile.Domain.Aggregates.EmployeeAggregate.Employee",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
   },
   {
     "ContainingType": "EmployeeProfile.API.Controllers.EmployeesController",

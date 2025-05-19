@@ -15,13 +15,17 @@ public class GetGradeHandler : IRequestHandler<GetGradeQuery, GradeDTO>
 {
     private readonly IQueryRepository<Grade> _gradeQueryRepository;
     private readonly IQueryRepository<Occupation> _occupationQueryRepository;
+    private readonly IQueryRepository<OccupationGrade> _occGradeQueryRepository;
+
     public GetGradeHandler(
         IQueryRepository<Grade> gradeQueryRepository,
-        IQueryRepository<Occupation> occupationQueryRepository
+        IQueryRepository<Occupation> occupationQueryRepository,
+        IQueryRepository<OccupationGrade> occGradeQueryRepository
         )
     {
         _gradeQueryRepository = gradeQueryRepository;
         _occupationQueryRepository = occupationQueryRepository;
+        _occGradeQueryRepository = occGradeQueryRepository;
     }
 
 
@@ -29,15 +33,20 @@ public class GetGradeHandler : IRequestHandler<GetGradeQuery, GradeDTO>
     {
         var grade = _gradeQueryRepository.GetById(request.Id);
         var occupations = new List<string>();
-        foreach (var occupationId in grade.OccupationIds) { 
-            var occupation= _occupationQueryRepository.GetById(occupationId);
-            occupations.Add(occupation.Name);
+        var occGrades = _occGradeQueryRepository.GetAll(null);
+
+        foreach (var occGrade in occGrades)
+        {
+            if (occGrade.GradeId == grade.Id)
+            {
+                var occupation = _occupationQueryRepository.GetById(occGrade.OccupationId);
+                occupations.Add(occupation.Name);
+            }
         }
         return Task.FromResult(new GradeDTO
         {
             Id = grade.Id,
             Name = grade.Name,
-            OccupationIds=grade.OccupationIds,
             Occupations = occupations
             
         });

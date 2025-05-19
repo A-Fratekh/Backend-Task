@@ -7,7 +7,7 @@ using EmployeeProfile.Domain.Aggregates;
 
 namespace EmployeeProfile.Application.UnitOfWork;
 
-public interface IUnitOfWork : IDisposable
+public interface IUnitOfWork 
 {
     int SaveChanges();
 }

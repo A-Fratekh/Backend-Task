@@ -12,13 +12,17 @@ namespace EmployeeProfile.Application.Queries.Departments
     {
         private readonly IQueryRepository<Department> _departmentQueryRepository;
         private readonly IQueryRepository<Occupation> _occupationQueryRepository;
+        private readonly IQueryRepository<DepartmentOccupation> _deptOccQueryRepository;
+
 
 
         public GetDepartmentByIdHandler(IQueryRepository<Department> departmentQueryRepository,
-             IQueryRepository<Occupation> occupationQueryRepository)
+             IQueryRepository<Occupation> occupationQueryRepository,
+             IQueryRepository<DepartmentOccupation> deptOccQueryRepository)
         {
             _departmentQueryRepository = departmentQueryRepository;
             _occupationQueryRepository = occupationQueryRepository;
+            _deptOccQueryRepository = deptOccQueryRepository;
         }
 
         public Task<DepartmentDTO> Handle(GetDepartmentByIdQuery request, CancellationToken cancellationToken)
@@ -26,19 +30,20 @@ namespace EmployeeProfile.Application.Queries.Departments
             var department = _departmentQueryRepository.GetById(request.Id);
             if (department == null)
                 throw new ArgumentNullException();
-
-
+            var deptOccs = _deptOccQueryRepository.GetAll(null);
             var occupations = new List<string>();
-            foreach (var occupationId in department.OccupationIds)
+            foreach (var deptOcc in deptOccs)
             {
-                var occupation = _occupationQueryRepository.GetById(occupationId);
-                occupations.Add(occupation.Name);
+                if (deptOcc.DepartmentId == department.Id)
+                {
+                    var occupation = _occupationQueryRepository.GetById(deptOcc.OccupationId);
+                    occupations.Add(occupation.Name);
+                }
             }
             var departmentDto = new DepartmentDTO
             {
                 Id = department.Id,
                 Name = department.Name,
-                OccupationIds = department.OccupationIds,
                 Occupations = occupations
             };
 
