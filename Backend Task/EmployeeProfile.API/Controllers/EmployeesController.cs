@@ -1,5 +1,4 @@
 ﻿
-using EmployeeProfile.Application.Commands.Departments;
 using EmployeeProfile.Application.Commands.Employees;
 using EmployeeProfile.Application.Queries.Employees;
 using EmployeeProfile.Application.UnitOfWork;
@@ -44,7 +43,7 @@ public class EmployeesController : ControllerBase
         return CreatedAtAction(nameof(Get), new { employeeNo = result }, result);
     }
 
-    [HttpPut("{id}")]
+    [HttpPut("{employeeNo}")]
     public async Task<ActionResult> Update(int EmployeeNo, UpdateEmployeeCommand request)
     {
         if (EmployeeNo != request.EmployeeNo)

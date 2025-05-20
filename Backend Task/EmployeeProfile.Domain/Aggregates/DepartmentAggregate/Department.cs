@@ -10,7 +10,7 @@ public class Department : AggregateRoot
     public string Name { get; private set; }
 
     private readonly List<DepartmentOccupation> _departmentOccupations = [];
-    public virtual IReadOnlyList<DepartmentOccupation> DepartmentOccupations => _departmentOccupations.ToList();
+    public virtual IReadOnlyList<DepartmentOccupation> DepartmentOccupations => _departmentOccupations;
 
 
     private Department() { } 

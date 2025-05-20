@@ -27,12 +27,13 @@ public class CreateOccupationHandler : IRequestHandler<CreateOccupationCommand, 
         foreach (var gradeId in request.GradeIds)
         {
             var occGrade = new OccupationGrade(occupation.Id, gradeId);
-            occupation.AddOccupationGrade(new OccupationGrade(occupation.Id, gradeId));
+            occupation.AddOccupationGrade(occGrade);
         }
         foreach (var departmentId in request.DepartmentIds)
         {
             var department =  _departmentQueryRepository.GetById(departmentId);
-            department.AddDepartmentOccupation(new DepartmentOccupation(departmentId, occupation.Id));
+            var deptOcc = new DepartmentOccupation(departmentId, occupation.Id);
+            department.AddDepartmentOccupation(deptOcc);
         }
         return Task.FromResult(occupation.Id);
     }

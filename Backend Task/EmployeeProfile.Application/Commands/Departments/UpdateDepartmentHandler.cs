@@ -25,7 +25,14 @@ public class UpdateDepartmentHandler : IRequestHandler<UpdateDepartmentCommand>
         var department =  _departmentQueryRepository.GetById(request.Id);
         if (department == null)
             throw new Exception($"Department with id {request.Id} not found");
-
+        foreach (var occupationId in request.OccupationIds)
+        {
+            if (!department.DepartmentOccupations.Any().Equals(new DepartmentOccupation(department.Id, occupationId)))
+            {
+                var deptOcc = new DepartmentOccupation(department.Id, occupationId);
+                department.AddDepartmentOccupation(deptOcc);
+            }
+        }
         department.Update(request.Name);
         _departmentRepository.Update(department);
         var occupations = _occupationQueryRepository.GetAll(null);

@@ -187,6 +187,27 @@
   },
   {
     "ContainingType": "EmployeeProfile.API.Controllers.EmployeesController",
+    "Method": "Update",
+    "RelativePath": "api/Employees/{employeeNo}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmployeeNo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "EmployeeProfile.Application.Commands.Employees.UpdateEmployeeCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmployeeProfile.API.Controllers.EmployeesController",
     "Method": "Delete",
     "RelativePath": "api/Employees/{employeeNo}",
     "HttpMethod": "DELETE",
@@ -201,32 +222,6 @@
       {
         "Name": "request",
         "Type": "EmployeeProfile.Application.Commands.Employees.DeleteEmployeeCommand",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EmployeeProfile.API.Controllers.EmployeesController",
-    "Method": "Update",
-    "RelativePath": "api/Employees/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "EmployeeNo",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "request",
-        "Type": "EmployeeProfile.Application.Commands.Employees.UpdateEmployeeCommand",
-        "IsRequired": true
-      },
-      {
-        "Name": "id",
-        "Type": "",
         "IsRequired": true
       }
     ],

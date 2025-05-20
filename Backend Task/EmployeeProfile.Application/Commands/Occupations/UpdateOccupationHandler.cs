@@ -13,22 +13,17 @@ public class UpdateOccupationHandler : IRequestHandler<UpdateOccupationCommand>
     private readonly ICommandRepository<Occupation> _occupationCommandRepository;
     private readonly ICommandRepository<Department> _departmentRepository;
     private readonly IQueryRepository<Department> _departmentQueryRepository;
-    private readonly ICommandRepository<Grade> _gradeRepository;
-    private readonly IQueryRepository<Grade> _gradeQueryRepository;
+
 
     public UpdateOccupationHandler(IQueryRepository<Occupation> occupationQueryRepository,
         ICommandRepository<Occupation> occupationCommandRepository,
         ICommandRepository<Department> departmentRepository,
-        IQueryRepository<Department> departmentQueryRepository,
-        ICommandRepository<Grade> gradeRepository,
-        IQueryRepository<Grade> gradeQueryRepository)
+        IQueryRepository<Department> departmentQueryRepository)
     {
         _occupationQueryRepository = occupationQueryRepository;
         _occupationCommandRepository = occupationCommandRepository;
         _departmentRepository = departmentRepository;
         _departmentQueryRepository = departmentQueryRepository;
-        _gradeRepository = gradeRepository;
-        _gradeQueryRepository = gradeQueryRepository;
     }
 
     public  Task Handle(UpdateOccupationCommand request, CancellationToken cancellationToken)

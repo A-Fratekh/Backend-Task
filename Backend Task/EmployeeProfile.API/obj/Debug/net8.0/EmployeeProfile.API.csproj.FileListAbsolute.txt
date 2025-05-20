@@ -1250,4 +1250,3 @@ C:\Users\Ahmad\Desktop\github\Backend Final\Backend-Task\Backend Task\EmployeePr
 C:\Users\Ahmad\Desktop\github\Backend Final\Backend-Task\Backend Task\EmployeeProfile.API\obj\Debug\net8.0\EmployeeProfile.API.pdb
 C:\Users\Ahmad\Desktop\github\Backend Final\Backend-Task\Backend Task\EmployeeProfile.API\obj\Debug\net8.0\EmployeeProfile.API.genruntimeconfig.cache
 C:\Users\Ahmad\Desktop\github\Backend Final\Backend-Task\Backend Task\EmployeeProfile.API\obj\Debug\net8.0\ref\EmployeeProfile.API.dll
-D:\Ahmad\Desktop\github\Backend task\Backend-Task\Backend Task\EmployeeProfile.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

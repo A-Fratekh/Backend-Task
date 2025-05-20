@@ -43,7 +43,6 @@ public class DeleteOccupationHandler : IRequestHandler<DeleteOccupationcommand>
         {
             var grade = _gradeQueryRepository.GetById(gradeId);
             occupation.RemoveOccupationGrade(new OccupationGrade(occupation.Id, gradeId));
-            
         }
          _occupationCommandRepository.Delete(occupation);
         return Task.CompletedTask;

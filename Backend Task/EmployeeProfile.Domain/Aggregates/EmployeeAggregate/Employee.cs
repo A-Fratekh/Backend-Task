@@ -2,6 +2,8 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics;
 using System.Text.Json.Serialization;
+using EmployeeProfile.Domain.Aggregates.DepartmentAggregate;
+using EmployeeProfile.Domain.Aggregates.OccupationAggregate;
 
 
 namespace EmployeeProfile.Domain.Aggregates.EmployeeAggregate;
@@ -14,8 +16,11 @@ public class Employee : AggregateRoot
     public string Name { get; private set; }
 
     public DateOnly HireDate { get; private set; }
+    [ForeignKey(nameof(Department))]
     public Guid DepartmentId { get; private set; }
+    [ForeignKey(nameof(Occupation))]
     public Guid OccupationId { get; private set; }
+    [ForeignKey(nameof(GradeId))]
     public Guid GradeId { get; private set; }
 
     private Employee() { }

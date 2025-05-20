@@ -33,9 +33,7 @@ public class AppDbContext : DbContext
                 .WithMany()
                 .HasForeignKey(og => og.GradeId)
                 .OnDelete(DeleteBehavior.Cascade);
-                
                 }
-            
             );
 
         modelBuilder.Entity<DepartmentOccupation>(
@@ -50,26 +48,23 @@ public class AppDbContext : DbContext
                 .HasForeignKey(od => od.OccupationId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-
             }
 
             );
 
-        // Department
         modelBuilder.Entity<Department>(entity =>
         {
             entity.HasKey(e => e.Id);
             entity.Property(e => e.Name).IsRequired().HasMaxLength(100);
         });
 
-        // Occupation
         modelBuilder.Entity<Occupation>(entity =>
         {
             entity.HasKey(e => e.Id);
             entity.Property(e => e.Name).IsRequired().HasMaxLength(100);
         });
 
-        // Grade
+
         modelBuilder.Entity<Grade>(entity =>
         {
             entity.HasKey(e => e.Id);
@@ -77,12 +72,12 @@ public class AppDbContext : DbContext
 
         });
 
-        // Employee
         modelBuilder.Entity<Employee>(entity =>
         {
             entity.HasKey(e => e.EmployeeNo);
             entity.Property(e => e.EmployeeNo).IsRequired().HasMaxLength(20);
             entity.Property(e => e.Name).IsRequired().HasMaxLength(100);
+            
         });
     }
 }
